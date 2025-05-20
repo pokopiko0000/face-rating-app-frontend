@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard] # [standard] を付けるとgunicornなども入る
+python-multipart
+insightface==0.7.3
+onnxruntime==1.17.3 # または onnxruntime-gpu (GPUインスタンスを使う場合)
+faiss-cpu==1.11.0 # または 1.7.4 (Pythonバージョンによる)
+numpy
+Pillow
+scikit-learn # pickleで使われている可能性があるため念のため
+h5py # もしAPI側でHDF5を直接読むなら (通常はpickleされたmetaを読むので不要かも)

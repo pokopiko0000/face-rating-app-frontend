@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.git/
+.gitignore
+SCUT-FBP5500-Database-Release/ # データセット自体はイメージに含めない
+MEBeauty-database/           # データセット自体はイメージに含めない
+*.h5                         # embeddingsファイルもイメージに含めない
+# 他にも不要なファイルがあれば追加
