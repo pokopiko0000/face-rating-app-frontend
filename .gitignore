@@ -83,3 +83,10 @@ nbbuild/
 ehthumbs.db
 Thumbs.db
 cropped_images/
+
+# Vite
+/project/.vite/
+/frontend/.next/
+
+# IDE config
+.idea/
