@@ -14,48 +14,291 @@ from pycountry_convert import (
     country_name_to_country_alpha2,
 )
 from pathlib import Path
+from typing import Dict, Any, Optional, List
+
 
 # --- 定数と設定 ---
 
 # このファイルの場所を基準にパスを構築
-BASE_DIR = Path(__file__).resolve().parent
-
-# 国別のメタデータ（大陸、意外度など）
-# 意外度: ★1 (よく聞く) 〜 ★5 (かなり珍しい)
-COUNTRY_METADATA = {
-    "Japan": {"continent": "AS", "rarity": 1},
-    "China": {"continent": "AS", "rarity": 1},
-    "Korea, Republic of": {"continent": "AS", "rarity": 1},
-    "United States": {"continent": "NA", "rarity": 1},
-    "India": {"continent": "AS", "rarity": 1},
-    "Brazil": {"continent": "SA", "rarity": 2},
-    "France": {"continent": "EU", "rarity": 2},
-    "Germany": {"continent": "EU", "rarity": 2},
-    "United Kingdom": {"continent": "EU", "rarity": 2},
-    "Nigeria": {"continent": "AF", "rarity": 3},
-    "Egypt": {"continent": "AF", "rarity": 3},
-    "Turkey": {"continent": "AS", "rarity": 3},
-    "Argentina": {"continent": "SA", "rarity": 3},
-    "Sweden": {"continent": "EU", "rarity": 4},
-    "New Zealand": {"continent": "OC", "rarity": 4},
-    "Peru": {"continent": "SA", "rarity": 4},
-    "Zimbabwe": {"continent": "AF", "rarity": 5},
-    "Papua New Guinea": {"continent": "OC", "rarity": 5},
-    "Bhutan": {"continent": "AS", "rarity": 5},
-    "Luxembourg": {"continent": "EU", "rarity": 5},
-}
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 # ボーナス設定
 GEO_BONUS = 0.08  # 違う大陸だった場合のボーナス (8%)
-RARITY_BONUS_UNIT = 0.03  # 意外度★1つあたりのボーナス (3%)
+RARITY_BONUS_UNIT = 0.015  # 意外度★1つあたりのボーナス (1.5%)
 
 # --- グローバル変数 ---
 # モデルとプロトタイプは起動時に一度だけロードする
-model = None
+model: Optional[insightface.app.FaceAnalysis] = None
 # 性別ごとにデータを保持する
-prototypes = {"man": {}, "woman": {}}
-representatives = {"man": {}, "woman": {}}
-country_code_cache = {}  # 国コード検索を高速化するためのキャッシュ
+prototypes: Dict[str, Dict[str, np.ndarray]] = {"man": {}, "woman": {}}
+representatives: Dict[str, Dict[str, str]] = {"man": {}, "woman": {}}
+country_code_cache: Dict[str, Optional[str]] = (
+    {}
+)  # 国コード検索を高速化するためのキャッシュ
+country_metadata_g: Dict[str, Dict[str, Any]] = (
+    {}
+)  # 国ごとのメタデータ（大陸、意外性）をキャッシュ
+
+
+# --- 国旗の絵文字マッピング ---
+# 250カ国のデータを網羅
+COUNTRY_FLAGS = {
+    "Afghanistan": "🇦🇫",
+    "Aland Islands": "🇦🇽",
+    "Albania": "🇦🇱",
+    "Algeria": "🇩🇿",
+    "American Samoa": "🇦🇸",
+    "Andorra": "🇦🇩",
+    "Angola": "🇦🇴",
+    "Anguilla": "🇦🇮",
+    "Antarctica": "🇦🇶",
+    "Antigua and Barbuda": "🇦🇬",
+    "Argentina": "🇦🇷",
+    "Armenia": "🇦🇲",
+    "Aruba": "🇦🇼",
+    "Australia": "🇦🇺",
+    "Austria": "🇦🇹",
+    "Azerbaijan": "🇦🇿",
+    "Bahamas": "🇧🇸",
+    "Bahrain": "🇧🇭",
+    "Bangladesh": "🇧🇩",
+    "Barbados": "🇧🇧",
+    "Belarus": "🇧🇾",
+    "Belgium": "🇧🇪",
+    "Belize": "🇧🇿",
+    "Benin": "🇧🇯",
+    "Bermuda": "🇧🇲",
+    "Bhutan": "🇧🇹",
+    "Bolivia (Plurinational State of)": "🇧🇴",
+    "Bonaire, Sint Eustatius and Saba": "🇧🇶",
+    "Bosnia and Herzegovina": "🇧🇦",
+    "Botswana": "🇧🇼",
+    "Bouvet Island": "🇧🇻",
+    "Brazil": "🇧🇷",
+    "British Indian Ocean Territory": "🇮🇴",
+    "Brunei Darussalam": "🇧🇳",
+    "Bulgaria": "🇧🇬",
+    "Burkina Faso": "🇧🇫",
+    "Burundi": "🇧🇮",
+    "Cabo Verde": "🇨🇻",
+    "Cambodia": "🇰🇭",
+    "Cameroon": "🇨🇲",
+    "Canada": "🇨🇦",
+    "Cayman Islands": "🇰🇾",
+    "Central African Republic": "🇨🇫",
+    "Chad": "🇹🇩",
+    "Chile": "🇨🇱",
+    "China": "🇨🇳",
+    "Christmas Island": "🇨🇽",
+    "Cocos (Keeling) Islands": "🇨🇨",
+    "Colombia": "🇨🇴",
+    "Comoros": "🇰🇲",
+    "Congo": "🇨🇬",
+    "Congo (Democratic Republic of the)": "🇨🇩",
+    "Cook Islands": "🇨🇰",
+    "Costa Rica": "🇨🇷",
+    "Cote d'Ivoire": "🇨🇮",
+    "Croatia": "🇭🇷",
+    "Cuba": "🇨🇺",
+    "Curacao": "🇨🇼",
+    "Cyprus": "🇨🇾",
+    "Czechia": "🇨🇿",
+    "Denmark": "🇩🇰",
+    "Djibouti": "🇩🇯",
+    "Dominica": "🇩🇲",
+    "Dominican Republic": "🇩🇴",
+    "Ecuador": "🇪🇨",
+    "Egypt": "🇪🇬",
+    "El Salvador": "🇸🇻",
+    "Equatorial Guinea": "🇬🇶",
+    "Eritrea": "🇪🇷",
+    "Estonia": "🇪🇪",
+    "Eswatini": "🇸🇿",
+    "Ethiopia": "🇪🇹",
+    "Falkland Islands (Malvinas)": "🇫🇰",
+    "Faroe Islands": "🇫🇴",
+    "Fiji": "🇫🇯",
+    "Finland": "🇫🇮",
+    "France": "🇫🇷",
+    "French Guiana": "🇬🇫",
+    "French Polynesia": "🇵🇫",
+    "French Southern Territories": "🇹🇫",
+    "Gabon": "🇬🇦",
+    "Gambia": "🇬🇲",
+    "Georgia": "🇬🇪",
+    "Germany": "🇩🇪",
+    "Ghana": "🇬🇭",
+    "Gibraltar": "🇬🇮",
+    "Greece": "🇬🇷",
+    "Greenland": "🇬🇱",
+    "Grenada": "🇬🇩",
+    "Guadeloupe": "🇬🇵",
+    "Guam": "🇬🇺",
+    "Guatemala": "🇬🇹",
+    "Guernsey": "🇬🇬",
+    "Guinea": "🇬🇳",
+    "Guinea-Bissau": "🇬🇼",
+    "Guyana": "🇬🇾",
+    "Haiti": "🇭🇹",
+    "Heard Island and McDonald Islands": "🇭🇲",
+    "Holy See": "🇻🇦",
+    "Honduras": "🇭🇳",
+    "Hong Kong": "🇭🇰",
+    "Hungary": "🇭🇺",
+    "Iceland": "🇮🇸",
+    "India": "🇮🇳",
+    "Indonesia": "🇮🇩",
+    "Iran (Islamic Republic of)": "🇮🇷",
+    "Iraq": "🇮🇶",
+    "Ireland": "🇮🇪",
+    "Isle of Man": "🇮🇲",
+    "Israel": "🇮🇱",
+    "Italy": "🇮🇹",
+    "Jamaica": "🇯🇲",
+    "Japan": "🇯🇵",
+    "Jersey": "🇯🇪",
+    "Jordan": "🇯🇴",
+    "Kazakhstan": "🇰🇿",
+    "Kenya": "🇰🇪",
+    "Kiribati": "🇰🇮",
+    "Korea (Democratic People's Republic of)": "🇰🇵",
+    "Korea (Republic of)": "🇰🇷",
+    "Kosovo": "🇽🇰",
+    "Kuwait": "🇰🇼",
+    "Kyrgyzstan": "🇰🇬",
+    "Lao People's Democratic Republic": "🇱🇦",
+    "Latvia": "🇱🇻",
+    "Lebanon": "🇱🇧",
+    "Lesotho": "🇱🇸",
+    "Liberia": "🇱🇷",
+    "Libya": "🇱🇾",
+    "Liechtenstein": "🇱🇮",
+    "Lithuania": "🇱🇹",
+    "Luxembourg": "🇱🇺",
+    "Macao": "🇲🇴",
+    "Madagascar": "🇲🇬",
+    "Malawi": "🇲🇼",
+    "Malaysia": "🇲🇾",
+    "Maldives": "🇲🇻",
+    "Mali": "🇲🇱",
+    "Malta": "🇲🇹",
+    "Marshall Islands": "🇲🇭",
+    "Martinique": "🇲🇶",
+    "Mauritania": "🇲🇷",
+    "Mauritius": "🇲🇺",
+    "Mayotte": "🇾🇹",
+    "Mexico": "🇲🇽",
+    "Micronesia (Federated States of)": "🇫🇲",
+    "Moldova (Republic of)": "🇲🇩",
+    "Monaco": "🇲🇨",
+    "Mongolia": "🇲🇳",
+    "Montenegro": "🇲🇪",
+    "Montserrat": "🇲🇸",
+    "Morocco": "🇲🇦",
+    "Mozambique": "🇲🇿",
+    "Myanmar": "🇲🇲",
+    "Namibia": "🇳🇦",
+    "Nauru": "🇳🇷",
+    "Nepal": "🇳🇵",
+    "Netherlands": "🇳🇱",
+    "New Caledonia": "🇳🇨",
+    "New Zealand": "🇳🇿",
+    "Nicaragua": "🇳🇮",
+    "Niger": "🇳🇪",
+    "Nigeria": "🇳🇬",
+    "Niue": "🇳🇺",
+    "Norfolk Island": "🇳🇫",
+    "North Macedonia": "🇲🇰",
+    "Northern Mariana Islands": "🇲🇵",
+    "Norway": "🇳🇴",
+    "Oman": "🇴🇲",
+    "Pakistan": "🇵🇰",
+    "Palau": "🇵🇼",
+    "Palestine, State of": "🇵🇸",
+    "Panama": "🇵🇦",
+    "Papua New Guinea": "🇵🇬",
+    "Paraguay": "🇵🇾",
+    "Peru": "🇵🇪",
+    "Philippines": "🇵🇭",
+    "Pitcairn": "🇵🇳",
+    "Poland": "🇵🇱",
+    "Portugal": "🇵🇹",
+    "Puerto Rico": "🇵🇷",
+    "Qatar": "🇶🇦",
+    "Reunion": "🇷🇪",
+    "Romania": "🇷🇴",
+    "Russian Federation": "🇷🇺",
+    "Rwanda": "🇷🇼",
+    "Saint Barthelemy": "🇧🇱",
+    "Saint Helena, Ascension and Tristan da Cunha": "🇸🇭",
+    "Saint Kitts and Nevis": "🇰🇳",
+    "Saint Lucia": "🇱🇨",
+    "Saint Martin (French part)": "🇲🇫",
+    "Saint Pierre and Miquelon": "🇵🇲",
+    "Saint Vincent and the Grenadines": "🇻🇨",
+    "Samoa": "🇼🇸",
+    "San Marino": "🇸🇲",
+    "Sao Tome and Principe": "🇸🇹",
+    "Saudi Arabia": "🇸🇦",
+    "Senegal": "🇸🇳",
+    "Serbia": "🇷🇸",
+    "Seychelles": "🇸🇨",
+    "Sierra Leone": "🇸🇱",
+    "Singapore": "🇸🇬",
+    "Sint Maarten (Dutch part)": "🇸🇽",
+    "Slovakia": "🇸🇰",
+    "Slovenia": "🇸🇮",
+    "Solomon Islands": "🇸🇧",
+    "Somalia": "🇸🇴",
+    "South Africa": "🇿🇦",
+    "South Georgia and the South Sandwich Islands": "🇬🇸",
+    "South Sudan": "🇸🇸",
+    "Spain": "🇪🇸",
+    "Sri Lanka": "🇱🇰",
+    "Sudan": "🇸🇩",
+    "Suriname": "🇸🇷",
+    "Svalbard and Jan Mayen": "🇸🇯",
+    "Sweden": "🇸🇪",
+    "Switzerland": "🇨🇭",
+    "Syrian Arab Republic": "🇸🇾",
+    "Taiwan (Province of China)": "🇹🇼",
+    "Tajikistan": "🇹🇯",
+    "Tanzania, United Republic of": "🇹🇿",
+    "Thailand": "🇹🇭",
+    "Timor-Leste": "🇹🇱",
+    "Togo": "🇹🇬",
+    "Tokelau": "🇹🇰",
+    "Tonga": "🇹🇴",
+    "Trinidad and Tobago": "🇹🇹",
+    "Tunisia": "🇹🇳",
+    "Turkey": "🇹🇷",
+    "Turkmenistan": "🇹🇲",
+    "Turks and Caicos Islands": "🇹🇨",
+    "Tuvalu": "🇹🇻",
+    "Uganda": "🇺🇬",
+    "Ukraine": "🇺🇦",
+    "United Arab Emirates": "🇦🇪",
+    "United Kingdom of Great Britain and Northern Ireland": "🇬🇧",
+    "United States Minor Outlying Islands": "🇺🇲",
+    "United States of America": "🇺🇸",
+    "Uruguay": "🇺🇾",
+    "Uzbekistan": "🇺🇿",
+    "Vanuatu": "🇻🇺",
+    "Venezuela (Bolivarian Republic of)": "🇻🇪",
+    "Viet Nam": "🇻🇳",
+    "Virgin Islands (British)": "🇻🇬",
+    "Virgin Islands (U.S.)": "🇻🇮",
+    "Wallis and Futuna": "🇼🇫",
+    "Western Sahara": "🇪🇭",
+    "Yemen": "🇾🇪",
+    "Zambia": "🇿🇲",
+    "Zimbabwe": "🇿🇼",
+}
+
+
+def get_country_flag(country_name):
+    """国名から国旗絵文字を取得"""
+    return COUNTRY_FLAGS.get(country_name, "🏳️")
 
 
 # --- 類似度計算関数 ---
@@ -72,11 +315,11 @@ def cosine_similarity(v1, v2):
 def get_continent(country_name):
     """国名から大陸コードを取得する"""
     try:
-        # 事前定義したメタデータにあればそれを使う
-        if country_name in COUNTRY_METADATA:
-            return COUNTRY_METADATA[country_name]["continent"]
+        # 事前に計算したメタデータにあればそれを使う
+        if country_name in country_metadata_g:
+            return country_metadata_g[country_name].get("continent")
 
-        # なければライブラリで変換を試みる
+        # なければライブラリで変換を試みる（フォールバック）
         country_alpha2 = country_name_to_country_alpha2(country_name)
         continent_code = country_alpha2_to_continent_code(country_alpha2)
         return continent_code
@@ -121,7 +364,7 @@ app.add_middleware(
 # --- 起動時イベント ---
 @app.on_event("startup")
 def load_models():
-    global model, prototypes, representatives
+    global model, prototypes, representatives, country_metadata_g
     # 1. 顔分析モデルを準備
     print("顔分析モデルを準備しています...")
     model = insightface.app.FaceAnalysis(providers=["CPUExecutionProvider"])
@@ -130,7 +373,7 @@ def load_models():
     print("モデルの準備が完了しました。")
 
     # 2. 国の代表顔ベクトルをロード（性別ごと）
-    prototypes_path = BASE_DIR / "country_prototypes_gender.npz"
+    prototypes_path = BASE_DIR / "backend" / "country_prototypes_gender.npz"
     if not os.path.exists(prototypes_path):
         print(f"エラー: {prototypes_path} が見つかりません。")
         return
@@ -151,7 +394,7 @@ def load_models():
     )
 
     # 3. 国の代表画像のファイル名をロード（性別ごと）
-    reps_path = BASE_DIR / "country_representatives_gender.json"
+    reps_path = BASE_DIR / "backend" / "country_representatives_gender.json"
     if not os.path.exists(reps_path):
         print(f"警告: {reps_path} が見つかりません。")
         return
@@ -172,8 +415,145 @@ def load_models():
         f"男性代表画像: {len(representatives['man'])}件, 女性代表画像: {len(representatives['woman'])}件 読み込みました。"
     )
 
+    # 4. 事前に生成した国別メタデータをファイルから読み込む
+    metadata_path = BASE_DIR / "backend" / "country_metadata.json"
+    if not metadata_path.exists():
+        print(f"警告: {metadata_path} が見つかりません。ボーナス計算は無効になります。")
+        return
+
+    print(f"{metadata_path} から国別メタデータを読み込んでいます...")
+    with open(metadata_path, "r", encoding="utf-8") as f:
+        country_metadata_g = json.load(f)
+    print(f"{len(country_metadata_g)}カ国分のメタデータを準備しました。")
+
 
 # --- APIエンドポイント ---
+@app.post("/analyze")
+async def analyze_face(
+    file: UploadFile = File(...),
+    gender: str = Form(...),  # フロントエンドからの性別指定（'male' or 'female'）
+):
+    """フロントエンド用の顔分析エンドポイント"""
+    # 性別データがロードされているかチェック
+    if model is None or not prototypes["man"] or not prototypes["woman"]:
+        raise HTTPException(
+            status_code=503,
+            detail="モデルがまだ準備できていません。しばらくしてから再試行してください。",
+        )
+
+    # アップロードされた画像を処理
+    contents = await file.read()
+    nparr = np.frombuffer(contents, np.uint8)
+    img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
+
+    if img is None:
+        raise HTTPException(
+            status_code=400, detail="提供されたファイルは有効な画像ではありません。"
+        )
+
+    img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    faces = model.get(img_rgb)
+
+    if not faces:
+        raise HTTPException(
+            status_code=400, detail="画像から顔が検出できませんでした。"
+        )
+
+    user_face = faces[0]
+    user_embedding = user_face.embedding
+
+    # 性別を変換（'male'/'female' -> 'man'/'woman'）
+    user_gender_str = "man" if gender == "male" else "woman"
+    print(f"ユーザー指定の性別を使用: {user_gender_str}")
+
+    # 判定した性別に基づいて比較対象を選択
+    target_prototypes = prototypes[user_gender_str]
+    target_representatives = representatives[user_gender_str]
+
+    # 両方のデータに存在する国のみを使用（データ整合性確保）
+    available_countries = set(target_prototypes.keys()) & set(
+        target_representatives.keys()
+    )
+    print(f"分析対象国数: {len(available_countries)}カ国")
+
+    # 類似度を計算
+    similarities = {}
+    user_continent = "AS"  # アジアと仮定
+
+    for country in available_countries:
+        prototype_vec = target_prototypes[country]
+        base_score = cosine_similarity(user_embedding, prototype_vec)
+
+        # 意外性ボーナスの計算
+        geo_bonus = 0.0
+        rarity_bonus = 0.0
+
+        metadata = country_metadata_g.get(country)
+        if metadata:
+            # 地理ボーナス
+            country_continent = metadata.get("continent")
+            if country_continent and country_continent != user_continent:
+                geo_bonus = GEO_BONUS
+
+            # 意外度ボーナス
+            rarity = metadata.get("rarity", 1)
+            rarity_bonus = (rarity - 1) * RARITY_BONUS_UNIT
+
+        # 最終スコア = 元のスコア + ボーナス
+        final_score = base_score + geo_bonus + rarity_bonus
+        similarities[country] = final_score
+
+    # ランキングを作成
+    sorted_countries = sorted(
+        similarities.items(), key=lambda item: item[1], reverse=True
+    )
+
+    # フロントエンド用のレスポンス形式
+    ranking_result = []
+    for i, (country, score) in enumerate(sorted_countries[:10]):  # TOP10を返す
+        ranking_result.append(
+            {
+                "country": country,
+                "similarity": float(score),
+                "country_code": get_country_code(country),
+            }
+        )
+
+    return JSONResponse(content={"ranking": ranking_result})
+
+
+@app.get("/comparison")
+async def get_comparison_image(
+    country: str,
+    gender: str,
+):
+    """比較画像を生成するエンドポイント"""
+    try:
+        # 性別を変換
+        gender_str = "man" if gender == "male" else "woman"
+
+        # 代表画像のファイル名を取得
+        if country not in representatives[gender_str]:
+            raise HTTPException(status_code=404, detail="代表画像が見つかりません")
+
+        representative_filename = representatives[gender_str][country]
+        representative_path = BASE_DIR / "cropped_images" / representative_filename
+
+        if not representative_path.exists():
+            raise HTTPException(
+                status_code=404, detail="代表画像ファイルが存在しません"
+            )
+
+        # 代表画像を返す
+        return FileResponse(representative_path)
+
+    except Exception as e:
+        print(f"比較画像取得エラー: {e}")  # デバッグ用にログ出力
+        raise HTTPException(
+            status_code=500, detail=f"比較画像の生成に失敗しました: {str(e)}"
+        )
+
+
 @app.post("/rank-face/")
 async def rank_face(
     file: UploadFile = File(...),
@@ -221,27 +601,35 @@ async def rank_face(
     target_prototypes = prototypes[user_gender_str]
     target_representatives = representatives[user_gender_str]
 
+    # 両方のデータに存在する国のみを使用（データ整合性確保）
+    available_countries = set(target_prototypes.keys()) & set(
+        target_representatives.keys()
+    )
+    print(f"分析対象国数: {len(available_countries)}カ国")
+
     # 4. 類似度を計算
     similarities = {}
 
     # ユーザーの地域を仮定（将来的には拡張可能）
     user_continent = "AS"  # アジアと仮定
 
-    for country, prototype_vec in target_prototypes.items():
+    for country in available_countries:
+        prototype_vec = target_prototypes[country]
         base_score = cosine_similarity(user_embedding, prototype_vec)
 
         # --- 意外性ボーナスの計算 ---
-        geo_bonus = 0
-        rarity_bonus = 0
+        geo_bonus = 0.0
+        rarity_bonus = 0.0
 
-        # 1. 地理ボーナス
-        country_continent = get_continent(country)
-        if country_continent and country_continent != user_continent:
-            geo_bonus = GEO_BONUS
+        metadata = country_metadata_g.get(country)
+        if metadata:
+            # 1. 地理ボーナス
+            country_continent = metadata.get("continent")
+            if country_continent and country_continent != user_continent:
+                geo_bonus = GEO_BONUS
 
-        # 2. 意外度ボーナス
-        if country in COUNTRY_METADATA:
-            rarity = COUNTRY_METADATA[country]["rarity"]
+            # 2. 意外度ボーナス
+            rarity = metadata.get("rarity", 1)
             # レア度が高いほどボーナス追加（★1はボーナス0）
             rarity_bonus = (rarity - 1) * RARITY_BONUS_UNIT
 

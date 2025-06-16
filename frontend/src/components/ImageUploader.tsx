@@ -66,38 +66,31 @@ export default function ImageUploader({ onImageUpload }: ImageUploaderProps) {
       />
       
       {preview ? (
-        <div className="relative">
-          <div className="relative overflow-hidden rounded-2xl bg-slate-800/50 border border-slate-700/50">
+        <div className="relative group">
+          <div className="relative overflow-hidden rounded-xl bg-slate-100 border border-slate-200">
             <img
               src={preview}
               alt="アップロード画像"
               className="w-full h-72 object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
           </div>
           <button
-            onClick={() => {
-              setPreview(null);
-              openFileSelector();
-            }}
-            className="absolute top-4 right-4 bg-slate-900/80 hover:bg-slate-800/80 text-white p-3 rounded-xl transition-colors duration-200 backdrop-blur-sm border border-slate-700/50"
+            onClick={openFileSelector}
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-slate-800 font-bold py-3 px-6 rounded-lg transition-all duration-300 backdrop-blur-sm border border-slate-200/50 opacity-0 group-hover:opacity-100 transform group-hover:scale-100 scale-95"
           >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-            </svg>
+            画像を変更
           </button>
-          <div className="absolute bottom-4 left-4 right-4">
-            <p className="text-white text-base font-semibold">
-              画像がアップロードされました
-            </p>
+          <div className="absolute bottom-4 left-4 right-4 text-white text-base font-semibold">
+            <p>画像が選択されました</p>
           </div>
         </div>
       ) : (
         <div
-          className={`relative border-2 border-dashed rounded-2xl p-12 text-center cursor-pointer transition-all duration-200 ${
+          className={`relative border-2 border-dashed rounded-xl p-12 text-center cursor-pointer transition-all duration-200 ${
             dragActive
-              ? 'border-slate-400 bg-slate-800/50'
-              : 'border-slate-700 bg-slate-800/20 hover:border-slate-600 hover:bg-slate-800/40'
+              ? 'border-teal-500 bg-teal-50'
+              : 'border-slate-300 bg-white hover:border-slate-400 hover:bg-slate-50'
           }`}
           onDragEnter={handleDrag}
           onDragLeave={handleDrag}
@@ -105,22 +98,24 @@ export default function ImageUploader({ onImageUpload }: ImageUploaderProps) {
           onDrop={handleDrop}
           onClick={openFileSelector}
         >
-          <div className="space-y-6">
-            <div className="text-5xl">
-              {dragActive ? '📤' : '📷'}
+          <div className="space-y-4">
+            <div className="flex justify-center text-4xl text-slate-500">
+             <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
             </div>
             <div>
-              <p className="text-xl font-semibold text-slate-200 mb-3">
-                {dragActive ? 'ここにドロップ' : '顔写真をアップロード'}
+              <p className="text-lg font-semibold text-slate-800 mb-1">
+                {dragActive ? 'ここにドロップして開始' : 'クリックして画像を選択'}
               </p>
-              <p className="text-base text-slate-400">
-                ドラッグ&ドロップ または クリックして選択
+              <p className="text-sm text-slate-500">
+                または、ファイルをドラッグ＆ドロップ
               </p>
             </div>
-            <div className="flex items-center justify-center space-x-3 text-sm text-slate-500">
-              <span className="px-3 py-1 bg-slate-800/50 rounded-lg">JPG</span>
-              <span className="px-3 py-1 bg-slate-800/50 rounded-lg">PNG</span>
-              <span className="px-3 py-1 bg-slate-800/50 rounded-lg">WEBP</span>
+            <div className="flex items-center justify-center space-x-2 text-xs text-slate-400 pt-2">
+              <span className="px-2 py-1 bg-slate-100 rounded-md">JPG</span>
+              <span className="px-2 py-1 bg-slate-100 rounded-md">PNG</span>
+              <span className="px-2 py-1 bg-slate-100 rounded-md">WEBP</span>
             </div>
           </div>
         </div>

@@ -1,170 +1,106 @@
 'use client';
 
-interface AnalysisResult {
+import Image from 'next/image';
+
+interface RankingItem {
+  rank: number;
   country: string;
-  similarity: number;
-  confidence: number;
-  features: string[];
+  score: number;
+  country_code: string | null;
+  representative_image_filename?: string;
+}
+
+interface ApiResponse {
+  detected_gender: 'man' | 'woman';
+  ranking: RankingItem[];
 }
 
 interface ResultsDisplayProps {
-  results: AnalysisResult[];
+  results: ApiResponse;
+  selectedImage: File | null;
 }
 
-export default function ResultsDisplay({ results }: ResultsDisplayProps) {
-  const getCountryFlag = (country: string) => {
-    const flags: { [key: string]: string } = {
-      '日本': '🇯🇵',
-      '韓国': '🇰🇷',
-      '中国': '🇨🇳',
-      'アメリカ': '🇺🇸',
-      'イギリス': '🇬🇧',
-      'フランス': '🇫🇷',
-      'ドイツ': '🇩🇪',
-      'イタリア': '🇮🇹',
-      'スペイン': '🇪🇸',
-      'ブラジル': '🇧🇷',
-      'インド': '🇮🇳',
-      'ロシア': '🇷🇺',
-      'オーストラリア': '🇦🇺',
-      'カナダ': '🇨🇦',
-      'メキシコ': '🇲🇽',
-    };
-    return flags[country] || '🌍';
-  };
-
-  const getSimilarityColor = (similarity: number) => {
-    if (similarity >= 80) return 'text-green-400 bg-green-500/10 border-green-500/20';
-    if (similarity >= 60) return 'text-yellow-400 bg-yellow-500/10 border-yellow-500/20';
-    return 'text-red-400 bg-red-500/10 border-red-500/20';
-  };
-
-  const getProgressColor = (similarity: number) => {
-    if (similarity >= 80) return 'bg-green-500';
-    if (similarity >= 60) return 'bg-yellow-500';
-    return 'bg-red-500';
-  };
-
-  const handleShare = () => {
-    if (results.length === 0) return;
-    const topResult = results[0];
-    const shareText = `AI顔診断の結果、私の顔は「${topResult.country}」の理想顔と${topResult.similarity}%似ていました！✨\nあなたも試してみては？\n\n#理想顔診断 #AI顔診断`;
-    const appUrl = 'http://localhost:3000';
-    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(appUrl)}`;
-    window.open(twitterUrl, '_blank');
-  };
+export default function ResultsDisplay({ results, selectedImage }: ResultsDisplayProps) {
+  const topResult = results.ranking[0];
 
   return (
     <div className="space-y-8">
-      {/* トップ結果 */}
-      {results.length > 0 && (
-        <div className="bg-slate-800/30 border border-slate-700/50 rounded-3xl p-8">
-          <div className="text-center mb-6">
-            <div className="text-5xl mb-4">{getCountryFlag(results[0].country)}</div>
-            <h3 className="text-3xl font-bold text-white mb-2">
-              {results[0].country}
-            </h3>
-            <p className="text-slate-400 text-base">最も似ている国</p>
-          </div>
-          
-          <div className="flex items-center justify-center space-x-8 mb-8">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-white">
-                {results[0].similarity}%
-              </div>
-              <div className="text-sm text-slate-400 mt-1">類似度</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-white">
-                {results[0].confidence}%
-              </div>
-              <div className="text-sm text-slate-400 mt-1">信頼度</div>
-            </div>
-          </div>
+      <h2 className="text-3xl font-bold text-slate-900 text-center mb-2">
+        分析結果
+      </h2>
+      <p className="text-center text-slate-600 -mt-6">
+        あなたの顔は<span className="font-bold text-teal-600 text-lg">{topResult.country}</span>の理想顔に最も近いようです！
+      </p>
 
-          {results[0].features && results[0].features.length > 0 && (
-            <div className="mb-8">
-              <p className="text-base text-slate-300 mb-4 text-center font-medium">特徴的な要素:</p>
-              <div className="flex flex-wrap justify-center gap-3">
-                {results[0].features.map((feature, index) => (
-                  <span
-                    key={index}
-                    className="px-4 py-2 bg-slate-700/50 text-slate-300 rounded-xl text-sm border border-slate-600/50 font-medium"
-                  >
-                    {feature}
-                  </span>
-                ))}
+      {/* 1位の比較表示 */}
+      {topResult.representative_image_filename && (
+          <div className="flex flex-col sm:flex-row gap-4 items-stretch">
+              <div className="w-full sm:w-1/2 bg-slate-100 rounded-lg p-3 border border-slate-200">
+                  <p className="text-center font-bold text-slate-700 mb-2">1位の理想顔</p>
+                  <div className="aspect-w-1 aspect-h-1">
+                      <img
+                          src={`http://localhost:8003/images/${topResult.representative_image_filename}`}
+                          alt={`${topResult.country}の代表的な顔`}
+                          className="object-cover w-full h-full rounded-md"
+                      />
+                  </div>
               </div>
-            </div>
-          )}
+              <div className="w-full sm:w-1/2 bg-slate-100 rounded-lg p-3 border border-slate-200">
+                  <p className="text-center font-bold text-slate-700 mb-2">あなたの顔</p>
+                   <div className="aspect-w-1 aspect-h-1">
+                      {selectedImage && (
+                          <img
+                              src={URL.createObjectURL(selectedImage)}
+                              alt="あなたの顔"
+                              className="object-cover w-full h-full rounded-md"
+                          />
+                      )}
+                  </div>
+              </div>
+          </div>
+      )}
 
-          <button
-            onClick={handleShare}
-            className="w-full bg-white hover:bg-slate-100 text-slate-900 font-semibold py-4 px-6 rounded-2xl transition-all duration-200 text-base"
+      {/* 2位以下のランキング */}
+      <div className="space-y-3">
+        {results.ranking.map((item) => (
+          <div
+            key={item.rank}
+            className={`p-4 rounded-xl border transition-all duration-300 ${
+              item.rank === 1
+                ? 'bg-teal-500/10 border-teal-500/30 shadow-lg'
+                : 'bg-white/80 border-slate-200'
+            }`}
           >
-            結果をシェア
-          </button>
-        </div>
-      )}
-
-      {/* その他の結果 */}
-      {results.slice(1).map((result, index) => (
-        <div
-          key={index}
-          className="bg-slate-800/20 border border-slate-700/30 rounded-2xl p-6 hover:bg-slate-800/40 transition-all duration-200"
-        >
-          <div className="flex items-center justify-between mb-4">
             <div className="flex items-center space-x-4">
-              <div className="text-3xl">{getCountryFlag(result.country)}</div>
-              <div>
-                <h4 className="font-semibold text-slate-200 text-lg">{result.country}</h4>
-                <div className="flex items-center space-x-4 mt-2">
-                  <span className={`px-3 py-1 rounded-xl text-sm font-semibold border ${getSimilarityColor(result.similarity)}`}>
-                    類似度 {result.similarity}%
-                  </span>
-                  <span className="text-sm text-slate-400 font-medium">
-                    信頼度 {result.confidence}%
-                  </span>
-                </div>
+              <div className="text-2xl font-bold text-slate-400 w-8 text-center">{item.rank}</div>
+              <div className="flex-shrink-0">
+                {item.country_code ? (
+                  <Image
+                    src={`https://flagcdn.com/w40/${item.country_code.toLowerCase()}.png`}
+                    alt={`${item.country}の国旗`}
+                    width={40}
+                    height={30}
+                    className="rounded-md"
+                  />
+                ) : (
+                  <div className="w-10 h-[30px] bg-slate-200 rounded-md"></div>
+                )}
+              </div>
+              <div className="flex-1">
+                <p className={`font-bold ${item.rank === 1 ? 'text-teal-800' : 'text-slate-800'}`}>
+                  {item.country}
+                </p>
+              </div>
+              <div className="text-right">
+                <p className={`font-bold text-lg ${item.rank === 1 ? 'text-teal-600' : 'text-slate-700'}`}>
+                  {Math.round(item.score * 100)}%
+                </p>
+                <p className="text-xs text-slate-500 -mt-1">類似度</p>
               </div>
             </div>
-            <div className="text-right">
-              <div className="text-xl font-bold text-slate-300">#{index + 2}</div>
-            </div>
           </div>
-
-          {result.features && result.features.length > 0 && (
-            <div className="mb-4 pt-4 border-t border-slate-700/50">
-              <p className="text-sm text-slate-400 mb-3 font-medium">特徴的な要素:</p>
-              <div className="flex flex-wrap gap-2">
-                {result.features.map((feature, featureIndex) => (
-                  <span
-                    key={featureIndex}
-                    className="px-3 py-1 bg-slate-700/30 text-slate-400 rounded-lg text-sm"
-                  >
-                    {feature}
-                  </span>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* プログレスバー */}
-          <div className="w-full bg-slate-700/30 rounded-full h-3">
-            <div
-              className={`h-3 rounded-full transition-all duration-500 ${getProgressColor(result.similarity)}`}
-              style={{ width: `${result.similarity}%` }}
-            ></div>
-          </div>
-        </div>
-      ))}
-
-      {results.length === 0 && (
-        <div className="text-center py-12">
-          <div className="text-5xl mb-6">🤔</div>
-          <p className="text-slate-400 text-lg">分析結果がありません</p>
-        </div>
-      )}
+        ))}
+      </div>
     </div>
   );
 }
