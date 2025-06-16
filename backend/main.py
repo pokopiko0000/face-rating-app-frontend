@@ -9,12 +9,13 @@ import os
 import io
 import pycountry
 import json
+import random
 from pycountry_convert import (
     country_alpha2_to_continent_code,
     country_name_to_country_alpha2,
 )
 from pathlib import Path
-from typing import Dict, Any, Optional, List
+from typing import Dict, Any, Optional, List, Tuple
 
 
 # --- 定数と設定 ---
@@ -427,21 +428,15 @@ def load_models():
     print(f"{len(country_metadata_g)}カ国分のメタデータを準備しました。")
 
 
-# --- APIエンドポイント ---
-@app.post("/analyze")
-async def analyze_face(
-    file: UploadFile = File(...),
-    gender: str = Form(...),  # フロントエンドからの性別指定（'male' or 'female'）
-):
-    """フロントエンド用の顔分析エンドポイント"""
-    # 性別データがロードされているかチェック
-    if model is None or not prototypes["man"] or not prototypes["woman"]:
-        raise HTTPException(
-            status_code=503,
-            detail="モデルがまだ準備できていません。しばらくしてから再試行してください。",
-        )
+# --- リファクタリングされたヘルパー関数 ---
 
-    # アップロードされた画像を処理
+
+async def _get_face_details(file: UploadFile) -> Any:
+    """アップロードされた画像から顔の情報を抽出する"""
+    if model is None:
+        # このチェックはエンドポイント側で既に行われているが、念のため追加
+        raise HTTPException(status_code=503, detail="モデルが初期化されていません。")
+
     contents = await file.read()
     nparr = np.frombuffer(contents, np.uint8)
     img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
@@ -459,24 +454,21 @@ async def analyze_face(
             status_code=400, detail="画像から顔が検出できませんでした。"
         )
 
-    user_face = faces[0]
-    user_embedding = user_face.embedding
+    return faces[0]
 
-    # 性別を変換（'male'/'female' -> 'man'/'woman'）
-    user_gender_str = "man" if gender == "male" else "woman"
-    print(f"ユーザー指定の性別を使用: {user_gender_str}")
 
-    # 判定した性別に基づいて比較対象を選択
-    target_prototypes = prototypes[user_gender_str]
-    target_representatives = representatives[user_gender_str]
+def _calculate_ranking(
+    user_embedding: np.ndarray, gender_str: str
+) -> List[Tuple[str, float]]:
+    """顔の特徴量ベクトルと性別から国別ランキングを計算する"""
+    target_prototypes = prototypes[gender_str]
+    target_representatives = representatives[gender_str]
 
-    # 両方のデータに存在する国のみを使用（データ整合性確保）
     available_countries = set(target_prototypes.keys()) & set(
         target_representatives.keys()
     )
-    print(f"分析対象国数: {len(available_countries)}カ国")
+    print(f"分析対象国数: {len(available_countries)}カ国（性別: {gender_str}）")
 
-    # 類似度を計算
     similarities = {}
     user_continent = "AS"  # アジアと仮定
 
@@ -484,33 +476,53 @@ async def analyze_face(
         prototype_vec = target_prototypes[country]
         base_score = cosine_similarity(user_embedding, prototype_vec)
 
-        # 意外性ボーナスの計算
         geo_bonus = 0.0
         rarity_bonus = 0.0
-
         metadata = country_metadata_g.get(country)
         if metadata:
-            # 地理ボーナス
             country_continent = metadata.get("continent")
             if country_continent and country_continent != user_continent:
                 geo_bonus = GEO_BONUS
 
-            # 意外度ボーナス
             rarity = metadata.get("rarity", 1)
             rarity_bonus = (rarity - 1) * RARITY_BONUS_UNIT
 
-        # 最終スコア = 元のスコア + ボーナス
         final_score = base_score + geo_bonus + rarity_bonus
         similarities[country] = final_score
 
-    # ランキングを作成
-    sorted_countries = sorted(
-        similarities.items(), key=lambda item: item[1], reverse=True
-    )
+    adjusted_scores = {}
+    if similarities:
+        max_original_score = max(similarities.values())
+        target_top_score = random.randint(85, 99)
+        if max_original_score > 0:
+            for country, score in similarities.items():
+                adjusted_scores[country] = (
+                    score / max_original_score
+                ) * target_top_score
+        else:
+            adjusted_scores = {country: 0 for country in similarities.keys()}
 
-    # フロントエンド用のレスポンス形式
+    return sorted(adjusted_scores.items(), key=lambda item: item[1], reverse=True)
+
+
+# --- APIエンドポイント ---
+@app.post("/analyze")
+async def analyze_face(
+    file: UploadFile = File(...),
+    gender: str = Form(...),  # フロントエンドからの性別指定（'male' or 'female'）
+):
+    """フロントエンド用の顔分析エンドポイント"""
+    if model is None or not prototypes["man"] or not prototypes["woman"]:
+        raise HTTPException(status_code=503, detail="モデルがまだ準備できていません。")
+
+    user_face = await _get_face_details(file)
+    user_embedding = user_face.embedding
+    user_gender_str = "man" if gender == "male" else "woman"
+
+    sorted_countries = _calculate_ranking(user_embedding, user_gender_str)
+
     ranking_result = []
-    for i, (country, score) in enumerate(sorted_countries[:10]):  # TOP10を返す
+    for country, score in sorted_countries[:10]:
         ranking_result.append(
             {
                 "country": country,
@@ -566,81 +578,20 @@ async def rank_face(
             detail="モデルがまだ準備できていません。しばらくしてから再試行してください。",
         )
 
-    # 3. アップロードされた画像を処理
-    contents = await file.read()
-    nparr = np.frombuffer(contents, np.uint8)
-    img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
-
-    if img is None:
-        raise HTTPException(
-            status_code=400, detail="提供されたファイルは有効な画像ではありません。"
-        )
-
-    img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-    faces = model.get(img_rgb)
-
-    if not faces:
-        raise HTTPException(
-            status_code=400, detail="画像から顔が検出できませんでした。"
-        )
-
-    user_face = faces[0]
+    user_face = await _get_face_details(file)
     user_embedding = user_face.embedding
 
     # --- 性別の決定 ---
-    # gender_overrideが指定されていればそれを使い、なければAIで判定
     if gender_override in ["man", "woman"]:
         user_gender_str = gender_override
         print(f"ユーザー指定の性別を使用: {user_gender_str}")
     else:
-        # AIによる性別判定 (0: 男性, 1: 女性)
         user_gender_str = "man" if user_face.gender == 0 else "woman"
         print(f"AIが検出した性別: {user_gender_str} (年齢: {user_face.age})")
 
-    # 判定した性別に基づいて比較対象を選択
-    target_prototypes = prototypes[user_gender_str]
+    sorted_countries = _calculate_ranking(user_embedding, user_gender_str)
+
     target_representatives = representatives[user_gender_str]
-
-    # 両方のデータに存在する国のみを使用（データ整合性確保）
-    available_countries = set(target_prototypes.keys()) & set(
-        target_representatives.keys()
-    )
-    print(f"分析対象国数: {len(available_countries)}カ国")
-
-    # 4. 類似度を計算
-    similarities = {}
-
-    # ユーザーの地域を仮定（将来的には拡張可能）
-    user_continent = "AS"  # アジアと仮定
-
-    for country in available_countries:
-        prototype_vec = target_prototypes[country]
-        base_score = cosine_similarity(user_embedding, prototype_vec)
-
-        # --- 意外性ボーナスの計算 ---
-        geo_bonus = 0.0
-        rarity_bonus = 0.0
-
-        metadata = country_metadata_g.get(country)
-        if metadata:
-            # 1. 地理ボーナス
-            country_continent = metadata.get("continent")
-            if country_continent and country_continent != user_continent:
-                geo_bonus = GEO_BONUS
-
-            # 2. 意外度ボーナス
-            rarity = metadata.get("rarity", 1)
-            # レア度が高いほどボーナス追加（★1はボーナス0）
-            rarity_bonus = (rarity - 1) * RARITY_BONUS_UNIT
-
-        # 最終スコア = 元のスコア + ボーナス
-        final_score = base_score + geo_bonus + rarity_bonus
-        similarities[country] = final_score
-
-    # 5. ランキングを作成
-    sorted_countries = sorted(
-        similarities.items(), key=lambda item: item[1], reverse=True
-    )
 
     # JSONで返せる形式に整形
     ranking_result = []
@@ -651,15 +602,12 @@ async def rank_face(
             "score": float(score),
             "country_code": get_country_code(country),
         }
-        # 1位の場合のみ、代表画像のファイル名を追加
         if i == 0 and country in target_representatives:
             rank_data["representative_image_filename"] = target_representatives[country]
-
         ranking_result.append(rank_data)
 
-    # 最終的なレスポンスを作成
     response_content = {
-        "detected_gender": user_gender_str,  # 実際に使用された性別
+        "detected_gender": user_gender_str,
         "ranking": ranking_result,
     }
 

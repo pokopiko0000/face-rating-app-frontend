@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Share2, RotateCcw, Trophy, Globe } from 'lucide-react';
+import { Share2, RotateCcw, Trophy } from 'lucide-react';
 import { DiagnosisResult } from '../types';
 
 interface ResultDisplayProps {
@@ -9,23 +9,7 @@ interface ResultDisplayProps {
   gender: 'male' | 'female';
 }
 
-// 国コードを国旗絵文字に変換するヘルパー関数
-const getFlagEmoji = (countryCode: string | null): string => {
-  if (!countryCode) return '🏳️';
-  // countryCode は 'JP' のような2文字のコードを想定
-  const codePoints = countryCode
-    .toUpperCase()
-    .split('')
-    .map(char => 127397 + char.charCodeAt(0));
-  return String.fromCodePoint(...codePoints);
-};
-
 export default function ResultDisplay({ result, userImage, onReset, gender }: ResultDisplayProps) {
-  // デバッグ用に結果をコンソールに出力
-  useEffect(() => {
-    console.log('Diagnosis Result:', result);
-  }, [result]);
-
   const [topCountryImage, setTopCountryImage] = useState<string>('');
   const topResult = result.ranking[0];
   const otherResults = result.ranking.slice(1, 5); // 2位から5位まで
@@ -56,7 +40,7 @@ export default function ResultDisplay({ result, userImage, onReset, gender }: Re
 
   const handleShare = () => {
     if (!topResult) return;
-    const text = `AI顔診断の結果、私は${topResult.country}の顔と${Math.round(topResult.similarity * 100)}%似ているそうです！ あなたも試してみよう！ #AI顔診断 #似ている国の顔`;
+    const text = `AI顔診断の結果、私と${topResult.country}の顔の相性は${Math.round(topResult.similarity)}点でした！ あなたも試してみよう！ #AI顔診断 #顔面相性スコア`;
     const url = window.location.href;
     const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
     window.open(twitterUrl, '_blank');
@@ -79,15 +63,24 @@ export default function ResultDisplay({ result, userImage, onReset, gender }: Re
           診断結果
         </div>
         <h2 className="text-2xl font-bold text-gray-800 mb-2">
-          最も似ているのは...
+          あなたが最も輝く国は...
         </h2>
       </div>
 
       <div className="bg-white rounded-3xl shadow-2xl overflow-hidden mb-8">
         <div className="bg-gradient-to-r from-purple-500 to-pink-500 text-white p-6 text-center">
-          <div className="text-5xl font-bold mb-2">{getFlagEmoji(topResult.country_code)} {topResult.country}</div>
-          <div className="text-3xl font-bold mb-2">{Math.round(topResult.similarity * 100)}%</div>
-          <div className="text-lg opacity-90">類似度</div>
+          <div className="text-4xl font-bold mb-2 flex items-center justify-center gap-4">
+            {topResult.country_code && (
+              <img
+                src={`https://flagcdn.com/w40/${topResult.country_code.toLowerCase()}.png`}
+                alt={`${topResult.country}の国旗`}
+                className="h-8 w-auto rounded"
+              />
+            )}
+            <span>{topResult.country}</span>
+          </div>
+          <div className="text-3xl font-bold mb-2">{Math.round(topResult.similarity)}点</div>
+          <div className="text-lg opacity-90">顔面相性スコア</div>
         </div>
 
         <div className="p-6">
@@ -134,9 +127,17 @@ export default function ResultDisplay({ result, userImage, onReset, gender }: Re
             {otherResults.map((item, index) => (
               <li key={item.country} className="flex items-center p-3 bg-gray-50 rounded-lg">
                 <span className="text-lg font-bold text-gray-600 w-8">{index + 2}</span>
-                <span className="text-2xl mr-3">{getFlagEmoji(item.country_code)}</span>
+                {item.country_code ? (
+                  <img
+                    src={`https://flagcdn.com/w40/${item.country_code.toLowerCase()}.png`}
+                    alt={`${item.country}の国旗`}
+                    className="w-6 h-auto mr-3 rounded"
+                  />
+                ) : (
+                  <span className="inline-block w-6 h-auto mr-3">🏳️</span>
+                )}
                 <span className="text-lg text-gray-800 font-medium flex-1">{item.country}</span>
-                <span className="text-lg font-bold text-purple-600">{Math.round(item.similarity * 100)}%</span>
+                <span className="text-lg font-bold text-purple-600">{Math.round(item.similarity)}点</span>
               </li>
             ))}
           </ul>

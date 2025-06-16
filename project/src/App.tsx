@@ -73,17 +73,17 @@ function App() {
         </div>
         
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-          あなたに似ている
+          もし、あなたが海外にいたら？
           <br />
           <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-            有名人を診断
+            AIがあなたのモテる国を診断
           </span>
         </h1>
         
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          最新のAI技術を使って、あなたの顔と有名人の顔を比較分析。
+          最新AIがあなたの顔をグローバル基準で分析！
           <br />
-          驚きの結果をSNSでシェアしよう！
+          世界の中で、あなたの魅力が最も輝く国はどこ？ 驚きの診断結果が、新しい出会いのきっかけになるかも。
         </p>
       </div>
 

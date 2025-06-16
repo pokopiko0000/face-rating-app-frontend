@@ -1,9 +1,27 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Sparkles, Brain, Eye } from 'lucide-react';
 
+const messages = [
+  "AIがあなたの顔の特徴をスキャンしています…",
+  "世界中の膨大な顔データとあなたを照合中…",
+  "あなたと最も相性の良い国を探しています！",
+  "あなたが行くとモテモテな国が分かります！",
+  "あなたの顔が最も輝く国を探しています…",
+];
+
 export default function LoadingScreen() {
+  const [messageIndex, setMessageIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setMessageIndex(prevIndex => (prevIndex + 1) % messages.length);
+    }, 2500); // 2.5秒ごとにインデックスを更新
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
-    <div className="fixed inset-0 bg-gradient-to-br from-purple-600 via-pink-600 to-blue-600 flex items-center justify-center z-50">
+    <div className="fixed inset-0 bg-gradient-to-br from-purple-600 via-pink-600 to-blue-600 flex items-center justify-center z-50 p-4">
       <div className="text-center text-white">
         <div className="relative mb-8">
           <div className="w-32 h-32 mx-auto relative">
@@ -27,25 +45,20 @@ export default function LoadingScreen() {
         </div>
         
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold">AI分析中...</h2>
-          <div className="space-y-2">
-            <div className="flex items-center justify-center gap-2 text-white/80">
-              <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-              <span>顔の特徴を検出しています</span>
-            </div>
-            <div className="flex items-center justify-center gap-2 text-white/80" style={{ animationDelay: '1s' }}>
-              <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-              <span>有名人データベースと照合中</span>
-            </div>
-            <div className="flex items-center justify-center gap-2 text-white/80" style={{ animationDelay: '2s' }}>
-              <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-              <span>類似度を計算しています</span>
-            </div>
+          <h2 className="text-2xl font-bold mb-4">AI分析中...</h2>
+          
+          <div className="h-12 flex items-center justify-center">
+            <p 
+              key={messageIndex}
+              className="text-lg text-white/90 animate-fade-in"
+            >
+              {messages[messageIndex]}
+            </p>
           </div>
           
           {/* Progress bar */}
           <div className="w-64 h-2 bg-white/20 rounded-full mx-auto overflow-hidden">
-            <div className="h-full bg-gradient-to-r from-yellow-400 to-pink-400 rounded-full animate-pulse"></div>
+            <div className="h-full bg-gradient-to-r from-yellow-300 to-pink-400 animate-pulse-slow w-full"></div>
           </div>
         </div>
       </div>
