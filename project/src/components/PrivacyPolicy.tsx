@@ -119,8 +119,8 @@ export default function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
             </section>
 
             <div className="text-center text-gray-500 text-sm mt-12 pt-8 border-t border-gray-200">
-              <p>制定日：2024年12月</p>
-              <p>最終更新日：2024年12月</p>
+              <p>制定日：2025年6月</p>
+              <p>最終更新日：2025年6月</p>
             </div>
           </div>
         </div>

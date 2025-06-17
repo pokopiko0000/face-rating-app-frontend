@@ -27,13 +27,33 @@ export default function Contact({ onBack }: ContactProps) {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // 実際の実装では、ここでフォームデータをサーバーに送信します
-    // 今回はデモ用に3秒後に成功とします
-    setTimeout(() => {
+    try {
+      const response = await fetch('https://formspree.io/f/xzzgvebv', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          _replyto: formData.email, // Formspreeの返信先設定
+        }),
+      });
+
+      if (response.ok) {
+        setIsSubmitting(false);
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        throw new Error('送信に失敗しました');
+      }
+    } catch (error) {
+      console.error('フォーム送信エラー:', error);
       setIsSubmitting(false);
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
-    }, 3000);
+      setSubmitStatus('error');
+    }
   };
 
   return (
@@ -83,6 +103,25 @@ export default function Contact({ onBack }: ContactProps) {
                 className="px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-medium hover:from-purple-700 hover:to-pink-700 transition-all duration-300"
               >
                 新しいお問い合わせ
+              </button>
+            </div>
+          ) : submitStatus === 'error' ? (
+            <div className="text-center py-12">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-red-100 rounded-full mb-6">
+                <MessageCircle className="w-8 h-8 text-red-600" />
+              </div>
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">
+                送信に失敗しました
+              </h2>
+              <p className="text-gray-600 mb-8">
+                申し訳ございません。お問い合わせの送信に失敗しました。<br />
+                しばらく時間をおいてから再度お試しください。
+              </p>
+              <button
+                onClick={() => setSubmitStatus('idle')}
+                className="px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-medium hover:from-purple-700 hover:to-pink-700 transition-all duration-300"
+              >
+                再度お問い合わせ
               </button>
             </div>
           ) : (

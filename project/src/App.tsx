@@ -97,10 +97,10 @@ function App() {
         </div>
         
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-          もし、あなたが海外にいたら？
+          あなたの顔はどこの国で人気？
           <br />
           <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-            AIがあなたのモテる国を診断
+            あなたがモテる国をAIが診断
           </span>
         </h1>
         
@@ -187,7 +187,7 @@ function App() {
         </div>
         
         <p className="text-xs text-gray-400">
-          © 2024 AI顔診断. All rights reserved.
+          © 2025 AI顔診断. All rights reserved.
         </p>
       </div>
     </div>
