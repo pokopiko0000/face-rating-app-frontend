@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Share2, RotateCcw, Trophy } from 'lucide-react';
 import { DiagnosisResult } from '../types';
 
@@ -10,33 +10,9 @@ interface ResultDisplayProps {
 }
 
 export default function ResultDisplay({ result, userImage, onReset, gender }: ResultDisplayProps) {
-  const [topCountryImage, setTopCountryImage] = useState<string>('');
   const topResult = result.ranking[0];
   const otherResults = result.ranking.slice(1, 5); // 2位から5位まで
-
-  useEffect(() => {
-    const fetchTopCountryImage = async () => {
-      if (!topResult) return;
-      try {
-        const response = await fetch(`http://localhost:8003/comparison?country=${encodeURIComponent(topResult.country)}&gender=${gender}`);
-        if (response.ok) {
-          const imageBlob = await response.blob();
-          setTopCountryImage(URL.createObjectURL(imageBlob));
-        }
-      } catch (error) {
-        console.error('Error fetching top country image:', error);
-      }
-    };
-    fetchTopCountryImage();
-
-    // Clean up the object URL on component unmount
-    return () => {
-      if (topCountryImage) {
-        URL.revokeObjectURL(topCountryImage);
-      }
-    };
-  }, [result, gender]);
-
+  const topCountryImage = result.top_country_image_url; // バックエンドから直接URLを取得
 
   const handleShare = () => {
     if (!topResult) return;
@@ -108,7 +84,7 @@ export default function ResultDisplay({ result, userImage, onReset, gender }: Re
                   />
                 ) : (
                   <div className="w-48 h-48 mx-auto rounded-2xl bg-gray-200 flex items-center justify-center">
-                    <p className="text-sm text-gray-500">画像読込中...</p>
+                    <p className="text-sm text-gray-500">画像なし</p>
                   </div>
                 )}
                 <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-purple-500 text-white px-4 py-1 rounded-full text-sm font-medium">

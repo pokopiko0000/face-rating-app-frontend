@@ -347,9 +347,13 @@ def get_country_code(country_name):
 # --- FastAPIアプリケーション ---
 app = FastAPI()
 
+# Cloudflare R2の公開URL
+R2_PUBLIC_URL = "https://pub-20801d1056e542a99ab766366e3a3124.r2.dev"
+
+
 # --- 静的ファイル配信の設定 ---
 # BASE_DIRを使って、実行場所によらない絶対パスを指定
-app.mount("/images", StaticFiles(directory=BASE_DIR / "cropped_images"), name="images")
+# app.mount("/images", StaticFiles(directory=BASE_DIR / "cropped_images"), name="images") # R2を使うため不要
 
 # --- CORSミドルウェアの設定 ---
 # ブラウザからのリクエストを許可するための設定
@@ -517,6 +521,7 @@ async def analyze_face(
 
     user_face = await _get_face_details(file)
     user_embedding = user_face.embedding
+    # フロントからの 'male'/'female' を 'man'/'woman' に変換
     user_gender_str = "man" if gender == "male" else "woman"
 
     sorted_countries = _calculate_ranking(user_embedding, user_gender_str)
@@ -531,7 +536,21 @@ async def analyze_face(
             }
         )
 
-    return JSONResponse(content={"ranking": ranking_result})
+    # 1位の国の代表画像ファイル名を取得
+    top_country_image_url = None
+    if sorted_countries:
+        top_country = sorted_countries[0][0]
+        target_reps = representatives[user_gender_str]
+        if top_country in target_reps:
+            image_filename = target_reps[top_country]
+            top_country_image_url = f"{R2_PUBLIC_URL}/{image_filename}"
+
+    return JSONResponse(
+        content={
+            "ranking": ranking_result,
+            "top_country_image_url": top_country_image_url,
+        }
+    )
 
 
 @app.get("/comparison")
@@ -539,31 +558,11 @@ async def get_comparison_image(
     country: str,
     gender: str,
 ):
-    """比較画像を生成するエンドポイント"""
-    try:
-        # 性別を変換
-        gender_str = "man" if gender == "male" else "woman"
-
-        # 代表画像のファイル名を取得
-        if country not in representatives[gender_str]:
-            raise HTTPException(status_code=404, detail="代表画像が見つかりません")
-
-        representative_filename = representatives[gender_str][country]
-        representative_path = BASE_DIR / "cropped_images" / representative_filename
-
-        if not representative_path.exists():
-            raise HTTPException(
-                status_code=404, detail="代表画像ファイルが存在しません"
-            )
-
-        # 代表画像を返す
-        return FileResponse(representative_path)
-
-    except Exception as e:
-        print(f"比較画像取得エラー: {e}")  # デバッグ用にログ出力
-        raise HTTPException(
-            status_code=500, detail=f"比較画像の生成に失敗しました: {str(e)}"
-        )
+    """このエンドポイントは使われなくなるため削除または無効化"""
+    raise HTTPException(
+        status_code=410,
+        detail="このエンドポイントは廃止されました。代わりに/analyzeレスポンスのURLを使用してください。",
+    )
 
 
 @app.post("/rank-face/")
@@ -617,7 +616,7 @@ async def rank_face(
 # --- フロントエンド配信（最後にマウント） ---
 # APIルートなどをすべて定義した後に、残りのパスをフロントエンドに回す
 # BASE_DIRを使って、実行場所によらない絶対パスを指定
-app.mount("/", StaticFiles(directory=BASE_DIR / "frontend", html=True), name="frontend")
+# app.mount("/", StaticFiles(directory=BASE_DIR / "frontend", html=True), name="frontend")
 
 
 # --- メインの実行部分（デバッグ用） ---
