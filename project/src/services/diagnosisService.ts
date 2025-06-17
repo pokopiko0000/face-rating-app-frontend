@@ -8,8 +8,11 @@ export const diagnoseFace = async (request: DiagnosisRequest): Promise<Diagnosis
   formData.append('file', image);
   formData.append('gender', gender);
 
+  // 環境変数からAPIのベースURLを取得。なければローカルのURLをデフォルトにする。
+  const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8003';
+
   try {
-    const response = await fetch('http://localhost:8003/analyze', {
+    const response = await fetch(`${API_BASE_URL}/analyze`, {
       method: 'POST',
       body: formData,
     });
