@@ -378,7 +378,7 @@ def load_models():
     print("モデルの準備が完了しました。")
 
     # 2. 国の代表顔ベクトルをロード（性別ごと）
-    prototypes_path = BASE_DIR / "backend" / "country_prototypes_gender.npz"
+    prototypes_path = BASE_DIR / "backend" / "data" / "country_prototypes_gender.npz"
     if not os.path.exists(prototypes_path):
         print(f"エラー: {prototypes_path} が見つかりません。")
         return
@@ -399,7 +399,7 @@ def load_models():
     )
 
     # 3. 国の代表画像のファイル名をロード（性別ごと）
-    reps_path = BASE_DIR / "backend" / "country_representatives_gender.json"
+    reps_path = BASE_DIR / "backend" / "data" / "country_representatives_gender.json"
     if not os.path.exists(reps_path):
         print(f"警告: {reps_path} が見つかりません。")
         return
@@ -421,7 +421,7 @@ def load_models():
     )
 
     # 4. 事前に生成した国別メタデータをファイルから読み込む
-    metadata_path = BASE_DIR / "backend" / "country_metadata.json"
+    metadata_path = BASE_DIR / "backend" / "data" / "country_metadata.json"
     if not metadata_path.exists():
         print(f"警告: {metadata_path} が見つかりません。ボーナス計算は無効になります。")
         return
