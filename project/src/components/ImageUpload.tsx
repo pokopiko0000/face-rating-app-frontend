@@ -134,8 +134,8 @@ export default function ImageUpload({ onImageSelect, selectedImage, onImageRemov
       )}
       
       {/* プライバシー安心メッセージ */}
-      <div className="mt-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">
-        <div className="flex items-center gap-2 mb-1">
+      <div className="mt-4 p-3 bg-blue-50 border border-blue-200 rounded-lg text-center">
+        <div className="flex items-center justify-center gap-2 mb-1">
           <Shield className="w-4 h-4 text-blue-600" />
           <span className="text-sm font-medium text-blue-800">プライバシー保護</span>
         </div>
