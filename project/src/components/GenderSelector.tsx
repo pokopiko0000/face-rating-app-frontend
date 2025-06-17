@@ -1,5 +1,4 @@
 import React from 'react';
-import { User, Users } from 'lucide-react';
 
 interface GenderSelectorProps {
   selectedGender: 'male' | 'female';
@@ -26,7 +25,7 @@ export default function GenderSelector({ selectedGender, onGenderChange }: Gende
               : 'text-gray-600 hover:text-gray-800'
           }`}
         >
-          <User size={18} />
+          <span className="text-lg">👨</span>
           男性
         </button>
         <button
@@ -37,7 +36,7 @@ export default function GenderSelector({ selectedGender, onGenderChange }: Gende
               : 'text-gray-600 hover:text-gray-800'
           }`}
         >
-          <Users size={18} />
+          <span className="text-lg">👩</span>
           女性
         </button>
       </div>
