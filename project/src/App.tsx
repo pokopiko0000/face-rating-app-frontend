@@ -5,9 +5,15 @@ import ImageUpload from './components/ImageUpload';
 import LoadingScreen from './components/LoadingScreen';
 import ResultDisplay from './components/ResultDisplay';
 import ErrorMessage from './components/ErrorMessage';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import Contact from './components/Contact';
+import TermsOfService from './components/TermsOfService';
 import { useDiagnosis } from './hooks/useDiagnosis';
 
+type PageType = 'home' | 'privacy' | 'contact' | 'terms';
+
 function App() {
+  const [currentPage, setCurrentPage] = useState<PageType>('home');
   const [selectedGender, setSelectedGender] = useState<'male' | 'female'>('female');
   const [selectedImage, setSelectedImage] = useState<File | null>(null);
   const [imagePreview, setImagePreview] = useState<string | null>(null);
@@ -44,7 +50,25 @@ function App() {
     reset();
     setSelectedImage(null);
     setImagePreview(null);
+    setCurrentPage('home');
   };
+
+  const handleBackToHome = () => {
+    setCurrentPage('home');
+  };
+
+  // Page routing
+  if (currentPage === 'privacy') {
+    return <PrivacyPolicy onBack={handleBackToHome} />;
+  }
+
+  if (currentPage === 'contact') {
+    return <Contact onBack={handleBackToHome} />;
+  }
+
+  if (currentPage === 'terms') {
+    return <TermsOfService onBack={handleBackToHome} />;
+  }
 
   if (isLoading) {
     return <LoadingScreen />;
@@ -134,8 +158,36 @@ function App() {
 
       {/* Footer */}
       <div className="text-center pb-8 px-4">
-        <p className="text-sm text-gray-500">
+        <p className="text-sm text-gray-500 mb-4">
           ※ この診断は娯楽目的です。実際の類似性を保証するものではありません。
+        </p>
+        
+        {/* Footer Links */}
+        <div className="flex flex-wrap justify-center gap-4 mb-4">
+          <button
+            onClick={() => setCurrentPage('privacy')}
+            className="text-sm text-gray-400 hover:text-purple-600 transition-colors duration-300"
+          >
+            プライバシーポリシー
+          </button>
+          <span className="text-gray-300">|</span>
+          <button
+            onClick={() => setCurrentPage('terms')}
+            className="text-sm text-gray-400 hover:text-purple-600 transition-colors duration-300"
+          >
+            利用規約
+          </button>
+          <span className="text-gray-300">|</span>
+          <button
+            onClick={() => setCurrentPage('contact')}
+            className="text-sm text-gray-400 hover:text-purple-600 transition-colors duration-300"
+          >
+            お問い合わせ
+          </button>
+        </div>
+        
+        <p className="text-xs text-gray-400">
+          © 2024 AI顔診断. All rights reserved.
         </p>
       </div>
     </div>
