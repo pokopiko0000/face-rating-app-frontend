@@ -351,6 +351,12 @@ app = FastAPI()
 R2_PUBLIC_URL = "https://pub-20801d1056e542a99ab766366e3a3124.r2.dev"
 
 
+# --- ヘルスチェック用エンドポイント ---
+@app.get("/")
+def read_root():
+    return {"status": "ok"}
+
+
 # --- 静的ファイル配信の設定 ---
 # BASE_DIRを使って、実行場所によらない絶対パスを指定
 # app.mount("/images", StaticFiles(directory=BASE_DIR / "cropped_images"), name="images") # R2を使うため不要
