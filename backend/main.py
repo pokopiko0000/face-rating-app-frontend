@@ -352,7 +352,7 @@ R2_PUBLIC_URL = "https://pub-20801d1056e542a99ab766366e3a3124.r2.dev"
 
 
 # --- ヘルスチェック用エンドポイント ---
-@app.get("/")
+@app.api_route("/", methods=["GET", "HEAD"])
 def read_root():
     return {"status": "ok"}
 
