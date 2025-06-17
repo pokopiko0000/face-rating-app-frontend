@@ -8,6 +8,8 @@ import ErrorMessage from './components/ErrorMessage';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import Contact from './components/Contact';
 import TermsOfService from './components/TermsOfService';
+import AdBanner from './components/AdBanner';
+import { ADS_CONFIG } from './config/ads';
 import { useDiagnosis } from './hooks/useDiagnosis';
 
 type PageType = 'home' | 'privacy' | 'contact' | 'terms';
@@ -154,6 +156,16 @@ function App() {
             </>
           )}
         </div>
+      </div>
+
+      {/* Advertisement Banner */}
+      <div className="max-w-4xl mx-auto px-4 mb-8">
+        <AdBanner 
+          adSlot={ADS_CONFIG.SLOTS.FOOTER}
+          adFormat="horizontal"
+          className="text-center"
+          style={{ minHeight: '100px' }}
+        />
       </div>
 
       {/* Footer */}

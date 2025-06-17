@@ -1,6 +1,8 @@
 import React from 'react';
 import { Share2, RotateCcw, Trophy } from 'lucide-react';
 import { DiagnosisResult } from '../types';
+import AdBanner from './AdBanner';
+import { ADS_CONFIG } from '../config/ads';
 
 interface ResultDisplayProps {
   result: DiagnosisResult;
@@ -119,6 +121,17 @@ export default function ResultDisplay({ result, userImage, onReset, gender }: Re
           </ul>
         </div>
       )}
+
+      {/* Advertisement */}
+      <div className="bg-white rounded-3xl shadow-xl p-6 mb-8 text-center">
+        <p className="text-sm text-gray-500 mb-4">おすすめ</p>
+        <AdBanner 
+          adSlot={ADS_CONFIG.SLOTS.RESULT}
+          adFormat="rectangle"
+          className="mx-auto"
+          style={{ minHeight: '250px', maxWidth: '336px' }}
+        />
+      </div>
 
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <button
