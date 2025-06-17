@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react';
-import { Upload, X, Camera } from 'lucide-react';
+import { Upload, X, Camera, Shield } from 'lucide-react';
 
 interface ImageUploadProps {
   onImageSelect: (file: File) => void;
@@ -132,6 +132,17 @@ export default function ImageUpload({ onImageSelect, selectedImage, onImageRemov
           </p>
         </div>
       )}
+      
+      {/* プライバシー安心メッセージ */}
+      <div className="mt-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">
+        <div className="flex items-center gap-2 mb-1">
+          <Shield className="w-4 h-4 text-blue-600" />
+          <span className="text-sm font-medium text-blue-800">プライバシー保護</span>
+        </div>
+        <p className="text-xs text-blue-700">
+          アップロードされた写真は分析後すぐに削除され、データベースには一切保存されません。
+        </p>
+      </div>
     </div>
   );
 }

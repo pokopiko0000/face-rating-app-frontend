@@ -24,8 +24,8 @@ from typing import Dict, Any, Optional, List, Tuple
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # ボーナス設定
-GEO_BONUS = 0.08  # 違う大陸だった場合のボーナス (8%)
-RARITY_BONUS_UNIT = 0.015  # 意外度★1つあたりのボーナス (1.5%)
+GEO_BONUS = 0.05  # 違う大陸だった場合のボーナス (5% に縮小)
+RARITY_BONUS_UNIT = 0.01  # 意外度★1つあたりのボーナス (1% に縮小)
 
 # --- グローバル変数 ---
 # モデルとプロトタイプは起動時に一度だけロードする
