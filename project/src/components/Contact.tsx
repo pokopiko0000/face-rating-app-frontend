@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowLeft, Mail, MessageCircle, Send } from 'lucide-react';
 
-interface ContactProps {
-  onBack: () => void;
-}
-
-export default function Contact({ onBack }: ContactProps) {
+export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -61,13 +58,13 @@ export default function Contact({ onBack }: ContactProps) {
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="mb-8">
-          <button
-            onClick={onBack}
+          <Link
+            to="/"
             className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl transition-all duration-300 mb-6"
           >
             <ArrowLeft className="w-4 h-4" />
             戻る
-          </button>
+          </Link>
           
           <div className="text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full shadow-lg mb-6">

@@ -27,43 +27,43 @@ export default function LoadingScreen() {
       <div className="max-w-4xl w-full">
         {/* Main Loading Content */}
         <div className="text-center text-white mb-8">
-          <div className="relative mb-8">
-            <div className="w-32 h-32 mx-auto relative">
-              {/* Outer rotating ring */}
-              <div className="absolute inset-0 border-4 border-white/20 rounded-full"></div>
-              <div className="absolute inset-0 border-4 border-transparent border-t-white rounded-full animate-spin"></div>
-              
-              {/* Inner pulsing circle */}
-              <div className="absolute inset-4 bg-white/10 rounded-full flex items-center justify-center backdrop-blur-sm">
-                <Brain className="w-12 h-12 text-white animate-pulse" />
-              </div>
-              
-              {/* Floating icons */}
-              <div className="absolute -top-2 -right-2 animate-bounce">
-                <Sparkles className="w-6 h-6 text-yellow-300" />
-              </div>
-              <div className="absolute -bottom-2 -left-2 animate-bounce" style={{ animationDelay: '0.5s' }}>
-                <Eye className="w-6 h-6 text-blue-300" />
-              </div>
+        <div className="relative mb-8">
+          <div className="w-32 h-32 mx-auto relative">
+            {/* Outer rotating ring */}
+            <div className="absolute inset-0 border-4 border-white/20 rounded-full"></div>
+            <div className="absolute inset-0 border-4 border-transparent border-t-white rounded-full animate-spin"></div>
+            
+            {/* Inner pulsing circle */}
+            <div className="absolute inset-4 bg-white/10 rounded-full flex items-center justify-center backdrop-blur-sm">
+              <Brain className="w-12 h-12 text-white animate-pulse" />
+            </div>
+            
+            {/* Floating icons */}
+            <div className="absolute -top-2 -right-2 animate-bounce">
+              <Sparkles className="w-6 h-6 text-yellow-300" />
+            </div>
+            <div className="absolute -bottom-2 -left-2 animate-bounce" style={{ animationDelay: '0.5s' }}>
+              <Eye className="w-6 h-6 text-blue-300" />
             </div>
           </div>
+        </div>
+        
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold mb-4">AI分析中...</h2>
           
-          <div className="space-y-4">
-            <h2 className="text-2xl font-bold mb-4">AI分析中...</h2>
-            
-            <div className="h-12 flex items-center justify-center">
-              <p 
-                key={messageIndex}
-                className="text-lg text-white/90 animate-fade-in"
-              >
-                {messages[messageIndex]}
-              </p>
-            </div>
-            
-            {/* Progress bar */}
-            <div className="w-64 h-2 bg-white/20 rounded-full mx-auto overflow-hidden">
-              <div className="h-full bg-gradient-to-r from-yellow-300 to-pink-400 animate-pulse-slow w-full"></div>
-            </div>
+          <div className="h-12 flex items-center justify-center">
+            <p 
+              key={messageIndex}
+              className="text-lg text-white/90 animate-fade-in"
+            >
+              {messages[messageIndex]}
+            </p>
+          </div>
+          
+          {/* Progress bar */}
+          <div className="w-64 h-2 bg-white/20 rounded-full mx-auto overflow-hidden">
+            <div className="h-full bg-gradient-to-r from-yellow-300 to-pink-400 animate-pulse-slow w-full"></div>
+          </div>
           </div>
         </div>
 

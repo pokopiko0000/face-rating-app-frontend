@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://face-rating-app-frontend.vercel.app/sitemap.xml 
