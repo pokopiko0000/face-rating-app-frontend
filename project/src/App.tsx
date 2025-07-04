@@ -4,11 +4,13 @@ import HomePage from './components/HomePage';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import Contact from './components/Contact';
 import TermsOfService from './components/TermsOfService';
+import CountryDetailImproved from './components/CountryDetailImproved';
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
+      <Route path="/country/:countryCode" element={<CountryDetailImproved />} />
       <Route path="/privacy" element={<PrivacyPolicy />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/terms" element={<TermsOfService />} />
