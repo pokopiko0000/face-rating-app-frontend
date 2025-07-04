@@ -84,9 +84,32 @@ ehthumbs.db
 Thumbs.db
 cropped_images/
 
-# Vite
+# Node.js
+node_modules/
+package-lock.json
+
+# Vite build
 /project/.vite/
+/project/dist/
 /frontend/.next/
+
+# Node.js environment
+.env.local
+.env.production
 
 # IDE config
 .idea/
+
+# Temporary files
+*.tmp
+*.bak
+*.backup
+*.backup2
+
+# Model files (large)
+*.pt
+*.npz
+
+# rclone
+rclone.exe
+rclone.conf

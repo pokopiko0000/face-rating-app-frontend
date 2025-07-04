@@ -1,4 +1,3 @@
-
 アプリの完成、誠におめでとうございます！素晴らしいプロダクトが完成しましたね。
 機能に満足されたとのこと、次のステップである「収益化」に進むのは自然な流れです。素晴らしい判断だと思います。
 
@@ -79,3 +78,10 @@ Google AdSenseの審査に通過し、ユーザーに安心して使ってもら
 など、具体的な作業もサポートできますので、お気軽にお声がけください。
 
 このロードマップを元に、一歩ずつ収益化を実現していきましょう！
+
+# プロジェクトルートに .env.local ファイルを作成
+VITE_GA_MEASUREMENT_ID=G-XXXXXXXXXX  # 実際のIDに置き換え
+VITE_ADSENSE_CLIENT_ID=ca-pub-XXXXXXXXXXXXXXXXX  # 後で設定
+VITE_ADSENSE_SLOT_FOOTER=1234567890
+VITE_ADSENSE_SLOT_LOADING=0987654321
+VITE_ADSENSE_SLOT_RESULT=1122334455

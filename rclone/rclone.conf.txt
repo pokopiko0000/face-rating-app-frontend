@@ -1,9 +1,0 @@
-tOCBZefhi7EPowpuCF5VzLIKj3rWu1QExngXw6Sa トークン
-
-a4be9bd221819c882ff5144ccd804279　　　　アクセスキー
-
-e9c247cc3919c4547478e5ea3d1a51643ca571cb17c7f388fda8c95ac7ccba80　　シークレットアクセスキー
-
-https://9c50d7f13f2654d080264b260845e521.r2.cloudflarestorage.com　　エンドポイント
-
-https://9c50d7f13f2654d080264b260845e521.r2.cloudflarestorage.com/faceappimages　S3API
