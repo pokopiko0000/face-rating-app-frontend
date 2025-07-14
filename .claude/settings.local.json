@@ -4,7 +4,20 @@
       "Bash(ls:*)",
       "Bash(rm:*)",
       "Bash(mv:*)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_take_screenshot",
+      "Bash(npm install:*)",
+      "mcp__playwright__browser_wait_for",
+      "mcp__playwright__browser_tab_new",
+      "Bash(pkill:*)",
+      "Bash(true)",
+      "Bash(where.exe node)",
+      "Bash(cmd.exe:*)",
+      "mcp__playwright__browser_press_key",
+      "mcp__playwright__browser_navigate_forward",
+      "Bash(find:*)",
+      "Bash(tree:*)"
     ],
     "deny": []
   }

@@ -1,17 +1,18 @@
 // 各国の厳選された美しい画像URL
+// 各国の厳選された美しい画像URL（すべてHTTPS対応）
 export const countryImages: Record<string, string> = {
   // メジャー国
-  'korea': 'https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=1200&h=800&fit=crop', // ソウル夜景
-  'japan': 'https://images.unsplash.com/photo-1490650034439-fd184c3c86a5?w=1200&h=800&fit=crop', // 富士山と桜
-  'usa': 'https://images.unsplash.com/photo-1485738422979-f5c462d49f74?w=1200&h=800&fit=crop', // ニューヨーク
-  'france': 'https://images.unsplash.com/photo-1502602898536-47ad22581b52?w=1200&h=800&fit=crop', // エッフェル塔
-  'italy': 'https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=1200&h=800&fit=crop', // ベニス
-  'china': 'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&h=800&fit=crop', // 万里の長城
-  'germany': 'https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=1200&h=800&fit=crop', // ノイシュヴァンシュタイン城
-  'uk': 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1200&h=800&fit=crop', // ロンドン
+  'korea': 'https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=1200&h=800&fit=crop&q=80', // ソウル夜景
+  'japan': 'https://images.unsplash.com/photo-1490650034439-fd184c3c86a5?w=1200&h=800&fit=crop&q=80', // 富士山と桜
+  'usa': 'https://images.unsplash.com/photo-1485738422979-f5c462d49f74?w=1200&h=800&fit=crop&q=80', // ニューヨーク
+  'france': 'https://images.unsplash.com/photo-1502602898536-47ad22581b52?w=1200&h=800&fit=crop&q=80', // エッフェル塔
+  'italy': 'https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=1200&h=800&fit=crop&q=80', // ベニス
+  'china': 'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&h=800&fit=crop&q=80', // 万里の長城
+  'germany': 'https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=1200&h=800&fit=crop&q=80', // ノイシュヴァンシュタイン城
+  'uk': 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1200&h=800&fit=crop&q=80', // ロンドン
   
   // 中堅国
-  'finland': 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&h=800&fit=crop', // オーロラ
+  'finland': 'https://images.unsplash.com/photo-1507272931001-fc06c17e4f43?w=1200&h=800&fit=crop&q=80', // オーロラ
   'thailand': 'https://images.unsplash.com/photo-1520637836862-4d197d17c13a?w=1200&h=800&fit=crop', // タイの寺院
   'vietnam': 'https://images.unsplash.com/photo-1557750255-c76072a7aad1?w=1200&h=800&fit=crop', // ハロン湾
   'mexico': 'https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?w=1200&h=800&fit=crop', // チチェン・イッツァ
