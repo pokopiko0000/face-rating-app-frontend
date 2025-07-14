@@ -1,0 +1,37 @@
+# fly.toml app configuration file for face-rating-frontend
+# NOTE: Vercel is recommended for React apps, but this config is provided as an alternative
+
+app = "face-rating-frontend"
+primary_region = "nrt"  # Tokyo region for better latency in Japan
+
+[build]
+  # Build static files
+  image = "node:18-alpine"
+
+[env]
+  NODE_ENV = "production"
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+
+[[http_service.checks]]
+  grace_period = "10s"
+  interval = "30s"
+  method = "GET"
+  timeout = "5s"
+  path = "/"
+
+[vm]
+  cpu_kind = "shared"
+  cpus = 1
+  memory_mb = 512  # Static sites need less memory
+
+# Handle SPA routing
+[[http_service.response_headers]]
+  "Cache-Control" = "public, max-age=31536000, immutable"
+  "X-Frame-Options" = "DENY"
+  "X-Content-Type-Options" = "nosniff"

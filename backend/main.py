@@ -616,6 +616,11 @@ R2_PUBLIC_URL = "https://pub-20801d1056e542a99ab766366e3a3124.r2.dev"
 def read_root():
     return {"status": "ok"}
 
+@app.get("/health")
+async def health_check():
+    """Health check endpoint for Fly.io deployment"""
+    return {"status": "healthy", "service": "face-rating-backend"}
+
 
 # --- 静的ファイル配信の設定 ---
 # BASE_DIRを使って、実行場所によらない絶対パスを指定
@@ -891,9 +896,16 @@ async def rank_face(
 if __name__ == "__main__":
     import uvicorn
 
+    # Get port from environment variable (for Fly.io deployment) or use default
+    port = int(os.environ.get("PORT", 8003))
+    
     # サーバーを起動
-    # uvicorn.run("main:app", host="0.0.0.0", port=8003)
-    # 開発中はリロード機能を有効にすると便利
+    # 本番環境では reload=False にする
+    reload = os.environ.get("FLY_APP_NAME") is None  # Fly.io deployment detection
     uvicorn.run(
-        "main:app", host="0.0.0.0", port=8003, reload=True, reload_dirs=[str(BASE_DIR)]
+        "main:app", 
+        host="0.0.0.0", 
+        port=port, 
+        reload=reload, 
+        reload_dirs=[str(BASE_DIR)] if reload else None
     )
