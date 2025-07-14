@@ -1,0 +1,64 @@
+# Fly.io deployment configuration for face-rating-app-frontend backend
+
+app = "face-rating-backend"
+primary_region = "nrt" # Tokyo region for better Japan latency
+kill_signal = "SIGINT"
+kill_timeout = 5
+processes = []
+
+[build]
+dockerfile = "Dockerfile"
+
+[env]
+PORT = "8080"
+PYTHONUNBUFFERED = "1"
+PYTHONPATH = "/app"
+
+[experimental]
+auto_rollback = true
+
+[[services]]
+protocol = "tcp"
+internal_port = 8080
+processes = ["app"]
+
+[[services.ports]]
+port = 80
+handlers = ["http"]
+force_https = true
+
+[[services.ports]]
+port = 443
+handlers = ["tls", "http"]
+
+[services.concurrency]
+type = "connections"
+hard_limit = 25
+soft_limit = 20
+
+[[services.tcp_checks]]
+grace_period = "1s"
+interval = "15s"
+restart_limit = 0
+timeout = "2s"
+
+[[services.http_checks]]
+interval = "10s"
+grace_period = "5s"
+method = "get"
+path = "/"
+protocol = "http"
+timeout = "2s"
+tls_skip_verify = false
+[services.http_checks.headers]
+
+# VM Configuration
+[vm]
+cpu_kind = "shared"
+cpus = 1
+memory_mb = 1024
+
+# Auto-scaling configuration
+[scaling]
+min_machines = 0
+max_machines = 3

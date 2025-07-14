@@ -887,13 +887,20 @@ async def rank_face(
 # app.mount("/", StaticFiles(directory=BASE_DIR / "frontend", html=True), name="frontend")
 
 
+# --- ヘルスチェック用エンドポイント ---
+@app.get("/health")
+def health_check():
+    """Fly.io用のヘルスチェックエンドポイント"""
+    return {"status": "healthy", "message": "Face rating backend is running"}
+
+
 # --- メインの実行部分（デバッグ用） ---
 if __name__ == "__main__":
     import uvicorn
 
     # サーバーを起動
-    # uvicorn.run("main:app", host="0.0.0.0", port=8003)
-    # 開発中はリロード機能を有効にすると便利
+    # Fly.ioの場合はPORTエンドポイントから動的にポートを取得
+    port = int(os.environ.get("PORT", 8003))
     uvicorn.run(
-        "main:app", host="0.0.0.0", port=8003, reload=True, reload_dirs=[str(BASE_DIR)]
+        "main:app", host="0.0.0.0", port=port, reload=True, reload_dirs=[str(BASE_DIR)]
     )
