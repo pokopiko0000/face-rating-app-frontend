@@ -57,5 +57,38 @@ python main.py                     # Start FastAPI server
 - Backend: Test API endpoints with FastAPI's automatic docs at `/docs`
 
 ## Deployment
-- Frontend is built with Vite and can be deployed to any static hosting
-- Backend requires Python environment with face_recognition dependencies
+
+### Current Deployment Options
+
+#### Frontend
+- **Recommended**: Vercel (free tier, optimized for React)
+- **Alternative**: Fly.io (see migration guide)
+- Built with Vite and can be deployed to any static hosting
+
+#### Backend
+- **Current**: Render ($7/month)
+- **Recommended**: Fly.io (free tier, $84/year savings)
+- Requires Python environment with face_recognition dependencies
+
+### Fly.io Migration
+For cost optimization, backend can be migrated from Render to Fly.io:
+- **Cost savings**: $84/year (from $7/month to free tier)
+- **Performance**: Better latency for Japanese users (Tokyo region)
+- **Auto-scaling**: Machines sleep when not in use
+- **Migration guide**: See `docs/FLY_IO_MIGRATION.md`
+
+### Deployment Commands
+
+#### Fly.io Backend Deployment
+```bash
+cd backend
+fly auth login
+fly launch --copy-config
+fly deploy
+```
+
+#### Vercel Frontend Deployment
+```bash
+cd project
+vercel --prod
+```
