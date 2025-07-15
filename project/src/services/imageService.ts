@@ -1,6 +1,22 @@
 // Unsplash API integration for country images
 const UNSPLASH_ACCESS_KEY = 'YOUR_UNSPLASH_ACCESS_KEY'; // 開発時は環境変数に設定
 
+// Type definitions for Unsplash API
+interface UnsplashPhoto {
+  id: string;
+  urls: {
+    regular: string;
+    small: string;
+  };
+  alt_description?: string;
+  user: {
+    name: string;
+    links: {
+      html: string;
+    };
+  };
+}
+
 // 国別の画像検索キーワード
 export const countryImageKeywords: Record<string, string[]> = {
   // メジャー国
@@ -93,7 +109,7 @@ export const fetchCountryImages = async (
 
     const data = await response.json();
     
-    return data.results.map((photo: any) => ({
+    return data.results.map((photo: UnsplashPhoto) => ({
       id: photo.id,
       url: photo.urls.regular,
       thumb: photo.urls.small,
@@ -139,7 +155,7 @@ export const fetchImagesByKeyword = async (
 
     const data = await response.json();
     
-    return data.results.map((photo: any) => ({
+    return data.results.map((photo: UnsplashPhoto) => ({
       id: photo.id,
       url: photo.urls.regular,
       thumb: photo.urls.small,

@@ -1,0 +1,1853 @@
+{
+  "timestamp": "2025-07-15T17:20:38.805070",
+  "total_countries": 230,
+  "valid_countries": 0,
+  "invalid_countries": 230,
+  "countries_with_warnings": 0,
+  "error_summary": {
+    "Data structure validation failed": 230
+  },
+  "warning_summary": {},
+  "detailed_results": [
+    {
+      "country_code": "af",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "al",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "dz",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "as",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ad",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ao",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ai",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "aq",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ag",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ar",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "am",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "aw",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "au",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "at",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "az",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "bs",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "bh",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "bd",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "bb",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "by",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "be",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "bz",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "bj",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "bm",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "bt",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "bo",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "bq",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ba",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "bw",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "bv",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "br",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "io",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "bn",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "bg",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "bf",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "bi",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "cv",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "kh",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "cm",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ca",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ky",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "cf",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "td",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "cl",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "mo",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "cx",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "cc",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "co",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "km",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "cd",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ck",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "cr",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "hr",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "cu",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "cy",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "cz",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "dk",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "dj",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "dm",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "do",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ec",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "eg",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "sv",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "gq",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "er",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ee",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "sz",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "et",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "fk",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "fo",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "fj",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "fi",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "fr",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "gf",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "pf",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "tf",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ga",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "gm",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "gs",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "de",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "gh",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "gi",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "gr",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "gl",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "gd",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "gp",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "gu",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "gt",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "gg",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "gw",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "gy",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ht",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "hm",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "va",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "hn",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "hk",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "hu",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "is",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "id",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ir",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "iq",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ie",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "im",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "il",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "it",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "jm",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "jp",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "je",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "jo",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "kz",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ke",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ki",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "kp",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "kr",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "kw",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "kg",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "la",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "lv",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "lb",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ls",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "lr",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ly",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "li",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "lt",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "lu",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "mg",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "mw",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "my",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "mv",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "so",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "mt",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "mh",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "mq",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "mr",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "mu",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "yt",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "mx",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "fm",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "md",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "mc",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "mn",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "me",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ms",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ma",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "mz",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "mm",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "na",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "nr",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "np",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "nc",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "nz",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ni",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ng",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "nu",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "nf",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "mk",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "mp",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "no",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ro",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "pk",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "pw",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ps",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "pa",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "pg",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "py",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "pe",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ph",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "pn",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "pl",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "pt",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "pr",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "qa",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ru",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "rw",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "sh",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "kn",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "lc",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "mf",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "pm",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "vc",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "sm",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "st",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "sa",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "sn",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "rs",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "sc",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "sl",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "sg",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "sx",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "sk",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "si",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "sb",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "za",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ss",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "es",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "lk",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "sd",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "sr",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "sj",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "se",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ch",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "sy",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "tj",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "tz",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "th",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "tl",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "tg",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "tk",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "to",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "tt",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "tn",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "tr",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "tm",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "tc",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "tv",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ug",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ua",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ae",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "gb",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "um",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "uy",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "uz",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "vu",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ve",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "vn",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "wf",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "eh",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "ye",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "zm",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    },
+    {
+      "country_code": "zw",
+      "valid": false,
+      "errors": [
+        "Data structure validation failed: CountryMetadata.__init__() got an unexpected keyword argument 'populationNumber'"
+      ],
+      "warnings": []
+    }
+  ]
+}

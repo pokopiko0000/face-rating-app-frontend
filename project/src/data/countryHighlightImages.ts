@@ -36,6 +36,12 @@ const highlightImages: HighlightImageMap = {
     '迫力満点のガイザー間欠泉': 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop&q=80',
     '幻想的なオーロラ観測': 'https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=400&h=300&fit=crop&q=80',
     '氷河と火山の雄大な絶景': 'https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=400&h=300&fit=crop&q=80'
+  },
+  'algeria': {
+    'サハラ砂漠の壮大な絶景': 'https://images.unsplash.com/photo-1509565840034-3c385bbe6451?w=400&h=300&fit=crop&q=80',
+    '地中海の美しい海岸線': 'https://images.unsplash.com/photo-1560707303-4e980ce876ad?w=400&h=300&fit=crop&q=80',
+    '古代ローマ遺跡の宝庫': 'https://images.unsplash.com/photo-1569167507133-e8b7e63d0f24?w=400&h=300&fit=crop&q=80',
+    'カスバの迷宮都市': 'https://images.unsplash.com/photo-1565967511849-76a60a516170?w=400&h=300&fit=crop&q=80'
   }
 };
 

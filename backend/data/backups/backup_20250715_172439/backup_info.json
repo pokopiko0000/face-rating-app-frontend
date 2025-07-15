@@ -1,0 +1,9 @@
+{
+  "timestamp": "20250715_172439",
+  "backup_path": "/mnt/c/Users/j_mar/Documents/ドキュメント/face/backend/data/backups/backup_20250715_172439",
+  "files_backed_up": [
+    "countries.ts",
+    "countryImages.ts",
+    "country.ts"
+  ]
+}

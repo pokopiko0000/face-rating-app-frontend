@@ -57,7 +57,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({
 
   return (
     <div className={`grid grid-cols-1 md:grid-cols-${Math.min(images.length, 3)} gap-4 ${className}`}>
-      {images.map((image, index) => (
+      {images.map((image) => (
         <div key={image.id} className="relative group">
           <div className="h-48 overflow-hidden rounded-lg">
             <img

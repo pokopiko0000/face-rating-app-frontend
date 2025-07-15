@@ -6,4 +6,6 @@ insightface
 pycountry
 pycountry-convert
 python-multipart
-onnxruntime 
+onnxruntime
+requests
+countryinfo 

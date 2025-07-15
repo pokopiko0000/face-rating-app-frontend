@@ -1,4 +1,4 @@
-// 国データ型定義 - フロントエンド用
+// 統一国データスキーマ - バックエンドとフロントエンドで共通使用
 
 export interface CountryHighlight {
   title: string;
@@ -55,6 +55,15 @@ export interface CountryData {
 }
 
 // 自動生成用の中間データ構造
+export interface CountryRawData {
+  name: string;
+  nameEn: string;
+  code: string;
+  flag: string;
+  basic: Partial<CountryBasicInfo>;
+  coordinates: Partial<CountryCoordinates>;
+  metadata: Partial<CountryMetadata>;
+}
 
 // フロントエンド用の軽量版（後方互換性維持）
 export interface CountryDataLegacy {
@@ -73,10 +82,30 @@ export type CountryDataMap = Record<string, CountryData>;
 export type CountryDataMapLegacy = Record<string, CountryDataLegacy>;
 
 // 生成設定
+export interface GenerationConfig {
+  useAI: boolean; // AI生成を使用するか
+  languages: string[]; // 対応言語
+  imageSource: 'unsplash' | 'local' | 'mixed'; // 画像ソース
+  batchSize: number; // 一括処理サイズ
+  retryCount: number; // リトライ回数
+}
 
 // 生成結果
+export interface GenerationResult {
+  success: boolean;
+  countryCode: string;
+  data?: CountryData;
+  error?: string;
+  warnings?: string[];
+}
 
 // バリデーション結果
+export interface ValidationResult {
+  valid: boolean;
+  countryCode: string;
+  errors: string[];
+  warnings: string[];
+}
 
 // 大陸コード定義
 export const CONTINENTS = {

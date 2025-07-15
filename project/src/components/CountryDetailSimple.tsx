@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Sparkles, MapPin, Users, Globe } from 'lucide-react';
+import { useParams, Link, useNavigate } from 'react-router-dom';
+import { ArrowLeft, Sparkles, MapPin, Users, Globe, Home } from 'lucide-react';
 import CountryFlag from './CountryFlag';
 import InteractiveWorldMap from './InteractiveWorldMap';
 import { getCountryImage } from '../data/countryImages';
@@ -10,8 +10,18 @@ import type { CountryHighlight } from '../types/country';
 
 export default function CountryDetailSimple() {
   const { countryCode } = useParams<{ countryCode: string }>();
+  const navigate = useNavigate();
   const country = countryData[countryCode?.toLowerCase() || ''];
   const [imageLoaded, setImageLoaded] = useState(false);
+  
+  const handleBack = () => {
+    // 診断結果から来た場合は戻る、そうでなければホームページに移動
+    if (window.history.length > 1) {
+      navigate(-1);
+    } else {
+      navigate('/');
+    }
+  };
 
   if (!country) {
     return (
@@ -26,7 +36,7 @@ export default function CountryDetailSimple() {
     );
   }
 
-  const imageUrl = getCountryImage(countryCode || '', country.name);
+  const imageUrl = getCountryImage(countryCode || '');
 
   return (
     <div className="relative min-h-screen overflow-hidden">
@@ -60,13 +70,21 @@ export default function CountryDetailSimple() {
       {/* Content Container */}
       <div className="relative z-10 min-h-screen flex flex-col">
         {/* Navigation */}
-        <div className="p-6">
-          <Link
-            to="/"
+        <div className="p-6 flex items-center justify-between">
+          <button
+            onClick={handleBack}
             className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-md rounded-full shadow-lg hover:shadow-xl hover:bg-white/30 transition-all duration-300 text-white border border-white/30"
           >
             <ArrowLeft className="w-4 h-4" />
             戻る
+          </button>
+          
+          <Link
+            to="/"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-md rounded-full shadow-lg hover:shadow-xl hover:bg-white/30 transition-all duration-300 text-white border border-white/30"
+          >
+            <Home className="w-4 h-4" />
+            ホーム
           </Link>
         </div>
 
@@ -103,7 +121,6 @@ export default function CountryDetailSimple() {
                     </h3>
                     <InteractiveWorldMap 
                       countryName={country.name}
-                      countryCode={country.code}
                       coordinates={country.coordinates}
                     />
                   </div>

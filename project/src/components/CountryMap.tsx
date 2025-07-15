@@ -3,17 +3,10 @@ import { MapPin } from 'lucide-react';
 
 interface CountryMapProps {
   countryName: string;
-  countryCode: string;
   className?: string;
 }
 
-const CountryMap: React.FC<CountryMapProps> = ({ countryName, countryCode, className = '' }) => {
-  // Google Maps Embed API を使用（APIキーなしでも基本的な地図は表示可能）
-  const mapUrl = `https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=${encodeURIComponent(countryName)}&zoom=5`;
-  
-  // フォールバック用：OpenStreetMapベースの地図
-  const osmMapUrl = `https://www.openstreetmap.org/export/embed.html?bbox=-180,-90,180,90&layer=mapnik&marker=0,0`;
-
+const CountryMap: React.FC<CountryMapProps> = ({ countryName, className = '' }) => {
   return (
     <div className={`bg-white rounded-lg overflow-hidden shadow-lg ${className}`}>
       <div className="bg-gradient-to-r from-blue-500 to-blue-600 text-white p-3">
@@ -28,7 +21,7 @@ const CountryMap: React.FC<CountryMapProps> = ({ countryName, countryCode, class
         <div className="text-center">
           <div className="text-4xl mb-2">🗺️</div>
           <p className="text-sm text-gray-600 font-medium">{countryName}</p>
-          <p className="text-xs text-gray-500">({countryCode})</p>
+          <p className="text-xs text-gray-500">地図表示エリア</p>
         </div>
         
         {/* 装飾的な要素 */}

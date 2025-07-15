@@ -1,0 +1,30 @@
+{
+  "integration_timestamp": "2025-07-15T17:24:40.386993",
+  "backup_location": "/mnt/c/Users/j_mar/Documents/ドキュメント/face/backend/data/backups/backup_20250715_172439",
+  "integration_summary": {
+    "total_countries": 230,
+    "total_images": 0,
+    "updated_files": [
+      "countries.ts",
+      "countryImages.ts",
+      "country.ts"
+    ]
+  },
+  "file_status": {
+    "countries.ts": {
+      "exists": true,
+      "size": 208331,
+      "last_modified": 1752567880.0482922
+    },
+    "countryImages.ts": {
+      "exists": true,
+      "size": 6390,
+      "last_modified": 1752560658.924185
+    },
+    "country.ts": {
+      "exists": true,
+      "size": 2323,
+      "last_modified": 1752567880.0112543
+    }
+  }
+}

@@ -17,7 +17,21 @@
       "mcp__playwright__browser_press_key",
       "mcp__playwright__browser_navigate_forward",
       "Bash(find:*)",
-      "Bash(tree:*)"
+      "Bash(tree:*)",
+      "Bash(grep:*)",
+      "Bash(jq:*)",
+      "Bash(source:*)",
+      "Bash(.venv/Scripts/python.exe:*)",
+      "Bash(../.venv/Scripts/pip.exe install requests countryinfo)",
+      "Bash(./.venv/Scripts/pip.exe install:*)",
+      "Bash(python3:*)",
+      "Bash(sudo apt:*)",
+      "Bash(sudo apt install:*)",
+      "Bash(pip3 install:*)",
+      "Bash(cat:*)",
+      "Bash(timeout 30 npm run dev:*)",
+      "Bash(python:*)",
+      "Bash(ss:*)"
     ],
     "deny": []
   }

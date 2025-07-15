@@ -295,7 +295,7 @@ export const countryData: CountryDataMap = {
     flag: '🇦🇬',
     code: 'ag',
     basic: {
-      capital: 'Saint John\'s',
+      capital: 'Saint John's',
       population: '10万人',
       language: 'English'
     },
@@ -1519,7 +1519,7 @@ export const countryData: CountryDataMap = {
     flag: '🇹🇩',
     code: 'td',
     basic: {
-      capital: 'N\'Djamena',
+      capital: 'N'Djamena',
       population: '1643万人',
       language: 'Arabic'
     },
@@ -3031,7 +3031,7 @@ export const countryData: CountryDataMap = {
     flag: '🇬🇩',
     code: 'gd',
     basic: {
-      capital: 'St. George\'s',
+      capital: 'St. George's',
       population: '11万人',
       language: 'English'
     },
@@ -7495,7 +7495,7 @@ export const countryData: CountryDataMap = {
     flag: '🇹🇴',
     code: 'to',
     basic: {
-      capital: 'Nuku\'alofa',
+      capital: 'Nuku'alofa',
       population: '11万人',
       language: 'English'
     },
@@ -8179,7 +8179,7 @@ export const countryData: CountryDataMap = {
     flag: '🇾🇪',
     code: 'ye',
     basic: {
-      capital: 'Sana\'a',
+      capital: 'Sana'a',
       population: '2983万人',
       language: 'Arabic'
     },

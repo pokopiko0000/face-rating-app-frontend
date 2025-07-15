@@ -15,7 +15,7 @@ export const useDiagnosis = () => {
     try {
       const diagnosisResult = await diagnoseFace(request);
       setResult(diagnosisResult);
-    } catch (err) {
+    } catch {
       setError('診断中にエラーが発生しました。もう一度お試しください。');
     } finally {
       setIsLoading(false);

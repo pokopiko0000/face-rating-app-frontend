@@ -1,0 +1,23 @@
+{
+  "generation_timestamp": "2025-07-15T17:20:39.015838",
+  "total_countries": 230,
+  "successful_countries": 230,
+  "failed_countries": 0,
+  "continents": {
+    "AS": 45,
+    "EU": 48,
+    "AF": 51,
+    "OC": 22,
+    "NA": 34,
+    "null": 15,
+    "SA": 13,
+    "AN": 2
+  },
+  "rarity_distribution": {
+    "3": 56,
+    "4": 65,
+    "5": 83,
+    "1": 12,
+    "2": 14
+  }
+}

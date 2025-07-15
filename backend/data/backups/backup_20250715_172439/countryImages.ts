@@ -55,11 +55,11 @@ export const countryImages: Record<string, string> = {
 };
 
 // フォールバック画像（国の画像が見つからない場合）
-export const getFallbackImage = (): string => {
+export const getFallbackImage = (countryName: string): string => {
   return `https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop&q=80`;
 };
 
 // 画像取得関数
-export const getCountryImage = (countryCode: string): string => {
-  return countryImages[countryCode.toLowerCase()] || getFallbackImage();
+export const getCountryImage = (countryCode: string, countryName: string): string => {
+  return countryImages[countryCode.toLowerCase()] || getFallbackImage(countryName);
 };

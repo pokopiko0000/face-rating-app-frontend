@@ -3,14 +3,10 @@ import { MapPin } from 'lucide-react';
 
 interface InteractiveWorldMapProps {
   countryName: string;
-  countryCode: string;
   coordinates: { lat: number; lng: number };
 }
 
-export default function InteractiveWorldMap({ countryName, countryCode, coordinates }: InteractiveWorldMapProps) {
-  // Google Maps Embed APIを使用
-  const mapUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${coordinates.lat},${coordinates.lng}&zoom=5&maptype=satellite`;
-  
+export default function InteractiveWorldMap({ countryName, coordinates }: InteractiveWorldMapProps) {
   // 代替案：OpenStreetMap静的画像
   const osmMapUrl = `https://www.openstreetmap.org/export/embed.html?bbox=${coordinates.lng-10},${coordinates.lat-10},${coordinates.lng+10},${coordinates.lat+10}&layer=mapnik&marker=${coordinates.lat},${coordinates.lng}`;
 
