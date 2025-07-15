@@ -16,5 +16,10 @@ export const ADS_CONFIG = {
 
 // 広告が有効かどうかを判定
 export const isAdsEnabled = () => {
-  return ADS_CONFIG.ADSENSE_CLIENT_ID !== 'ca-pub-XXXXXXXXXXXXXXXXX';
+  const clientId = ADS_CONFIG.ADSENSE_CLIENT_ID;
+  return clientId && 
+         clientId !== '' && 
+         clientId !== 'ca-pub-XXXXXXXXXXXXXXXXX' &&
+         clientId.startsWith('ca-pub-') &&
+         clientId.length > 10;
 }; 

@@ -8,4 +8,5 @@ pycountry-convert
 python-multipart
 onnxruntime
 requests
-countryinfo 
+countryinfo
+pydantic-settings 
