@@ -6,7 +6,7 @@ import InteractiveWorldMap from './InteractiveWorldMap';
 import { getCountryImage } from '../data/countryImages';
 import { countryData } from '../data/countries';
 import { getHighlightImage } from '../data/countryHighlightImages';
-import type { CountryHighlight } from '../types/country';
+import type { CountryHighlight } from '../../../../shared/types';
 
 export default function CountryDetailSimple() {
   const { countryCode } = useParams<{ countryCode: string }>();

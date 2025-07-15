@@ -1,0 +1,15 @@
+node_modules
+dist
+build
+.vite
+coverage
+.env
+.env.local
+.env.production
+.env.development
+*.md
+*.json
+*.lock
+*.config.js
+*.config.ts
+public/
