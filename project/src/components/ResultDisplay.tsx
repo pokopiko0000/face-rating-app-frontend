@@ -19,7 +19,9 @@ export default function ResultDisplay({ result, userImage, onReset }: ResultDisp
   const topCountryImage = result.top_country_image_url; // バックエンドから直接URLを取得
 
   const handleShare = () => {
-    if (!topResult) return;
+    if (!topResult) {
+      return;
+    }
     const text = `AI顔診断の結果、私と${topResult.country}の顔の相性は${Math.round(topResult.similarity)}点でした！ あなたも試してみよう！ #AI顔診断 #顔面相性スコア`;
     const url = window.location.href;
     const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;

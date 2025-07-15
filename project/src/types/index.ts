@@ -1,3 +1,6 @@
+// 統一型定義の再エクスポート - 後方互換性のため
+export * from '../../../shared/types';
+
 // 診断リクエストの型
 export interface DiagnosisRequest {
   image: File;
