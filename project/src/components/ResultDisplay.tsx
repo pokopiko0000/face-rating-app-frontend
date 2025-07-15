@@ -1,7 +1,7 @@
 import React from 'react';
 import { Share2, RotateCcw, Trophy, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { DiagnosisResult } from '../types';
+import { DiagnosisResult } from '../../../shared/types';
 import AdBanner from './AdBanner';
 import { ADS_CONFIG } from '../config/ads';
 import { getCountryCodeFromDiagnosis } from '../utils/countryCodeMapping';

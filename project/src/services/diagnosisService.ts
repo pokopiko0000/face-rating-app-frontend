@@ -1,4 +1,4 @@
-import { DiagnosisRequest, DiagnosisResult } from '../types';
+import { DiagnosisRequest, DiagnosisResult } from '../../../shared/types';
 
 // 実AI診断サービス
 export const diagnoseFace = async (request: DiagnosisRequest): Promise<DiagnosisResult> => {

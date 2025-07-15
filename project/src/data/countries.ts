@@ -1,4 +1,4 @@
-import { CountryDataMap } from '../types/country';
+import { CountryDataMap } from '../../../shared/types/country';
 
 export const countryData: CountryDataMap = {
   'af': {

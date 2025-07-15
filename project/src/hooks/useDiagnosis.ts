@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react';
-import { DiagnosisResult, DiagnosisRequest } from '../types';
+import { DiagnosisResult, DiagnosisRequest } from '../../../shared/types';
 import { diagnoseFace } from '../services/diagnosisService';
 
 export const useDiagnosis = () => {
