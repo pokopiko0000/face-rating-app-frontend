@@ -1,4 +1,6 @@
 // Google Analytics utility functions
+// Note: These functions are currently unused but kept for future implementation
+
 declare global {
   interface Window {
     gtag?: (
@@ -9,16 +11,17 @@ declare global {
   }
 }
 
-export const initializeAnalytics = () => {
-  // Initialize Google Analytics if needed
-  if (typeof window !== 'undefined' && window.gtag) {
-    // Analytics initialization code would go here
-  }
-};
+// TODO: Implement analytics initialization when needed
+// export const initializeAnalytics = () => {
+//   if (typeof window !== 'undefined' && window.gtag) {
+//     // Analytics initialization code would go here
+//   }
+// };
 
-export const trackEvent = (eventName: string, parameters?: Record<string, unknown>) => {
-  if (typeof window !== 'undefined' && window.gtag) {
-    window.gtag('event', eventName, parameters);
-  }
-};
+// TODO: Implement event tracking when needed
+// export const trackEvent = (eventName: string, parameters?: Record<string, unknown>) => {
+//   if (typeof window !== 'undefined' && window.gtag) {
+//     window.gtag('event', eventName, parameters);
+//   }
+// };
 

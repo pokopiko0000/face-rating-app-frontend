@@ -1,4 +1,4 @@
-import { Celebrity } from '../types';
+import { Celebrity } from '../../../shared/types';
 
 export const celebrities: Celebrity[] = [
   // Male celebrities

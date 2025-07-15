@@ -19,3 +19,6 @@ export interface DiagnosisApiResponse {
 
 // useDiagnosisフックが最終的にコンポーネントに渡す結果の型
 export type DiagnosisResult = DiagnosisApiResponse;
+
+// Re-export shared types for backward compatibility
+export { Celebrity } from '../../../shared/types';

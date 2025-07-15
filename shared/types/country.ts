@@ -1,5 +1,14 @@
 // 統一国データスキーマ - バックエンドとフロントエンドで共通使用
 
+// Celebrity type definition
+export interface Celebrity {
+  id: string;
+  name: string;
+  nationality: string;
+  image: string;
+  gender: 'male' | 'female';
+}
+
 export interface CountryHighlight {
   title: string;
   description: string;
