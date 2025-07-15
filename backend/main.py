@@ -17,15 +17,14 @@ from pycountry_convert import (
 from pathlib import Path
 from typing import Dict, Any, Optional, List, Tuple
 
+# Import configuration management
+from config import settings
+
 
 # --- 定数と設定 ---
 
 # このファイルの場所を基準にパスを構築
 BASE_DIR = Path(__file__).resolve().parent.parent
-
-# ボーナス設定
-GEO_BONUS = 0.05  # 違う大陸だった場合のボーナス (5% に縮小)
-RARITY_BONUS_UNIT = 0.01  # 意外度★1つあたりのボーナス (1% に縮小)
 
 # --- グローバル変数 ---
 # モデルとプロトタイプは起動時に一度だけロードする
@@ -605,10 +604,11 @@ def get_country_code(country_name):
 
 
 # --- FastAPIアプリケーション ---
-app = FastAPI()
-
-# Cloudflare R2の公開URL
-R2_PUBLIC_URL = "https://pub-20801d1056e542a99ab766366e3a3124.r2.dev"
+app = FastAPI(
+    title=settings.api_title,
+    version=settings.api_version,
+    debug=settings.debug,
+)
 
 
 # --- ヘルスチェック用エンドポイント ---
@@ -625,10 +625,7 @@ def read_root():
 # ブラウザからのリクエストを許可するための設定
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # すべてのオリジンを許可（開発用）
-    allow_credentials=True,
-    allow_methods=["*"],  # すべてのHTTPメソッドを許可
-    allow_headers=["*"],  # すべてのヘッダーを許可
+    **settings.get_cors_config()
 )
 
 
@@ -638,9 +635,10 @@ def load_models():
     global model, prototypes, representatives, country_metadata_g
     # 1. 顔分析モデルを準備
     print("顔分析モデルを準備しています...")
-    model = insightface.app.FaceAnalysis(providers=["CPUExecutionProvider"])
+    face_config = settings.get_face_analysis_config()
+    model = insightface.app.FaceAnalysis(providers=face_config["providers"])
     # 性別・年齢推定モデルも有効化
-    model.prepare(ctx_id=0, det_thresh=0.1, det_size=(640, 640))
+    model.prepare(ctx_id=0, det_thresh=face_config["det_thresh"], det_size=face_config["det_size"])
     print("モデルの準備が完了しました。")
 
     # 2. 国の代表顔ベクトルをロード（性別ごと）
@@ -752,10 +750,10 @@ def _calculate_ranking(
         if metadata:
             country_continent = metadata.get("continent")
             if country_continent and country_continent != user_continent:
-                geo_bonus = GEO_BONUS
+                geo_bonus = settings.geo_bonus
 
             rarity = metadata.get("rarity", 1)
-            rarity_bonus = (rarity - 1) * RARITY_BONUS_UNIT
+            rarity_bonus = (rarity - 1) * settings.rarity_bonus_unit
 
         final_score = base_score + geo_bonus + rarity_bonus
         similarities[country] = final_score
@@ -810,7 +808,7 @@ async def analyze_face(
         target_reps = representatives[user_gender_str]
         if top_country in target_reps:
             image_filename = target_reps[top_country]
-            top_country_image_url = f"{R2_PUBLIC_URL}/{image_filename}"
+            top_country_image_url = f"{settings.r2_public_url}/{image_filename}"
 
     return JSONResponse(
         content={
