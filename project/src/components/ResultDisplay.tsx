@@ -1,10 +1,10 @@
 import React from 'react';
-import { Share2, RotateCcw, Trophy, ExternalLink } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Share2, RotateCcw, Trophy } from 'lucide-react';
 import { DiagnosisResult } from '../types';
 import AdBanner from './AdBanner';
 import { ADS_CONFIG } from '../config/ads';
-import { getCountryCodeFromDiagnosis } from '../utils/countryCodeMapping';
+import TopResultDisplay from './TopResultDisplay';
+import CountryRankingItem from './CountryRankingItem';
 
 interface ResultDisplayProps {
   result: DiagnosisResult;
@@ -49,124 +49,23 @@ export default function ResultDisplay({ result, userImage, onReset }: ResultDisp
         </h2>
       </div>
 
-      <div className="bg-white rounded-3xl shadow-2xl overflow-hidden mb-8">
-        <div className="bg-gradient-to-r from-purple-500 to-pink-500 text-white p-6 text-center">
-          <div className="text-4xl font-bold mb-2 flex items-center justify-center gap-4">
-            {topResult.country_code && (
-              <img
-                src={`https://flagcdn.com/w40/${topResult.country_code.toLowerCase()}.png`}
-                alt={`${topResult.country}の国旗`}
-                className="h-8 w-auto rounded"
-              />
-            )}
-            <span>{topResult.country}</span>
-          </div>
-          <div className="text-3xl font-bold mb-2">{Math.round(topResult.similarity)}点</div>
-          <div className="text-lg opacity-90">顔面相性スコア</div>
-          
-          {/* 国詳細ページへのリンク */}
-          {(() => {
-            const countryCode = getCountryCodeFromDiagnosis(topResult.country, topResult.country_code);
-            return countryCode ? (
-              <div className="mt-4">
-                <Link
-                  to={`/country/${countryCode}`}
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-white/20 hover:bg-white/30 text-white rounded-full font-medium transition-all duration-300 hover:scale-105"
-                >
-                  <ExternalLink size={18} />
-                  {topResult.country}について詳しく見る
-                </Link>
-              </div>
-            ) : null;
-          })()}
-        </div>
-
-        <div className="p-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <div className="text-center">
-              <div className="relative">
-                <img
-                  src={userImage}
-                  alt="あなたの写真"
-                  className="w-48 h-48 mx-auto rounded-2xl object-cover shadow-lg"
-                />
-                <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-medium">
-                  あなた
-                </div>
-              </div>
-            </div>
-
-            <div className="text-center">
-              <div className="relative">
-                 {topCountryImage ? (
-                  <img
-                    src={topCountryImage}
-                    alt={`${topResult.country}の代表画像`}
-                    className="w-48 h-48 mx-auto rounded-2xl object-cover shadow-lg bg-gray-200"
-                  />
-                ) : (
-                  <div className="w-48 h-48 mx-auto rounded-2xl bg-gray-200 flex items-center justify-center">
-                    <p className="text-sm text-gray-500">画像なし</p>
-                  </div>
-                )}
-                <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-purple-500 text-white px-4 py-1 rounded-full text-sm font-medium">
-                  {topResult.country}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <TopResultDisplay 
+        topResult={topResult}
+        userImage={userImage}
+        topCountryImage={topCountryImage}
+      />
 
       {otherResults.length > 0 && (
         <div className="bg-white rounded-3xl shadow-xl p-6 mb-8">
           <h3 className="text-xl font-bold text-center text-gray-700 mb-4">トップ5ランキング</h3>
           <ul className="space-y-3">
-            {otherResults.map((item, index) => {
-              const countryCode = getCountryCodeFromDiagnosis(item.country, item.country_code);
-              
-              return (
-                <li key={item.country} className="group">
-                  {countryCode ? (
-                    <Link
-                      to={`/country/${countryCode}`}
-                      className="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-200 hover:shadow-md"
-                    >
-                      <span className="text-lg font-bold text-gray-600 w-8">{index + 2}</span>
-                      {item.country_code ? (
-                        <img
-                          src={`https://flagcdn.com/w40/${item.country_code.toLowerCase()}.png`}
-                          alt={`${item.country}の国旗`}
-                          className="w-6 h-auto mr-3 rounded"
-                        />
-                      ) : (
-                        <span className="inline-block w-6 h-auto mr-3">🏳️</span>
-                      )}
-                      <span className="text-lg text-gray-800 font-medium flex-1 group-hover:text-purple-600 transition-colors">
-                        {item.country}
-                      </span>
-                      <span className="text-lg font-bold text-purple-600">{Math.round(item.similarity)}点</span>
-                      <ExternalLink size={16} className="ml-2 text-gray-400 group-hover:text-purple-600 transition-colors" />
-                    </Link>
-                  ) : (
-                    <div className="flex items-center p-3 bg-gray-50 rounded-lg">
-                      <span className="text-lg font-bold text-gray-600 w-8">{index + 2}</span>
-                      {item.country_code ? (
-                        <img
-                          src={`https://flagcdn.com/w40/${item.country_code.toLowerCase()}.png`}
-                          alt={`${item.country}の国旗`}
-                          className="w-6 h-auto mr-3 rounded"
-                        />
-                      ) : (
-                        <span className="inline-block w-6 h-auto mr-3">🏳️</span>
-                      )}
-                      <span className="text-lg text-gray-800 font-medium flex-1">{item.country}</span>
-                      <span className="text-lg font-bold text-purple-600">{Math.round(item.similarity)}点</span>
-                    </div>
-                  )}
-                </li>
-              );
-            })}
+            {otherResults.map((item, index) => (
+              <CountryRankingItem 
+                key={item.country} 
+                item={item} 
+                rank={index + 2} 
+              />
+            ))}
           </ul>
         </div>
       )}

@@ -14,11 +14,8 @@ export interface CountryRanking {
   country_code: string | null;
 }
 
-// APIレスポンス全体の型
-export interface DiagnosisApiResponse {
+// 診断結果の型 - バックエンドAPIレスポンスに対応
+export interface DiagnosisResult {
   ranking: CountryRanking[];
   top_country_image_url: string | null;
 }
-
-// useDiagnosisフックが最終的にコンポーネントに渡す結果の型
-export type DiagnosisResult = DiagnosisApiResponse;

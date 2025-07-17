@@ -12,14 +12,8 @@ export interface Celebrity {
   gender: 'male' | 'female';
 }
 
-// 診断結果型定義
-export interface DiagnosisResult {
-  country: string;
-  score: number;
-  confidence: number;
-  gender: 'male' | 'female';
-  timestamp: string;
-}
+// 注意: DiagnosisResult型は project/src/types/index.ts で定義されています
+// ここでは定義しないことで、型の競合を避けています
 
 // API応答型定義
 export interface ApiResponse<T> {

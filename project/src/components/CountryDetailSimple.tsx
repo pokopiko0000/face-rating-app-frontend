@@ -1,27 +1,17 @@
 import React, { useState } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Sparkles, MapPin, Users, Globe, Home } from 'lucide-react';
-import CountryFlag from './CountryFlag';
-import InteractiveWorldMap from './InteractiveWorldMap';
+import { useParams, Link } from 'react-router-dom';
+import { Sparkles } from 'lucide-react';
+import CountryDetailNavigation from './CountryDetailNavigation';
+import CountryDetailHeader from './CountryDetailHeader';
+import CountryBasicInfo from './CountryBasicInfo';
+import CountryHighlights from './CountryHighlights';
 import { getCountryImage } from '../data/countryImages';
 import { countryData } from '../data/countries';
-import { getHighlightImage } from '../data/countryHighlightImages';
-import type { CountryHighlight } from '../../../../shared/types';
 
 export default function CountryDetailSimple() {
   const { countryCode } = useParams<{ countryCode: string }>();
-  const navigate = useNavigate();
   const country = countryData[countryCode?.toLowerCase() || ''];
   const [imageLoaded, setImageLoaded] = useState(false);
-  
-  const handleBack = () => {
-    // 診断結果から来た場合は戻る、そうでなければホームページに移動
-    if (window.history.length > 1) {
-      navigate(-1);
-    } else {
-      navigate('/');
-    }
-  };
 
   if (!country) {
     return (
@@ -70,131 +60,21 @@ export default function CountryDetailSimple() {
       {/* Content Container */}
       <div className="relative z-10 min-h-screen flex flex-col">
         {/* Navigation */}
-        <div className="p-6 flex items-center justify-between">
-          <button
-            onClick={handleBack}
-            className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-md rounded-full shadow-lg hover:shadow-xl hover:bg-white/30 transition-all duration-300 text-white border border-white/30"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            戻る
-          </button>
-          
-          <Link
-            to="/"
-            className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-md rounded-full shadow-lg hover:shadow-xl hover:bg-white/30 transition-all duration-300 text-white border border-white/30"
-          >
-            <Home className="w-4 h-4" />
-            ホーム
-          </Link>
-        </div>
+        <CountryDetailNavigation />
 
         {/* Hero Section */}
         <div className="flex-1 flex items-center justify-center px-6 py-12">
           <div className="max-w-4xl w-full">
             {/* Country Header */}
-            <div className="text-center mb-12">
-              <div className="flex justify-center items-center gap-4 mb-4">
-                <CountryFlag 
-                  countryCode={country.code}
-                  countryName={country.name}
-                  size="large"
-                />
-              </div>
-              <h1 className="text-6xl md:text-7xl font-bold mb-3 text-white drop-shadow-lg">
-                {country.name}
-              </h1>
-              <p className="text-2xl md:text-3xl text-white/90">
-                {country.nameEn}
-              </p>
-            </div>
+            <CountryDetailHeader country={country} />
 
             {/* Content Cards */}
             <div className="space-y-6">
               {/* Map and Basic Info Section */}
-              <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 shadow-2xl">
-                <div className="grid md:grid-cols-2 gap-8">
-                  {/* Left: World Map */}
-                  <div>
-                    <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                      <Globe className="w-5 h-5 text-blue-300" />
-                      世界地図での位置
-                    </h3>
-                    <InteractiveWorldMap 
-                      countryName={country.name}
-                      coordinates={country.coordinates}
-                    />
-                  </div>
-                  
-                  {/* Right: Basic Info */}
-                  <div>
-                    <h3 className="text-xl font-bold text-white mb-6">基本情報</h3>
-                    <div className="space-y-4">
-                      <div className="flex items-center gap-3 bg-white/10 rounded-lg p-4">
-                        <MapPin className="w-5 h-5 text-purple-300 flex-shrink-0" />
-                        <div>
-                          <div className="text-sm text-white/70">首都</div>
-                          <div className="font-semibold text-white text-lg">{country.basic.capital}</div>
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-3 bg-white/10 rounded-lg p-4">
-                        <Users className="w-5 h-5 text-purple-300 flex-shrink-0" />
-                        <div>
-                          <div className="text-sm text-white/70">人口</div>
-                          <div className="font-semibold text-white text-lg">{country.basic.population}</div>
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-3 bg-white/10 rounded-lg p-4">
-                        <Globe className="w-5 h-5 text-purple-300 flex-shrink-0" />
-                        <div>
-                          <div className="text-sm text-white/70">言語</div>
-                          <div className="font-semibold text-white text-lg">{country.basic.language}</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                {/* Description */}
-                <div className="mt-8 pt-8 border-t border-white/10">
-                  <p className="text-lg text-white/90 leading-relaxed">
-                    {country.description}
-                  </p>
-                </div>
-              </div>
+              <CountryBasicInfo country={country} />
 
               {/* Highlights */}
-              <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 shadow-2xl">
-                <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
-                  <Sparkles className="w-5 h-5 text-purple-300" />
-                  {country.name}の魅力
-                </h3>
-                <div className="grid md:grid-cols-2 gap-4">
-                  {country.highlights.map((highlight: CountryHighlight, index: number) => (
-                    <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 transition-all duration-300">
-                      <div className="flex">
-                        {/* 左側：画像 */}
-                        <div className="w-40 h-32 flex-shrink-0 bg-white/10">
-                          <img 
-                            src={getHighlightImage(highlight.title, countryCode || '')} 
-                            alt={highlight.title}
-                            className="w-full h-full object-cover"
-                            crossOrigin="anonymous"
-                            onError={(e) => {
-                              const target = e.target as HTMLImageElement;
-                              target.src = 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop&q=80';
-                            }}
-                          />
-                        </div>
-                        {/* 右側：テキスト */}
-                        <div className="flex-1 p-4">
-                          <h4 className="font-bold text-white mb-2">{highlight.title}</h4>
-                          <p className="text-white/80 text-sm leading-relaxed">{highlight.description}</p>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
+              <CountryHighlights country={country} countryCode={countryCode || ''} />
 
               {/* Call to Action */}
               <div className="text-center">
