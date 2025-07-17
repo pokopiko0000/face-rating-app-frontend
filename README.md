@@ -35,10 +35,13 @@ AI技術を使って、あなたの顔がどの国で最も魅力的に見える
 /
 ├── README.md              # プロジェクト概要（このファイル）
 ├── CLAUDE.md              # AI開発指示書
-├── REQUIREMENTS.md        # 要件定義書
-├── plan.md               # 収益化計画
 ├── metadata.csv          # 国別顔データメタ情報
 ├── .gitignore            # Git除外設定
+├── docs/                 # 文書ディレクトリ
+│   ├── archive/          # アーカイブ済み文書
+│   │   ├── REQUIREMENTS.md  # 要件定義書（アーカイブ）
+│   │   └── plan.md         # 収益化計画（アーカイブ）
+│   └── FLY_IO_MIGRATION.md  # デプロイ移行ガイド
 ├── backend/              # バックエンドAPI
 │   ├── main.py          # FastAPIメインサーバー
 │   ├── crop_face.py     # 顔検出・切り抜き

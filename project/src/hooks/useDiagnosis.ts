@@ -1,10 +1,10 @@
 import { useState, useCallback } from 'react';
-import { DiagnosisResult, DiagnosisRequest } from '../types';
+import { DiagnosisResponse, DiagnosisRequest } from '../types';
 import { diagnoseFace } from '../services/diagnosisService';
 
 export const useDiagnosis = () => {
   const [isLoading, setIsLoading] = useState(false);
-  const [result, setResult] = useState<DiagnosisResult | null>(null);
+  const [result, setResult] = useState<DiagnosisResponse | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   const diagnose = useCallback(async (request: DiagnosisRequest) => {

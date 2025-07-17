@@ -21,4 +21,5 @@ export interface DiagnosisApiResponse {
 }
 
 // useDiagnosisフックが最終的にコンポーネントに渡す結果の型
-export type DiagnosisResult = DiagnosisApiResponse;
+// 注意: DiagnosisResultはshared/types/index.tsで定義されています
+export type DiagnosisResponse = DiagnosisApiResponse;

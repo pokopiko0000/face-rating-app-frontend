@@ -1,7 +1,7 @@
-import { DiagnosisRequest, DiagnosisResult } from '../types';
+import { DiagnosisRequest, DiagnosisResponse } from '../types';
 
 // 実AI診断サービス
-export const diagnoseFace = async (request: DiagnosisRequest): Promise<DiagnosisResult> => {
+export const diagnoseFace = async (request: DiagnosisRequest): Promise<DiagnosisResponse> => {
   const { image, gender } = request;
 
   const formData = new FormData();
@@ -22,7 +22,7 @@ export const diagnoseFace = async (request: DiagnosisRequest): Promise<Diagnosis
       throw new Error(errorData.detail || `HTTP error! status: ${response.status}`);
     }
 
-    const result: DiagnosisResult = await response.json();
+    const result: DiagnosisResponse = await response.json();
     return result;
   } catch (error) {
     console.error("Diagnosis service error:", error);
