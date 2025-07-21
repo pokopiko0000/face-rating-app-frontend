@@ -57,9 +57,6 @@ README.md
 scripts/
 generate_*.py
 regenerate_*.py
-crop_face.py
-rank_face.py
-yolov8n.pt
 
 # Keep only essential files
 !main.py
