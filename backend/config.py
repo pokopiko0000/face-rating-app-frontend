@@ -8,7 +8,8 @@ are defined here.
 
 from enum import Enum
 from typing import List, Tuple, Optional
-from pydantic import BaseSettings, validator, Field
+from pydantic import validator, Field
+from pydantic_settings import BaseSettings
 import os
 
 
