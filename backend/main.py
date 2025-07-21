@@ -20,6 +20,12 @@ from typing import Dict, Any, Optional, List, Tuple
 # Import configuration management
 from config import settings
 
+# Import constants
+from constants import COUNTRY_FLAGS, COUNTRY_NAME_JP
+
+# Import utilities  
+from utils.similarity import cosine_similarity
+
 
 # --- 定数と設定 ---
 
@@ -41,8 +47,8 @@ country_metadata_g: Dict[str, Dict[str, Any]] = (
 
 
 # --- 国旗の絵文字マッピング ---
-# 250カ国のデータを網羅
-COUNTRY_FLAGS = {
+# 250カ国のデータを網羅 - constants/country_flags.pyに移動済み
+# COUNTRY_FLAGS = {
     "Afghanistan": "🇦🇫",
     "Aland Islands": "🇦🇽",
     "Albania": "🇦🇱",
