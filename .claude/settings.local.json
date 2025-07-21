@@ -32,7 +32,10 @@
       "Bash(timeout 30 npm run dev:*)",
       "Bash(python:*)",
       "Bash(ss:*)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(git commit:*)",
+      "Bash(git fetch:*)",
+      "Bash(git push:*)"
     ],
     "deny": []
   }
