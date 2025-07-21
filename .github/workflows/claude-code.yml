@@ -1,0 +1,81 @@
+name: Claude Code Assistant
+on:
+  issues:
+    types: [opened, labeled, assigned]
+  issue_comment:
+    types: [created]
+  pull_request:
+    types: [opened, synchronize]
+  pull_request_review:
+    types: [submitted]
+  pull_request_review_comment:
+    types: [created]
+
+jobs:
+  claude-code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Claude Code Assistant
+        uses: anthropics/claude-code-action@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          allowed_tools: |
+            Bash:
+              # フロントエンド開発ツール
+              - npm
+              - node
+              - npx
+              - tsc
+              - eslint
+              - prettier
+              - vite
+              
+              # バックエンド開発ツール
+              - python
+              - python3
+              - pip
+              - pip3
+              - uvicorn
+              
+              # Git操作
+              - git
+              
+              # ファイル操作
+              - ls
+              - cat
+              - echo
+              - mkdir
+              - rm
+              - cp
+              - mv
+              - touch
+              - chmod
+              
+              # テキスト処理
+              - grep
+              - find
+              - sed
+              - awk
+              - sort
+              - head
+              - tail
+              
+              # ネットワーク
+              - curl
+              - wget
+              
+              # ビルド・テスト
+              - make
+              - jest
+              - vitest
+              - pytest
+              
+              # その他ユーティリティ
+              - which
+              - pwd
+              - cd
+              - env
+              - export

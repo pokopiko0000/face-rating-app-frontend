@@ -31,7 +31,8 @@
       "Bash(cat:*)",
       "Bash(timeout 30 npm run dev:*)",
       "Bash(python:*)",
-      "Bash(ss:*)"
+      "Bash(ss:*)",
+      "Bash(mkdir:*)"
     ],
     "deny": []
   }
