@@ -61,6 +61,7 @@ class Settings(BaseSettings):
         case_sensitive = False
     
     @field_validator("cors_origins", mode='before')
+    @classmethod
     def parse_cors_origins(cls, v):
         """Parse comma-separated CORS origins."""
         if isinstance(v, str):
@@ -68,6 +69,7 @@ class Settings(BaseSettings):
         return v
     
     @field_validator("face_detection_size", mode='before')
+    @classmethod
     def parse_detection_size(cls, v):
         """Parse face detection size tuple."""
         if isinstance(v, str):
@@ -76,6 +78,7 @@ class Settings(BaseSettings):
         return v
     
     @field_validator("face_providers", mode='before')
+    @classmethod
     def parse_face_providers(cls, v):
         """Parse face analysis providers."""
         if isinstance(v, str):
@@ -83,6 +86,7 @@ class Settings(BaseSettings):
         return v
     
     @field_validator("r2_public_url")
+    @classmethod
     def validate_r2_url(cls, v):
         """Validate R2 URL format."""
         if not v.startswith(("http://", "https://")):
@@ -90,6 +94,7 @@ class Settings(BaseSettings):
         return v
     
     @field_validator("geo_bonus", "rarity_bonus_unit", "face_detection_threshold")
+    @classmethod
     def validate_positive_float(cls, v):
         """Validate positive float values."""
         if v <= 0:
@@ -97,6 +102,7 @@ class Settings(BaseSettings):
         return v
     
     @field_validator("port")
+    @classmethod
     def validate_port(cls, v):
         """Validate port number."""
         if not 1 <= v <= 65535:
