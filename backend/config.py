@@ -8,7 +8,7 @@ are defined here.
 
 from enum import Enum
 from typing import List, Tuple, Optional
-from pydantic import validator, Field
+from pydantic import field_validator, Field
 from pydantic_settings import BaseSettings
 import os
 
@@ -60,14 +60,14 @@ class Settings(BaseSettings):
         env_file_encoding = "utf-8"
         case_sensitive = False
     
-    @validator("cors_origins", pre=True)
+    @field_validator("cors_origins", mode='before')
     def parse_cors_origins(cls, v):
         """Parse comma-separated CORS origins."""
         if isinstance(v, str):
             return [origin.strip() for origin in v.split(",") if origin.strip()]
         return v
     
-    @validator("face_detection_size", pre=True)
+    @field_validator("face_detection_size", mode='before')
     def parse_detection_size(cls, v):
         """Parse face detection size tuple."""
         if isinstance(v, str):
@@ -75,28 +75,28 @@ class Settings(BaseSettings):
             return (width, height)
         return v
     
-    @validator("face_providers", pre=True)
+    @field_validator("face_providers", mode='before')
     def parse_face_providers(cls, v):
         """Parse face analysis providers."""
         if isinstance(v, str):
             return [provider.strip() for provider in v.split(",") if provider.strip()]
         return v
     
-    @validator("r2_public_url")
+    @field_validator("r2_public_url")
     def validate_r2_url(cls, v):
         """Validate R2 URL format."""
         if not v.startswith(("http://", "https://")):
             raise ValueError("R2 URL must be a valid HTTP/HTTPS URL")
         return v
     
-    @validator("geo_bonus", "rarity_bonus_unit", "face_detection_threshold")
+    @field_validator("geo_bonus", "rarity_bonus_unit", "face_detection_threshold")
     def validate_positive_float(cls, v):
         """Validate positive float values."""
         if v <= 0:
             raise ValueError("Value must be positive")
         return v
     
-    @validator("port")
+    @field_validator("port")
     def validate_port(cls, v):
         """Validate port number."""
         if not 1 <= v <= 65535:
