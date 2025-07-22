@@ -35,7 +35,9 @@
       "Bash(mkdir:*)",
       "Bash(git commit:*)",
       "Bash(git fetch:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(cp:*)",
+      "WebFetch(domain:developers.cloudflare.com)"
     ],
     "deny": []
   }
