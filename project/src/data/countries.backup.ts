@@ -1,0 +1,8284 @@
+import { CountryDataMap } from '../../../shared/types';
+
+export const countryData: CountryDataMap = {
+  'af': {
+    name: 'アフガニスタン',
+    nameEn: 'Afghanistan',
+    flag: '🇦🇫',
+    code: 'af',
+    basic: {
+      capital: 'Kabul',
+      population: '4022万人',
+      language: 'Dari'
+    },
+    coordinates: {
+      lat: 33.0,
+      lng: 65.0
+    },
+    description: 'アフガニスタンの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'al': {
+    name: 'Albania',
+    nameEn: 'Albania',
+    flag: '🇦🇱',
+    code: 'al',
+    basic: {
+      capital: 'Tirana',
+      population: '284万人',
+      language: 'Albanian'
+    },
+    coordinates: {
+      lat: 41.0,
+      lng: 20.0
+    },
+    description: 'Albaniaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'dz': {
+    name: 'アルジェリア',
+    nameEn: 'Algeria',
+    flag: '🇩🇿',
+    code: 'dz',
+    basic: {
+      capital: 'Algiers',
+      population: '4470万人',
+      language: 'Arabic'
+    },
+    coordinates: {
+      lat: 28.0,
+      lng: 3.0
+    },
+    description: 'アルジェリアの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'as': {
+    name: 'サモア',
+    nameEn: 'Samoa',
+    flag: '🇦🇸',
+    code: 'as',
+    basic: {
+      capital: 'Pago Pago',
+      population: '6万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -14.3333,
+      lng: -170.0
+    },
+    description: 'サモアの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ad': {
+    name: 'Andorra',
+    nameEn: 'Andorra',
+    flag: '🇦🇩',
+    code: 'ad',
+    basic: {
+      capital: 'Andorra la Vella',
+      population: '8万人',
+      language: 'Catalan'
+    },
+    coordinates: {
+      lat: 42.5,
+      lng: 1.5
+    },
+    description: 'Andorraの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ao': {
+    name: 'Angola',
+    nameEn: 'Angola',
+    flag: '🇦🇴',
+    code: 'ao',
+    basic: {
+      capital: 'Luanda',
+      population: '3287万人',
+      language: 'Portuguese'
+    },
+    coordinates: {
+      lat: -12.5,
+      lng: 18.5
+    },
+    description: 'Angolaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ai': {
+    name: 'Anguilla',
+    nameEn: 'Anguilla',
+    flag: '🇦🇮',
+    code: 'ai',
+    basic: {
+      capital: 'The Valley',
+      population: '1万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 18.25,
+      lng: -63.1667
+    },
+    description: 'Anguillaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'aq': {
+    name: 'Antarctica',
+    nameEn: 'Antarctica',
+    flag: '🇦🇶',
+    code: 'aq',
+    basic: {
+      capital: '',
+      population: '1.0千人',
+      language: ''
+    },
+    coordinates: {
+      lat: -90.0,
+      lng: 0.0
+    },
+    description: 'Antarcticaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ag': {
+    name: 'Antigua and Barbuda',
+    nameEn: 'Antigua and Barbuda',
+    flag: '🇦🇬',
+    code: 'ag',
+    basic: {
+      capital: 'Saint John\'s',
+      population: '10万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 17.05,
+      lng: -61.8
+    },
+    description: 'Antigua and Barbudaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ar': {
+    name: 'アルゼンチン',
+    nameEn: 'Argentina',
+    flag: '🇦🇷',
+    code: 'ar',
+    basic: {
+      capital: 'Buenos Aires',
+      population: '4538万人',
+      language: 'Guaraní'
+    },
+    coordinates: {
+      lat: -34.0,
+      lng: -64.0
+    },
+    description: 'アルゼンチンの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'am': {
+    name: 'アルメニア',
+    nameEn: 'Armenia',
+    flag: '🇦🇲',
+    code: 'am',
+    basic: {
+      capital: 'Yerevan',
+      population: '296万人',
+      language: 'Armenian'
+    },
+    coordinates: {
+      lat: 40.0,
+      lng: 45.0
+    },
+    description: 'アルメニアの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'aw': {
+    name: 'Aruba',
+    nameEn: 'Aruba',
+    flag: '🇦🇼',
+    code: 'aw',
+    basic: {
+      capital: 'Oranjestad',
+      population: '11万人',
+      language: 'Dutch'
+    },
+    coordinates: {
+      lat: 12.5,
+      lng: -69.9667
+    },
+    description: 'Arubaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'au': {
+    name: 'オーストラリア',
+    nameEn: 'Australia',
+    flag: '🇦🇺',
+    code: 'au',
+    basic: {
+      capital: 'Canberra',
+      population: '2569万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -27.0,
+      lng: 133.0
+    },
+    description: 'オーストラリアの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'at': {
+    name: 'オーストリア',
+    nameEn: 'Austria',
+    flag: '🇦🇹',
+    code: 'at',
+    basic: {
+      capital: 'Vienna',
+      population: '892万人',
+      language: 'German'
+    },
+    coordinates: {
+      lat: 47.3333,
+      lng: 13.3333
+    },
+    description: 'オーストリアの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'az': {
+    name: 'アゼルバイジャン',
+    nameEn: 'Azerbaijan',
+    flag: '🇦🇿',
+    code: 'az',
+    basic: {
+      capital: 'Baku',
+      population: '1011万人',
+      language: 'Azerbaijani'
+    },
+    coordinates: {
+      lat: 40.5,
+      lng: 47.5
+    },
+    description: 'アゼルバイジャンの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'bs': {
+    name: 'Bahamas',
+    nameEn: 'Bahamas',
+    flag: '🇧🇸',
+    code: 'bs',
+    basic: {
+      capital: 'Nassau',
+      population: '39万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 25.0343,
+      lng: -77.3963
+    },
+    description: 'Bahamasの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'bh': {
+    name: 'バーレーン',
+    nameEn: 'Bahrain',
+    flag: '🇧🇭',
+    code: 'bh',
+    basic: {
+      capital: 'Manama',
+      population: '170万人',
+      language: 'Arabic'
+    },
+    coordinates: {
+      lat: 26.0,
+      lng: 50.55
+    },
+    description: 'バーレーンの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'bd': {
+    name: 'バングラデシュ',
+    nameEn: 'Bangladesh',
+    flag: '🇧🇩',
+    code: 'bd',
+    basic: {
+      capital: 'Dhaka',
+      population: '1.6億人',
+      language: 'Bengali'
+    },
+    coordinates: {
+      lat: 24.0,
+      lng: 90.0
+    },
+    description: 'バングラデシュの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'bb': {
+    name: 'Barbados',
+    nameEn: 'Barbados',
+    flag: '🇧🇧',
+    code: 'bb',
+    basic: {
+      capital: 'Bridgetown',
+      population: '29万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 13.1667,
+      lng: -59.5333
+    },
+    description: 'Barbadosの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'by': {
+    name: 'ベラルーシ',
+    nameEn: 'Belarus',
+    flag: '🇧🇾',
+    code: 'by',
+    basic: {
+      capital: 'Minsk',
+      population: '940万人',
+      language: 'Belarusian'
+    },
+    coordinates: {
+      lat: 53.0,
+      lng: 28.0
+    },
+    description: 'ベラルーシの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'be': {
+    name: 'ベルギー',
+    nameEn: 'Belgium',
+    flag: '🇧🇪',
+    code: 'be',
+    basic: {
+      capital: 'Brussels',
+      population: '1156万人',
+      language: 'German'
+    },
+    coordinates: {
+      lat: 50.8333,
+      lng: 4.0
+    },
+    description: 'ベルギーの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'bz': {
+    name: 'Belize',
+    nameEn: 'Belize',
+    flag: '🇧🇿',
+    code: 'bz',
+    basic: {
+      capital: 'Belmopan',
+      population: '40万人',
+      language: 'Belizean Creole'
+    },
+    coordinates: {
+      lat: 17.25,
+      lng: -88.75
+    },
+    description: 'Belizeの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'bj': {
+    name: 'Benin',
+    nameEn: 'Benin',
+    flag: '🇧🇯',
+    code: 'bj',
+    basic: {
+      capital: 'Porto-Novo',
+      population: '1212万人',
+      language: 'French'
+    },
+    coordinates: {
+      lat: 9.5,
+      lng: 2.25
+    },
+    description: 'Beninの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'bm': {
+    name: 'Bermuda',
+    nameEn: 'Bermuda',
+    flag: '🇧🇲',
+    code: 'bm',
+    basic: {
+      capital: 'Hamilton',
+      population: '6万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 32.3333,
+      lng: -64.75
+    },
+    description: 'Bermudaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'bt': {
+    name: 'ブータン',
+    nameEn: 'Bhutan',
+    flag: '🇧🇹',
+    code: 'bt',
+    basic: {
+      capital: 'Thimphu',
+      population: '77万人',
+      language: 'Dzongkha'
+    },
+    coordinates: {
+      lat: 27.5,
+      lng: 90.5
+    },
+    description: 'ブータンの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'bo': {
+    name: 'ボリビア',
+    nameEn: 'Bolivia',
+    flag: '🇧🇴',
+    code: 'bo',
+    basic: {
+      capital: 'Sucre',
+      population: '1167万人',
+      language: 'Aymara'
+    },
+    coordinates: {
+      lat: -17.0,
+      lng: -65.0
+    },
+    description: 'ボリビアの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'bq': {
+    name: 'オランダ',
+    nameEn: 'Netherlands',
+    flag: '🇧🇶',
+    code: 'bq',
+    basic: {
+      capital: 'Kralendijk',
+      population: '3万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 12.18,
+      lng: -68.25
+    },
+    description: 'オランダの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ba': {
+    name: 'Bosnia and Herzegovina',
+    nameEn: 'Bosnia and Herzegovina',
+    flag: '🇧🇦',
+    code: 'ba',
+    basic: {
+      capital: 'Sarajevo',
+      population: '328万人',
+      language: 'Bosnian'
+    },
+    coordinates: {
+      lat: 44.0,
+      lng: 18.0
+    },
+    description: 'Bosnia and Herzegovinaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'bw': {
+    name: 'Botswana',
+    nameEn: 'Botswana',
+    flag: '🇧🇼',
+    code: 'bw',
+    basic: {
+      capital: 'Gaborone',
+      population: '235万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -22.0,
+      lng: 24.0
+    },
+    description: 'Botswanaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'bv': {
+    name: 'Bouvet Island',
+    nameEn: 'Bouvet Island',
+    flag: '🇧🇻',
+    code: 'bv',
+    basic: {
+      capital: '',
+      population: '0人',
+      language: 'Norwegian'
+    },
+    coordinates: {
+      lat: 54.4208,
+      lng: 3.3464
+    },
+    description: 'Bouvet Islandの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'br': {
+    name: 'ブラジル',
+    nameEn: 'Brazil',
+    flag: '🇧🇷',
+    code: 'br',
+    basic: {
+      capital: 'Brasília',
+      population: '2.1億人',
+      language: 'Portuguese'
+    },
+    coordinates: {
+      lat: -10.0,
+      lng: -55.0
+    },
+    description: 'ブラジルの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'io': {
+    name: 'インド',
+    nameEn: 'India',
+    flag: '🇮🇴',
+    code: 'io',
+    basic: {
+      capital: 'Diego Garcia',
+      population: '3.0千人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -6.0,
+      lng: 71.5
+    },
+    description: 'インドの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'bn': {
+    name: 'Brunei',
+    nameEn: 'Brunei',
+    flag: '🇧🇳',
+    code: 'bn',
+    basic: {
+      capital: 'Bandar Seri Begawan',
+      population: '44万人',
+      language: 'Malay'
+    },
+    coordinates: {
+      lat: 4.5,
+      lng: 114.6667
+    },
+    description: 'Bruneiの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'bg': {
+    name: 'ブルガリア',
+    nameEn: 'Bulgaria',
+    flag: '🇧🇬',
+    code: 'bg',
+    basic: {
+      capital: 'Sofia',
+      population: '693万人',
+      language: 'Bulgarian'
+    },
+    coordinates: {
+      lat: 43.0,
+      lng: 25.0
+    },
+    description: 'ブルガリアの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'bf': {
+    name: 'Burkina Faso',
+    nameEn: 'Burkina Faso',
+    flag: '🇧🇫',
+    code: 'bf',
+    basic: {
+      capital: 'Ouagadougou',
+      population: '2090万人',
+      language: 'French'
+    },
+    coordinates: {
+      lat: 13.0,
+      lng: -2.0
+    },
+    description: 'Burkina Fasoの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'bi': {
+    name: 'Burundi',
+    nameEn: 'Burundi',
+    flag: '🇧🇮',
+    code: 'bi',
+    basic: {
+      capital: 'Gitega',
+      population: '1189万人',
+      language: 'French'
+    },
+    coordinates: {
+      lat: -3.5,
+      lng: 30.0
+    },
+    description: 'Burundiの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'cv': {
+    name: 'Cape Verde',
+    nameEn: 'Cape Verde',
+    flag: '🇨🇻',
+    code: 'cv',
+    basic: {
+      capital: 'Praia',
+      population: '56万人',
+      language: 'Portuguese'
+    },
+    coordinates: {
+      lat: 16.5388,
+      lng: -23.0418
+    },
+    description: 'Cape Verdeの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'kh': {
+    name: 'カンボジア',
+    nameEn: 'Cambodia',
+    flag: '🇰🇭',
+    code: 'kh',
+    basic: {
+      capital: 'Phnom Penh',
+      population: '1672万人',
+      language: 'Khmer'
+    },
+    coordinates: {
+      lat: 13.0,
+      lng: 105.0
+    },
+    description: 'カンボジアの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'cm': {
+    name: 'Cameroon',
+    nameEn: 'Cameroon',
+    flag: '🇨🇲',
+    code: 'cm',
+    basic: {
+      capital: 'Yaoundé',
+      population: '2655万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 6.0,
+      lng: 12.0
+    },
+    description: 'Cameroonの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ca': {
+    name: 'カナダ',
+    nameEn: 'Canada',
+    flag: '🇨🇦',
+    code: 'ca',
+    basic: {
+      capital: 'Ottawa',
+      population: '3801万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 60.0,
+      lng: -95.0
+    },
+    description: 'カナダの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ky': {
+    name: 'Cayman Islands',
+    nameEn: 'Cayman Islands',
+    flag: '🇰🇾',
+    code: 'ky',
+    basic: {
+      capital: 'George Town',
+      population: '7万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 19.3133,
+      lng: -81.2546
+    },
+    description: 'Cayman Islandsの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'cf': {
+    name: 'Central African Republic',
+    nameEn: 'Central African Republic',
+    flag: '🇨🇫',
+    code: 'cf',
+    basic: {
+      capital: 'Bangui',
+      population: '483万人',
+      language: 'French'
+    },
+    coordinates: {
+      lat: 7.0,
+      lng: 21.0
+    },
+    description: 'Central African Republicの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'td': {
+    name: 'Chad',
+    nameEn: 'Chad',
+    flag: '🇹🇩',
+    code: 'td',
+    basic: {
+      capital: 'N\'Djamena',
+      population: '1643万人',
+      language: 'Arabic'
+    },
+    coordinates: {
+      lat: 15.0,
+      lng: 19.0
+    },
+    description: 'Chadの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'cl': {
+    name: 'チリ',
+    nameEn: 'Chile',
+    flag: '🇨🇱',
+    code: 'cl',
+    basic: {
+      capital: 'Santiago',
+      population: '1912万人',
+      language: 'Spanish'
+    },
+    coordinates: {
+      lat: -30.0,
+      lng: -71.0
+    },
+    description: 'チリの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'mo': {
+    name: 'Macao',
+    nameEn: 'Macao',
+    flag: '🇲🇴',
+    code: 'mo',
+    basic: {
+      capital: '',
+      population: '65万人',
+      language: 'Portuguese'
+    },
+    coordinates: {
+      lat: 22.1667,
+      lng: 113.55
+    },
+    description: 'Macaoの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'cx': {
+    name: 'Christmas Island',
+    nameEn: 'Christmas Island',
+    flag: '🇨🇽',
+    code: 'cx',
+    basic: {
+      capital: 'Flying Fish Cove',
+      population: '2.1千人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -10.5,
+      lng: 105.6667
+    },
+    description: 'Christmas Islandの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'cc': {
+    name: 'Cocos (Keeling) Islands',
+    nameEn: 'Cocos (Keeling) Islands',
+    flag: '🇨🇨',
+    code: 'cc',
+    basic: {
+      capital: 'West Island',
+      population: '544人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -12.1642,
+      lng: 96.871
+    },
+    description: 'Cocos (Keeling) Islandsの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'co': {
+    name: 'コロンビア',
+    nameEn: 'Colombia',
+    flag: '🇨🇴',
+    code: 'co',
+    basic: {
+      capital: 'Bogotá',
+      population: '5088万人',
+      language: 'Spanish'
+    },
+    coordinates: {
+      lat: 4.0,
+      lng: -72.0
+    },
+    description: 'コロンビアの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'km': {
+    name: 'Comoros',
+    nameEn: 'Comoros',
+    flag: '🇰🇲',
+    code: 'km',
+    basic: {
+      capital: 'Moroni',
+      population: '87万人',
+      language: 'Arabic'
+    },
+    coordinates: {
+      lat: -12.1667,
+      lng: 44.25
+    },
+    description: 'Comorosの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'cd': {
+    name: 'Congo',
+    nameEn: 'Congo',
+    flag: '🇨🇩',
+    code: 'cd',
+    basic: {
+      capital: 'Kinshasa',
+      population: '1.1億人',
+      language: 'French'
+    },
+    coordinates: {
+      lat: 0.0,
+      lng: 25.0
+    },
+    description: 'Congoの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ck': {
+    name: 'Cook Islands',
+    nameEn: 'Cook Islands',
+    flag: '🇨🇰',
+    code: 'ck',
+    basic: {
+      capital: 'Avarua',
+      population: '2万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -21.2333,
+      lng: -159.7667
+    },
+    description: 'Cook Islandsの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'cr': {
+    name: 'Costa Rica',
+    nameEn: 'Costa Rica',
+    flag: '🇨🇷',
+    code: 'cr',
+    basic: {
+      capital: 'San José',
+      population: '509万人',
+      language: 'Spanish'
+    },
+    coordinates: {
+      lat: 10.0,
+      lng: -84.0
+    },
+    description: 'Costa Ricaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'hr': {
+    name: 'クロアチア',
+    nameEn: 'Croatia',
+    flag: '🇭🇷',
+    code: 'hr',
+    basic: {
+      capital: 'Zagreb',
+      population: '405万人',
+      language: 'Croatian'
+    },
+    coordinates: {
+      lat: 45.1667,
+      lng: 15.5
+    },
+    description: 'クロアチアの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'cu': {
+    name: 'Cuba',
+    nameEn: 'Cuba',
+    flag: '🇨🇺',
+    code: 'cu',
+    basic: {
+      capital: 'Havana',
+      population: '1133万人',
+      language: 'Spanish'
+    },
+    coordinates: {
+      lat: 21.5,
+      lng: -80.0
+    },
+    description: 'Cubaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'cy': {
+    name: 'Cyprus',
+    nameEn: 'Cyprus',
+    flag: '🇨🇾',
+    code: 'cy',
+    basic: {
+      capital: 'Nicosia',
+      population: '121万人',
+      language: 'Greek'
+    },
+    coordinates: {
+      lat: 35.0,
+      lng: 33.0
+    },
+    description: 'Cyprusの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'cz': {
+    name: 'チェコ',
+    nameEn: 'Czech Republic',
+    flag: '🇨🇿',
+    code: 'cz',
+    basic: {
+      capital: 'Prague',
+      population: '1070万人',
+      language: 'Czech'
+    },
+    coordinates: {
+      lat: 49.75,
+      lng: 15.5
+    },
+    description: 'チェコの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'dk': {
+    name: 'デンマーク',
+    nameEn: 'Denmark',
+    flag: '🇩🇰',
+    code: 'dk',
+    basic: {
+      capital: 'Copenhagen',
+      population: '583万人',
+      language: 'Danish'
+    },
+    coordinates: {
+      lat: 56.0,
+      lng: 10.0
+    },
+    description: 'デンマークの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'dj': {
+    name: 'Djibouti',
+    nameEn: 'Djibouti',
+    flag: '🇩🇯',
+    code: 'dj',
+    basic: {
+      capital: 'Djibouti',
+      population: '99万人',
+      language: 'Arabic'
+    },
+    coordinates: {
+      lat: 11.5,
+      lng: 43.0
+    },
+    description: 'Djiboutiの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'dm': {
+    name: 'Dominica',
+    nameEn: 'Dominica',
+    flag: '🇩🇲',
+    code: 'dm',
+    basic: {
+      capital: 'Roseau',
+      population: '7万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 15.4167,
+      lng: -61.3333
+    },
+    description: 'Dominicaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'do': {
+    name: 'Dominican Republic',
+    nameEn: 'Dominican Republic',
+    flag: '🇩🇴',
+    code: 'do',
+    basic: {
+      capital: 'Santo Domingo',
+      population: '1085万人',
+      language: 'Spanish'
+    },
+    coordinates: {
+      lat: 19.0,
+      lng: -70.6667
+    },
+    description: 'Dominican Republicの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ec': {
+    name: 'エクアドル',
+    nameEn: 'Ecuador',
+    flag: '🇪🇨',
+    code: 'ec',
+    basic: {
+      capital: 'Quito',
+      population: '1764万人',
+      language: 'Spanish'
+    },
+    coordinates: {
+      lat: -2.0,
+      lng: -77.5
+    },
+    description: 'エクアドルの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'eg': {
+    name: 'エジプト',
+    nameEn: 'Egypt',
+    flag: '🇪🇬',
+    code: 'eg',
+    basic: {
+      capital: 'Cairo',
+      population: '1.0億人',
+      language: 'Arabic'
+    },
+    coordinates: {
+      lat: 27.0,
+      lng: 30.0
+    },
+    description: 'エジプトの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'sv': {
+    name: 'El Salvador',
+    nameEn: 'El Salvador',
+    flag: '🇸🇻',
+    code: 'sv',
+    basic: {
+      capital: 'San Salvador',
+      population: '649万人',
+      language: 'Spanish'
+    },
+    coordinates: {
+      lat: 13.8333,
+      lng: -88.9167
+    },
+    description: 'El Salvadorの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'gq': {
+    name: 'Equatorial Guinea',
+    nameEn: 'Equatorial Guinea',
+    flag: '🇬🇶',
+    code: 'gq',
+    basic: {
+      capital: 'Malabo',
+      population: '140万人',
+      language: 'French'
+    },
+    coordinates: {
+      lat: 2.0,
+      lng: 10.0
+    },
+    description: 'Equatorial Guineaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'er': {
+    name: 'Eritrea',
+    nameEn: 'Eritrea',
+    flag: '🇪🇷',
+    code: 'er',
+    basic: {
+      capital: 'Asmara',
+      population: '535万人',
+      language: 'Arabic'
+    },
+    coordinates: {
+      lat: 15.0,
+      lng: 39.0
+    },
+    description: 'Eritreaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ee': {
+    name: 'エストニア',
+    nameEn: 'Estonia',
+    flag: '🇪🇪',
+    code: 'ee',
+    basic: {
+      capital: 'Tallinn',
+      population: '133万人',
+      language: 'Estonian'
+    },
+    coordinates: {
+      lat: 59.0,
+      lng: 26.0
+    },
+    description: 'エストニアの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'sz': {
+    name: 'Eswatini',
+    nameEn: 'Eswatini',
+    flag: '🇸🇿',
+    code: 'sz',
+    basic: {
+      capital: 'Mbabane',
+      population: '116万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -26.5,
+      lng: 31.5
+    },
+    description: 'Eswatiniの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'et': {
+    name: 'Ethiopia',
+    nameEn: 'Ethiopia',
+    flag: '🇪🇹',
+    code: 'et',
+    basic: {
+      capital: 'Addis Ababa',
+      population: '1.1億人',
+      language: 'Amharic'
+    },
+    coordinates: {
+      lat: 8.0,
+      lng: 38.0
+    },
+    description: 'Ethiopiaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'fk': {
+    name: 'Falkland Islands (Malvinas)',
+    nameEn: 'Falkland Islands (Malvinas)',
+    flag: '🇫🇰',
+    code: 'fk',
+    basic: {
+      capital: 'Stanley',
+      population: '2.6千人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -51.75,
+      lng: -59.0
+    },
+    description: 'Falkland Islands (Malvinas)の魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'fo': {
+    name: 'Faroe Islands',
+    nameEn: 'Faroe Islands',
+    flag: '🇫🇴',
+    code: 'fo',
+    basic: {
+      capital: 'Tórshavn',
+      population: '5万人',
+      language: 'Danish'
+    },
+    coordinates: {
+      lat: 62.0,
+      lng: -7.0
+    },
+    description: 'Faroe Islandsの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'fj': {
+    name: 'フィジー',
+    nameEn: 'Fiji',
+    flag: '🇫🇯',
+    code: 'fj',
+    basic: {
+      capital: 'Suva',
+      population: '90万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -17.7134,
+      lng: 178.065
+    },
+    description: 'フィジーの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'fi': {
+    name: 'フィンランド',
+    nameEn: 'Finland',
+    flag: '🇫🇮',
+    code: 'fi',
+    basic: {
+      capital: 'Helsinki',
+      population: '553万人',
+      language: 'Finnish'
+    },
+    coordinates: {
+      lat: 64.0,
+      lng: 26.0
+    },
+    description: '北欧の宝石、フィンランドは「幸福度世界一」として知られる魔法のような国です。ラップランドの神秘的なオーロラから、18万8千もの美しい湖まで、息をのむような自然美が広がります。サウナ発祥の地として世界的に有名で、フィンランド人の日常に深く根ざした文化を体験できます。また、ムーミンの故郷としても愛され、童話のような森と湖の風景が現実に広がっています。革新的な教育システムと持続可能な社会を築きながらも、伝統を大切にするバランス感覚は、訪れる人々に深い感動を与えます。',
+    highlights: [
+      {
+        title: '神秘的なオーロラ観測体験',
+        description: 'ラップランドの澄んだ夜空に踊る幻想的なオーロラは、一生に一度は見たい絶景です。特に9月から3月にかけて、イナリやロヴァニエミで最高の観測条件が整います。オーロラハンティングツアーやガラスイグルーでの宿泊など、様々な方法でこの自然の奇跡を体験できます。'
+      },
+      {
+        title: 'サウナ文化の本場',
+        description: 'フィンランド人にとってサウナは生活の一部。550万人の人口に対して300万ものサウナがあり、家族や友人との大切なコミュニケーションの場として親しまれています。湖畔のサウナで汗を流した後、氷の張った湖に飛び込むアヴァントは究極のリフレッシュ体験です。'
+      },
+      {
+        title: 'ムーミンの故郷',
+        description: 'トーベ・ヤンソンが生み出したムーミンの世界が現実に息づく国。ナーンタリのムーミンワールドでは童話の世界を歩き回ることができ、ヘルシンキではムーミン博物館でオリジナル作品に触れられます。森や湖の風景は、まさにムーミンの物語そのものです。'
+      },
+      {
+        title: '18万8千の美しい湖',
+        description: '「千の湖の国」と呼ばれるフィンランドには、実際には18万8千もの湖があります。サイマー湖地方では純白の白夜の季節に湖でのカヌーやフィッシング、冬には氷上ウォーキングが楽しめます。湖畔のコテージでのんびり過ごす時間は、都市生活で疲れた心を癒してくれます。'
+      },
+    ],
+    whyVisit: 'オーロラとサウナ、ムーミンが織りなす北欧の幸福な国で、人生を変える体験を'
+  },
+
+  'fr': {
+    name: 'フランス',
+    nameEn: 'France',
+    flag: '🇫🇷',
+    code: 'fr',
+    basic: {
+      capital: 'Paris',
+      population: '6739万人',
+      language: 'French'
+    },
+    coordinates: {
+      lat: 46.0,
+      lng: 2.0
+    },
+    description: 'フランスの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'gf': {
+    name: 'French Guiana',
+    nameEn: 'French Guiana',
+    flag: '🇬🇫',
+    code: 'gf',
+    basic: {
+      capital: 'Cayenne',
+      population: '25万人',
+      language: 'French'
+    },
+    coordinates: {
+      lat: 4.0,
+      lng: -53.0
+    },
+    description: 'French Guianaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'pf': {
+    name: 'French Polynesia',
+    nameEn: 'French Polynesia',
+    flag: '🇵🇫',
+    code: 'pf',
+    basic: {
+      capital: 'Papeetē',
+      population: '28万人',
+      language: 'French'
+    },
+    coordinates: {
+      lat: -17.6797,
+      lng: -149.4068
+    },
+    description: 'French Polynesiaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'tf': {
+    name: 'French Southern Territories',
+    nameEn: 'French Southern Territories',
+    flag: '🇹🇫',
+    code: 'tf',
+    basic: {
+      capital: 'Port-aux-Français',
+      population: '400人',
+      language: 'French'
+    },
+    coordinates: {
+      lat: -49.25,
+      lng: 69.167
+    },
+    description: 'French Southern Territoriesの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ga': {
+    name: 'Gabon',
+    nameEn: 'Gabon',
+    flag: '🇬🇦',
+    code: 'ga',
+    basic: {
+      capital: 'Libreville',
+      population: '223万人',
+      language: 'French'
+    },
+    coordinates: {
+      lat: -1.0,
+      lng: 11.75
+    },
+    description: 'Gabonの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'gm': {
+    name: 'Gambia',
+    nameEn: 'Gambia',
+    flag: '🇬🇲',
+    code: 'gm',
+    basic: {
+      capital: 'Banjul',
+      population: '242万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 13.4667,
+      lng: -16.5667
+    },
+    description: 'Gambiaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'gs': {
+    name: 'South Georgia and the South Sandwich Islands',
+    nameEn: 'South Georgia and the South Sandwich Islands',
+    flag: '🇬🇸',
+    code: 'gs',
+    basic: {
+      capital: 'King Edward Point',
+      population: '30人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -54.5,
+      lng: -37.0
+    },
+    description: 'South Georgia and the South Sandwich Islandsの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'de': {
+    name: 'ドイツ',
+    nameEn: 'Germany',
+    flag: '🇩🇪',
+    code: 'de',
+    basic: {
+      capital: 'Berlin',
+      population: '8324万人',
+      language: 'German'
+    },
+    coordinates: {
+      lat: 51.0,
+      lng: 9.0
+    },
+    description: 'ドイツの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'gh': {
+    name: 'Ghana',
+    nameEn: 'Ghana',
+    flag: '🇬🇭',
+    code: 'gh',
+    basic: {
+      capital: 'Accra',
+      population: '3107万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 8.0,
+      lng: -2.0
+    },
+    description: 'Ghanaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'gi': {
+    name: 'Gibraltar',
+    nameEn: 'Gibraltar',
+    flag: '🇬🇮',
+    code: 'gi',
+    basic: {
+      capital: 'Gibraltar',
+      population: '3万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 36.1333,
+      lng: -5.35
+    },
+    description: 'Gibraltarの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'gr': {
+    name: 'ギリシャ',
+    nameEn: 'Greece',
+    flag: '🇬🇷',
+    code: 'gr',
+    basic: {
+      capital: 'Athens',
+      population: '1072万人',
+      language: 'Greek'
+    },
+    coordinates: {
+      lat: 39.0,
+      lng: 22.0
+    },
+    description: 'ギリシャの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'gl': {
+    name: 'Greenland',
+    nameEn: 'Greenland',
+    flag: '🇬🇱',
+    code: 'gl',
+    basic: {
+      capital: 'Nuuk',
+      population: '6万人',
+      language: 'Greenlandic'
+    },
+    coordinates: {
+      lat: 72.0,
+      lng: -40.0
+    },
+    description: 'Greenlandの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'gd': {
+    name: 'Grenada',
+    nameEn: 'Grenada',
+    flag: '🇬🇩',
+    code: 'gd',
+    basic: {
+      capital: 'St. George\'s',
+      population: '11万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 12.1167,
+      lng: -61.6667
+    },
+    description: 'Grenadaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'gp': {
+    name: 'Guadeloupe',
+    nameEn: 'Guadeloupe',
+    flag: '🇬🇵',
+    code: 'gp',
+    basic: {
+      capital: 'Basse-Terre',
+      population: '40万人',
+      language: 'French'
+    },
+    coordinates: {
+      lat: 16.25,
+      lng: -61.5833
+    },
+    description: 'Guadeloupeの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'gu': {
+    name: 'Guam',
+    nameEn: 'Guam',
+    flag: '🇬🇺',
+    code: 'gu',
+    basic: {
+      capital: 'Hagåtña',
+      population: '17万人',
+      language: 'Chamorro'
+    },
+    coordinates: {
+      lat: 13.4667,
+      lng: 144.7833
+    },
+    description: 'Guamの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'gt': {
+    name: 'Guatemala',
+    nameEn: 'Guatemala',
+    flag: '🇬🇹',
+    code: 'gt',
+    basic: {
+      capital: 'Guatemala City',
+      population: '1686万人',
+      language: 'Spanish'
+    },
+    coordinates: {
+      lat: 15.5,
+      lng: -90.25
+    },
+    description: 'Guatemalaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'gg': {
+    name: 'Guernsey',
+    nameEn: 'Guernsey',
+    flag: '🇬🇬',
+    code: 'gg',
+    basic: {
+      capital: 'St. Peter Port',
+      population: '6万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 49.4667,
+      lng: -2.5833
+    },
+    description: 'Guernseyの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'gw': {
+    name: 'Guinea-Bissau',
+    nameEn: 'Guinea-Bissau',
+    flag: '🇬🇼',
+    code: 'gw',
+    basic: {
+      capital: 'Bissau',
+      population: '197万人',
+      language: 'Portuguese'
+    },
+    coordinates: {
+      lat: 12.0,
+      lng: -15.0
+    },
+    description: 'Guinea-Bissauの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'gy': {
+    name: 'Guyana',
+    nameEn: 'Guyana',
+    flag: '🇬🇾',
+    code: 'gy',
+    basic: {
+      capital: 'Georgetown',
+      population: '79万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 5.0,
+      lng: -59.0
+    },
+    description: 'Guyanaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ht': {
+    name: 'Haiti',
+    nameEn: 'Haiti',
+    flag: '🇭🇹',
+    code: 'ht',
+    basic: {
+      capital: 'Port-au-Prince',
+      population: '1140万人',
+      language: 'French'
+    },
+    coordinates: {
+      lat: 19.0,
+      lng: -72.4167
+    },
+    description: 'Haitiの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'hm': {
+    name: 'Heard Island and McDonald Islands',
+    nameEn: 'Heard Island and McDonald Islands',
+    flag: '🇭🇲',
+    code: 'hm',
+    basic: {
+      capital: '',
+      population: '0人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -53.0818,
+      lng: 73.5042
+    },
+    description: 'Heard Island and McDonald Islandsの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'va': {
+    name: 'Vatican City',
+    nameEn: 'Vatican City',
+    flag: '🇻🇦',
+    code: 'va',
+    basic: {
+      capital: 'Vatican City',
+      population: '451人',
+      language: 'Italian'
+    },
+    coordinates: {
+      lat: 41.9,
+      lng: 12.45
+    },
+    description: 'Vatican Cityの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'hn': {
+    name: 'Honduras',
+    nameEn: 'Honduras',
+    flag: '🇭🇳',
+    code: 'hn',
+    basic: {
+      capital: 'Tegucigalpa',
+      population: '990万人',
+      language: 'Spanish'
+    },
+    coordinates: {
+      lat: 15.0,
+      lng: -86.5
+    },
+    description: 'Hondurasの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'hk': {
+    name: 'Hong Kong',
+    nameEn: 'Hong Kong',
+    flag: '🇭🇰',
+    code: 'hk',
+    basic: {
+      capital: 'City of Victoria',
+      population: '750万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 22.267,
+      lng: 114.188
+    },
+    description: 'Hong Kongの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'hu': {
+    name: 'ハンガリー',
+    nameEn: 'Hungary',
+    flag: '🇭🇺',
+    code: 'hu',
+    basic: {
+      capital: 'Budapest',
+      population: '975万人',
+      language: 'Hungarian'
+    },
+    coordinates: {
+      lat: 47.0,
+      lng: 20.0
+    },
+    description: 'ハンガリーの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'is': {
+    name: 'アイスランド',
+    nameEn: 'Iceland',
+    flag: '🇮🇸',
+    code: 'is',
+    basic: {
+      capital: 'Reykjavik',
+      population: '37万人',
+      language: 'Icelandic'
+    },
+    coordinates: {
+      lat: 65.0,
+      lng: -18.0
+    },
+    description: 'アイスランドの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'id': {
+    name: 'インドネシア',
+    nameEn: 'Indonesia',
+    flag: '🇮🇩',
+    code: 'id',
+    basic: {
+      capital: 'Jakarta',
+      population: '2.7億人',
+      language: 'Indonesian'
+    },
+    coordinates: {
+      lat: -5.0,
+      lng: 120.0
+    },
+    description: 'インドネシアの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ir': {
+    name: 'イラン',
+    nameEn: 'Iran',
+    flag: '🇮🇷',
+    code: 'ir',
+    basic: {
+      capital: 'Tehran',
+      population: '8399万人',
+      language: 'Persian (Farsi)'
+    },
+    coordinates: {
+      lat: 32.0,
+      lng: 53.0
+    },
+    description: 'イランの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'iq': {
+    name: 'イラク',
+    nameEn: 'Iraq',
+    flag: '🇮🇶',
+    code: 'iq',
+    basic: {
+      capital: 'Baghdad',
+      population: '4022万人',
+      language: 'Arabic'
+    },
+    coordinates: {
+      lat: 33.0,
+      lng: 44.0
+    },
+    description: 'イラクの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ie': {
+    name: 'アイルランド',
+    nameEn: 'Ireland',
+    flag: '🇮🇪',
+    code: 'ie',
+    basic: {
+      capital: 'Dublin',
+      population: '499万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 53.0,
+      lng: -8.0
+    },
+    description: 'アイルランドの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'im': {
+    name: 'Isle of Man',
+    nameEn: 'Isle of Man',
+    flag: '🇮🇲',
+    code: 'im',
+    basic: {
+      capital: 'Douglas',
+      population: '9万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 54.25,
+      lng: -4.5
+    },
+    description: 'Isle of Manの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'il': {
+    name: 'イスラエル',
+    nameEn: 'Israel',
+    flag: '🇮🇱',
+    code: 'il',
+    basic: {
+      capital: 'Jerusalem',
+      population: '922万人',
+      language: 'Arabic'
+    },
+    coordinates: {
+      lat: 31.47,
+      lng: 35.13
+    },
+    description: 'イスラエルの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'it': {
+    name: 'イタリア',
+    nameEn: 'Italy',
+    flag: '🇮🇹',
+    code: 'it',
+    basic: {
+      capital: 'Rome',
+      population: '5955万人',
+      language: 'Italian'
+    },
+    coordinates: {
+      lat: 42.8333,
+      lng: 12.8333
+    },
+    description: 'イタリアの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'jm': {
+    name: 'Jamaica',
+    nameEn: 'Jamaica',
+    flag: '🇯🇲',
+    code: 'jm',
+    basic: {
+      capital: 'Kingston',
+      population: '296万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 18.25,
+      lng: -77.5
+    },
+    description: 'Jamaicaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'jp': {
+    name: '日本',
+    nameEn: 'Japan',
+    flag: '🇯🇵',
+    code: 'jp',
+    basic: {
+      capital: 'Tokyo',
+      population: '1.3億人',
+      language: 'Japanese'
+    },
+    coordinates: {
+      lat: 36.0,
+      lng: 138.0
+    },
+    description: '日本の魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'je': {
+    name: 'Jersey',
+    nameEn: 'Jersey',
+    flag: '🇯🇪',
+    code: 'je',
+    basic: {
+      capital: 'Saint Helier',
+      population: '10万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 49.25,
+      lng: -2.1667
+    },
+    description: 'Jerseyの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'jo': {
+    name: 'ヨルダン',
+    nameEn: 'Jordan',
+    flag: '🇯🇴',
+    code: 'jo',
+    basic: {
+      capital: 'Amman',
+      population: '1020万人',
+      language: 'Arabic'
+    },
+    coordinates: {
+      lat: 31.0,
+      lng: 36.0
+    },
+    description: 'ヨルダンの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'kz': {
+    name: 'カザフスタン',
+    nameEn: 'Kazakhstan',
+    flag: '🇰🇿',
+    code: 'kz',
+    basic: {
+      capital: 'Astana',
+      population: '1875万人',
+      language: 'Kazakh'
+    },
+    coordinates: {
+      lat: 48.0196,
+      lng: 66.9237
+    },
+    description: 'カザフスタンの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ke': {
+    name: 'ケニア',
+    nameEn: 'Kenya',
+    flag: '🇰🇪',
+    code: 'ke',
+    basic: {
+      capital: 'Nairobi',
+      population: '5377万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 1.0,
+      lng: 38.0
+    },
+    description: 'ケニアの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ki': {
+    name: 'キリバス',
+    nameEn: 'Kiribati',
+    flag: '🇰🇮',
+    code: 'ki',
+    basic: {
+      capital: 'South Tarawa',
+      population: '12万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 1.4167,
+      lng: 173.0
+    },
+    description: 'キリバスの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'kp': {
+    name: '北朝鮮',
+    nameEn: 'North Korea',
+    flag: '🇰🇵',
+    code: 'kp',
+    basic: {
+      capital: 'Pyongyang',
+      population: '2578万人',
+      language: 'Korean'
+    },
+    coordinates: {
+      lat: 40.0,
+      lng: 127.0
+    },
+    description: '北朝鮮の魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'kr': {
+    name: '韓国',
+    nameEn: 'South Korea',
+    flag: '🇰🇷',
+    code: 'kr',
+    basic: {
+      capital: 'Seoul',
+      population: '5178万人',
+      language: 'Korean'
+    },
+    coordinates: {
+      lat: 37.0,
+      lng: 127.5
+    },
+    description: '韓国の魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'kw': {
+    name: 'クウェート',
+    nameEn: 'Kuwait',
+    flag: '🇰🇼',
+    code: 'kw',
+    basic: {
+      capital: 'Kuwait City',
+      population: '427万人',
+      language: 'Arabic'
+    },
+    coordinates: {
+      lat: 29.5,
+      lng: 45.75
+    },
+    description: 'クウェートの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'kg': {
+    name: 'キルギス',
+    nameEn: 'Kyrgyzstan',
+    flag: '🇰🇬',
+    code: 'kg',
+    basic: {
+      capital: 'Bishkek',
+      population: '659万人',
+      language: 'Kyrgyz'
+    },
+    coordinates: {
+      lat: 41.0,
+      lng: 75.0
+    },
+    description: 'キルギスの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'la': {
+    name: 'ラオス',
+    nameEn: 'Laos',
+    flag: '🇱🇦',
+    code: 'la',
+    basic: {
+      capital: 'Vientiane',
+      population: '728万人',
+      language: 'Lao'
+    },
+    coordinates: {
+      lat: 18.0,
+      lng: 105.0
+    },
+    description: 'ラオスの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'lv': {
+    name: 'ラトビア',
+    nameEn: 'Latvia',
+    flag: '🇱🇻',
+    code: 'lv',
+    basic: {
+      capital: 'Riga',
+      population: '190万人',
+      language: 'Latvian'
+    },
+    coordinates: {
+      lat: 57.0,
+      lng: 25.0
+    },
+    description: 'ラトビアの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'lb': {
+    name: 'レバノン',
+    nameEn: 'Lebanon',
+    flag: '🇱🇧',
+    code: 'lb',
+    basic: {
+      capital: 'Beirut',
+      population: '683万人',
+      language: 'Arabic'
+    },
+    coordinates: {
+      lat: 33.8333,
+      lng: 35.8333
+    },
+    description: 'レバノンの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ls': {
+    name: 'Lesotho',
+    nameEn: 'Lesotho',
+    flag: '🇱🇸',
+    code: 'ls',
+    basic: {
+      capital: 'Maseru',
+      population: '214万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -29.5,
+      lng: 28.5
+    },
+    description: 'Lesothoの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'lr': {
+    name: 'Liberia',
+    nameEn: 'Liberia',
+    flag: '🇱🇷',
+    code: 'lr',
+    basic: {
+      capital: 'Monrovia',
+      population: '506万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 6.5,
+      lng: -9.5
+    },
+    description: 'Liberiaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ly': {
+    name: 'Libya',
+    nameEn: 'Libya',
+    flag: '🇱🇾',
+    code: 'ly',
+    basic: {
+      capital: 'Tripoli',
+      population: '687万人',
+      language: 'Arabic'
+    },
+    coordinates: {
+      lat: 25.0,
+      lng: 17.0
+    },
+    description: 'Libyaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'li': {
+    name: 'Liechtenstein',
+    nameEn: 'Liechtenstein',
+    flag: '🇱🇮',
+    code: 'li',
+    basic: {
+      capital: 'Vaduz',
+      population: '4万人',
+      language: 'German'
+    },
+    coordinates: {
+      lat: 47.2667,
+      lng: 9.5333
+    },
+    description: 'Liechtensteinの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'lt': {
+    name: 'リトアニア',
+    nameEn: 'Lithuania',
+    flag: '🇱🇹',
+    code: 'lt',
+    basic: {
+      capital: 'Vilnius',
+      population: '279万人',
+      language: 'Lithuanian'
+    },
+    coordinates: {
+      lat: 56.0,
+      lng: 24.0
+    },
+    description: 'リトアニアの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'lu': {
+    name: 'Luxembourg',
+    nameEn: 'Luxembourg',
+    flag: '🇱🇺',
+    code: 'lu',
+    basic: {
+      capital: 'Luxembourg',
+      population: '63万人',
+      language: 'German'
+    },
+    coordinates: {
+      lat: 49.75,
+      lng: 6.1667
+    },
+    description: 'Luxembourgの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'mg': {
+    name: 'Madagascar',
+    nameEn: 'Madagascar',
+    flag: '🇲🇬',
+    code: 'mg',
+    basic: {
+      capital: 'Antananarivo',
+      population: '2769万人',
+      language: 'French'
+    },
+    coordinates: {
+      lat: -20.0,
+      lng: 47.0
+    },
+    description: 'Madagascarの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'mw': {
+    name: 'Malawi',
+    nameEn: 'Malawi',
+    flag: '🇲🇼',
+    code: 'mw',
+    basic: {
+      capital: 'Lilongwe',
+      population: '1913万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -13.5,
+      lng: 34.0
+    },
+    description: 'Malawiの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'my': {
+    name: 'マレーシア',
+    nameEn: 'Malaysia',
+    flag: '🇲🇾',
+    code: 'my',
+    basic: {
+      capital: 'Kuala Lumpur',
+      population: '3237万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 2.5,
+      lng: 112.5
+    },
+    description: 'マレーシアの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'mv': {
+    name: 'モルディブ',
+    nameEn: 'Maldives',
+    flag: '🇲🇻',
+    code: 'mv',
+    basic: {
+      capital: 'Malé',
+      population: '54万人',
+      language: 'Maldivian'
+    },
+    coordinates: {
+      lat: 3.25,
+      lng: 73.0
+    },
+    description: 'モルディブの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'so': {
+    name: 'Somalia',
+    nameEn: 'Somalia',
+    flag: '🇸🇴',
+    code: 'so',
+    basic: {
+      capital: 'Mogadishu',
+      population: '1589万人',
+      language: 'Arabic'
+    },
+    coordinates: {
+      lat: 10.0,
+      lng: 49.0
+    },
+    description: 'Somaliaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'mt': {
+    name: 'Malta',
+    nameEn: 'Malta',
+    flag: '🇲🇹',
+    code: 'mt',
+    basic: {
+      capital: 'Valletta',
+      population: '53万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 35.9375,
+      lng: 14.3754
+    },
+    description: 'Maltaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'mh': {
+    name: 'マーシャル諸島',
+    nameEn: 'Marshall Islands',
+    flag: '🇲🇭',
+    code: 'mh',
+    basic: {
+      capital: 'Majuro',
+      population: '6万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 9.0,
+      lng: 168.0
+    },
+    description: 'マーシャル諸島の魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'mq': {
+    name: 'Martinique',
+    nameEn: 'Martinique',
+    flag: '🇲🇶',
+    code: 'mq',
+    basic: {
+      capital: 'Fort-de-France',
+      population: '38万人',
+      language: 'French'
+    },
+    coordinates: {
+      lat: 14.6667,
+      lng: -61.0
+    },
+    description: 'Martiniqueの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'mr': {
+    name: 'Mauritania',
+    nameEn: 'Mauritania',
+    flag: '🇲🇷',
+    code: 'mr',
+    basic: {
+      capital: 'Nouakchott',
+      population: '465万人',
+      language: 'Arabic'
+    },
+    coordinates: {
+      lat: 20.0,
+      lng: -12.0
+    },
+    description: 'Mauritaniaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'mu': {
+    name: 'Mauritius',
+    nameEn: 'Mauritius',
+    flag: '🇲🇺',
+    code: 'mu',
+    basic: {
+      capital: 'Port Louis',
+      population: '127万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -20.2833,
+      lng: 57.55
+    },
+    description: 'Mauritiusの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'yt': {
+    name: 'Mayotte',
+    nameEn: 'Mayotte',
+    flag: '🇾🇹',
+    code: 'yt',
+    basic: {
+      capital: 'Mamoudzou',
+      population: '23万人',
+      language: 'French'
+    },
+    coordinates: {
+      lat: -12.8333,
+      lng: 45.1667
+    },
+    description: 'Mayotteの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'mx': {
+    name: 'メキシコ',
+    nameEn: 'Mexico',
+    flag: '🇲🇽',
+    code: 'mx',
+    basic: {
+      capital: 'Mexico City',
+      population: '1.3億人',
+      language: 'Spanish'
+    },
+    coordinates: {
+      lat: 23.0,
+      lng: -102.0
+    },
+    description: 'メキシコの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'fm': {
+    name: 'ミクロネシア',
+    nameEn: 'Micronesia',
+    flag: '🇫🇲',
+    code: 'fm',
+    basic: {
+      capital: 'Palikir',
+      population: '12万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 6.9167,
+      lng: 158.25
+    },
+    description: 'ミクロネシアの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'md': {
+    name: 'Moldova',
+    nameEn: 'Moldova',
+    flag: '🇲🇩',
+    code: 'md',
+    basic: {
+      capital: 'Chișinău',
+      population: '262万人',
+      language: 'Romanian'
+    },
+    coordinates: {
+      lat: 47.0,
+      lng: 29.0
+    },
+    description: 'Moldovaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'mc': {
+    name: 'Monaco',
+    nameEn: 'Monaco',
+    flag: '🇲🇨',
+    code: 'mc',
+    basic: {
+      capital: 'Monaco',
+      population: '4万人',
+      language: 'French'
+    },
+    coordinates: {
+      lat: 43.7333,
+      lng: 7.4
+    },
+    description: 'Monacoの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'mn': {
+    name: 'モンゴル',
+    nameEn: 'Mongolia',
+    flag: '🇲🇳',
+    code: 'mn',
+    basic: {
+      capital: 'Ulan Bator',
+      population: '328万人',
+      language: 'Mongolian'
+    },
+    coordinates: {
+      lat: 46.0,
+      lng: 105.0
+    },
+    description: 'モンゴルの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'me': {
+    name: 'Montenegro',
+    nameEn: 'Montenegro',
+    flag: '🇲🇪',
+    code: 'me',
+    basic: {
+      capital: 'Podgorica',
+      population: '62万人',
+      language: 'Montenegrin'
+    },
+    coordinates: {
+      lat: 42.5,
+      lng: 19.3
+    },
+    description: 'Montenegroの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ms': {
+    name: 'Montserrat',
+    nameEn: 'Montserrat',
+    flag: '🇲🇸',
+    code: 'ms',
+    basic: {
+      capital: 'Plymouth',
+      population: '4.9千人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 16.75,
+      lng: -62.2
+    },
+    description: 'Montserratの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ma': {
+    name: 'モロッコ',
+    nameEn: 'Morocco',
+    flag: '🇲🇦',
+    code: 'ma',
+    basic: {
+      capital: 'Rabat',
+      population: '3691万人',
+      language: 'Arabic'
+    },
+    coordinates: {
+      lat: 32.0,
+      lng: -5.0
+    },
+    description: 'モロッコの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'mz': {
+    name: 'Mozambique',
+    nameEn: 'Mozambique',
+    flag: '🇲🇿',
+    code: 'mz',
+    basic: {
+      capital: 'Maputo',
+      population: '3126万人',
+      language: 'Portuguese'
+    },
+    coordinates: {
+      lat: -18.25,
+      lng: 35.0
+    },
+    description: 'Mozambiqueの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'mm': {
+    name: 'ミャンマー',
+    nameEn: 'Myanmar',
+    flag: '🇲🇲',
+    code: 'mm',
+    basic: {
+      capital: 'Naypyidaw',
+      population: '5441万人',
+      language: 'Burmese'
+    },
+    coordinates: {
+      lat: 22.0,
+      lng: 98.0
+    },
+    description: 'ミャンマーの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'na': {
+    name: 'Namibia',
+    nameEn: 'Namibia',
+    flag: '🇳🇦',
+    code: 'na',
+    basic: {
+      capital: 'Windhoek',
+      population: '254万人',
+      language: 'Afrikaans'
+    },
+    coordinates: {
+      lat: -22.0,
+      lng: 17.0
+    },
+    description: 'Namibiaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'nr': {
+    name: 'ナウル',
+    nameEn: 'Nauru',
+    flag: '🇳🇷',
+    code: 'nr',
+    basic: {
+      capital: 'Yaren',
+      population: '1万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -0.5333,
+      lng: 166.9167
+    },
+    description: 'ナウルの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'np': {
+    name: 'ネパール',
+    nameEn: 'Nepal',
+    flag: '🇳🇵',
+    code: 'np',
+    basic: {
+      capital: 'Kathmandu',
+      population: '2914万人',
+      language: 'Nepali'
+    },
+    coordinates: {
+      lat: 28.0,
+      lng: 84.0
+    },
+    description: 'ネパールの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'nc': {
+    name: 'New Caledonia',
+    nameEn: 'New Caledonia',
+    flag: '🇳🇨',
+    code: 'nc',
+    basic: {
+      capital: 'Nouméa',
+      population: '27万人',
+      language: 'French'
+    },
+    coordinates: {
+      lat: -21.5,
+      lng: 165.5
+    },
+    description: 'New Caledoniaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'nz': {
+    name: 'ニュージーランド',
+    nameEn: 'New Zealand',
+    flag: '🇳🇿',
+    code: 'nz',
+    basic: {
+      capital: 'Wellington',
+      population: '508万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -41.0,
+      lng: 174.0
+    },
+    description: 'ニュージーランドの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ni': {
+    name: 'Nicaragua',
+    nameEn: 'Nicaragua',
+    flag: '🇳🇮',
+    code: 'ni',
+    basic: {
+      capital: 'Managua',
+      population: '662万人',
+      language: 'Spanish'
+    },
+    coordinates: {
+      lat: 13.0,
+      lng: -85.0
+    },
+    description: 'Nicaraguaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ng': {
+    name: 'ナイジェリア',
+    nameEn: 'Nigeria',
+    flag: '🇳🇬',
+    code: 'ng',
+    basic: {
+      capital: 'Abuja',
+      population: '2.1億人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 10.0,
+      lng: 8.0
+    },
+    description: 'ナイジェリアの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'nu': {
+    name: 'Niue',
+    nameEn: 'Niue',
+    flag: '🇳🇺',
+    code: 'nu',
+    basic: {
+      capital: 'Alofi',
+      population: '1.5千人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -19.0333,
+      lng: -169.8667
+    },
+    description: 'Niueの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'nf': {
+    name: 'Norfolk Island',
+    nameEn: 'Norfolk Island',
+    flag: '🇳🇫',
+    code: 'nf',
+    basic: {
+      capital: 'Kingston',
+      population: '2.3千人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -29.0333,
+      lng: 167.95
+    },
+    description: 'Norfolk Islandの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'mk': {
+    name: 'North Macedonia',
+    nameEn: 'North Macedonia',
+    flag: '🇲🇰',
+    code: 'mk',
+    basic: {
+      capital: 'Skopje',
+      population: '208万人',
+      language: 'Macedonian'
+    },
+    coordinates: {
+      lat: 41.8333,
+      lng: 22.0
+    },
+    description: 'North Macedoniaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'mp': {
+    name: 'Northern Mariana Islands',
+    nameEn: 'Northern Mariana Islands',
+    flag: '🇲🇵',
+    code: 'mp',
+    basic: {
+      capital: 'Saipan',
+      population: '6万人',
+      language: 'Carolinian'
+    },
+    coordinates: {
+      lat: 15.2,
+      lng: 145.75
+    },
+    description: 'Northern Mariana Islandsの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'no': {
+    name: 'ノルウェー',
+    nameEn: 'Norway',
+    flag: '🇳🇴',
+    code: 'no',
+    basic: {
+      capital: 'Oslo',
+      population: '538万人',
+      language: 'Norwegian Nynorsk'
+    },
+    coordinates: {
+      lat: 62.0,
+      lng: 10.0
+    },
+    description: 'ノルウェーの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ro': {
+    name: 'ルーマニア',
+    nameEn: 'Romania',
+    flag: '🇷🇴',
+    code: 'ro',
+    basic: {
+      capital: 'Bucharest',
+      population: '1929万人',
+      language: 'Romanian'
+    },
+    coordinates: {
+      lat: 46.0,
+      lng: 25.0
+    },
+    description: 'ルーマニアの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'pk': {
+    name: 'パキスタン',
+    nameEn: 'Pakistan',
+    flag: '🇵🇰',
+    code: 'pk',
+    basic: {
+      capital: 'Islamabad',
+      population: '2.2億人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 30.0,
+      lng: 70.0
+    },
+    description: 'パキスタンの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'pw': {
+    name: 'パラオ',
+    nameEn: 'Palau',
+    flag: '🇵🇼',
+    code: 'pw',
+    basic: {
+      capital: 'Ngerulmud',
+      population: '2万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 7.5,
+      lng: 134.5
+    },
+    description: 'パラオの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ps': {
+    name: 'Palestine, State of',
+    nameEn: 'Palestine, State of',
+    flag: '🇵🇸',
+    code: 'ps',
+    basic: {
+      capital: 'Ramallah',
+      population: '480万人',
+      language: 'Arabic'
+    },
+    coordinates: {
+      lat: 31.9,
+      lng: 35.2
+    },
+    description: 'Palestine, State ofの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'pa': {
+    name: 'Panama',
+    nameEn: 'Panama',
+    flag: '🇵🇦',
+    code: 'pa',
+    basic: {
+      capital: 'Panama City',
+      population: '431万人',
+      language: 'Spanish'
+    },
+    coordinates: {
+      lat: 9.0,
+      lng: -80.0
+    },
+    description: 'Panamaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'pg': {
+    name: 'パプアニューギニア',
+    nameEn: 'Papua New Guinea',
+    flag: '🇵🇬',
+    code: 'pg',
+    basic: {
+      capital: 'Port Moresby',
+      population: '895万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -6.0,
+      lng: 147.0
+    },
+    description: 'パプアニューギニアの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'py': {
+    name: 'パラグアイ',
+    nameEn: 'Paraguay',
+    flag: '🇵🇾',
+    code: 'py',
+    basic: {
+      capital: 'Asunción',
+      population: '713万人',
+      language: 'Guaraní'
+    },
+    coordinates: {
+      lat: -23.0,
+      lng: -58.0
+    },
+    description: 'パラグアイの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'pe': {
+    name: 'ペルー',
+    nameEn: 'Peru',
+    flag: '🇵🇪',
+    code: 'pe',
+    basic: {
+      capital: 'Lima',
+      population: '3297万人',
+      language: 'Aymara'
+    },
+    coordinates: {
+      lat: -10.0,
+      lng: -76.0
+    },
+    description: 'ペルーの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ph': {
+    name: 'フィリピン',
+    nameEn: 'Philippines',
+    flag: '🇵🇭',
+    code: 'ph',
+    basic: {
+      capital: 'Manila',
+      population: '1.1億人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 13.0,
+      lng: 122.0
+    },
+    description: 'フィリピンの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'pn': {
+    name: 'Pitcairn',
+    nameEn: 'Pitcairn',
+    flag: '🇵🇳',
+    code: 'pn',
+    basic: {
+      capital: 'Adamstown',
+      population: '56人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -25.0667,
+      lng: -130.1
+    },
+    description: 'Pitcairnの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'pl': {
+    name: 'ポーランド',
+    nameEn: 'Poland',
+    flag: '🇵🇱',
+    code: 'pl',
+    basic: {
+      capital: 'Warsaw',
+      population: '3795万人',
+      language: 'Polish'
+    },
+    coordinates: {
+      lat: 52.0,
+      lng: 20.0
+    },
+    description: 'ポーランドの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'pt': {
+    name: 'ポルトガル',
+    nameEn: 'Portugal',
+    flag: '🇵🇹',
+    code: 'pt',
+    basic: {
+      capital: 'Lisbon',
+      population: '1031万人',
+      language: 'Portuguese'
+    },
+    coordinates: {
+      lat: 39.5,
+      lng: -8.0
+    },
+    description: 'ポルトガルの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'pr': {
+    name: 'Puerto Rico',
+    nameEn: 'Puerto Rico',
+    flag: '🇵🇷',
+    code: 'pr',
+    basic: {
+      capital: 'San Juan',
+      population: '319万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 18.25,
+      lng: -66.5
+    },
+    description: 'Puerto Ricoの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'qa': {
+    name: 'カタール',
+    nameEn: 'Qatar',
+    flag: '🇶🇦',
+    code: 'qa',
+    basic: {
+      capital: 'Doha',
+      population: '288万人',
+      language: 'Arabic'
+    },
+    coordinates: {
+      lat: 25.5,
+      lng: 51.25
+    },
+    description: 'カタールの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ru': {
+    name: 'ロシア',
+    nameEn: 'Russia',
+    flag: '🇷🇺',
+    code: 'ru',
+    basic: {
+      capital: 'Moscow',
+      population: '1.4億人',
+      language: 'Russian'
+    },
+    coordinates: {
+      lat: 60.0,
+      lng: 100.0
+    },
+    description: 'ロシアの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'rw': {
+    name: 'Rwanda',
+    nameEn: 'Rwanda',
+    flag: '🇷🇼',
+    code: 'rw',
+    basic: {
+      capital: 'Kigali',
+      population: '1295万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -2.0,
+      lng: 30.0
+    },
+    description: 'Rwandaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'sh': {
+    name: 'Saint Helena, Ascension and Tristan da Cunha',
+    nameEn: 'Saint Helena, Ascension and Tristan da Cunha',
+    flag: '🇸🇭',
+    code: 'sh',
+    basic: {
+      capital: 'Jamestown',
+      population: '5万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -15.95,
+      lng: -5.72
+    },
+    description: 'Saint Helena, Ascension and Tristan da Cunhaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'kn': {
+    name: 'Saint Kitts and Nevis',
+    nameEn: 'Saint Kitts and Nevis',
+    flag: '🇰🇳',
+    code: 'kn',
+    basic: {
+      capital: 'Basseterre',
+      population: '5万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 17.3333,
+      lng: -62.75
+    },
+    description: 'Saint Kitts and Nevisの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'lc': {
+    name: 'Saint Lucia',
+    nameEn: 'Saint Lucia',
+    flag: '🇱🇨',
+    code: 'lc',
+    basic: {
+      capital: 'Castries',
+      population: '18万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 13.8833,
+      lng: -60.9667
+    },
+    description: 'Saint Luciaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'mf': {
+    name: 'Saint Martin (French part)',
+    nameEn: 'Saint Martin (French part)',
+    flag: '🇲🇫',
+    code: 'mf',
+    basic: {
+      capital: 'Marigot',
+      population: '4万人',
+      language: 'French'
+    },
+    coordinates: {
+      lat: 18.0708,
+      lng: -63.0501
+    },
+    description: 'Saint Martin (French part)の魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'pm': {
+    name: 'Saint Pierre and Miquelon',
+    nameEn: 'Saint Pierre and Miquelon',
+    flag: '🇵🇲',
+    code: 'pm',
+    basic: {
+      capital: 'Saint-Pierre',
+      population: '6.1千人',
+      language: 'French'
+    },
+    coordinates: {
+      lat: 46.8333,
+      lng: -56.3333
+    },
+    description: 'Saint Pierre and Miquelonの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'vc': {
+    name: 'Saint Vincent and the Grenadines',
+    nameEn: 'Saint Vincent and the Grenadines',
+    flag: '🇻🇨',
+    code: 'vc',
+    basic: {
+      capital: 'Kingstown',
+      population: '11万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 13.25,
+      lng: -61.2
+    },
+    description: 'Saint Vincent and the Grenadinesの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'sm': {
+    name: 'San Marino',
+    nameEn: 'San Marino',
+    flag: '🇸🇲',
+    code: 'sm',
+    basic: {
+      capital: 'City of San Marino',
+      population: '3万人',
+      language: 'Italian'
+    },
+    coordinates: {
+      lat: 43.7667,
+      lng: 12.4167
+    },
+    description: 'San Marinoの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'st': {
+    name: 'Sao Tome and Principe',
+    nameEn: 'Sao Tome and Principe',
+    flag: '🇸🇹',
+    code: 'st',
+    basic: {
+      capital: 'São Tomé',
+      population: '22万人',
+      language: 'Portuguese'
+    },
+    coordinates: {
+      lat: 1.0,
+      lng: 7.0
+    },
+    description: 'Sao Tome and Principeの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'sa': {
+    name: 'サウジアラビア',
+    nameEn: 'Saudi Arabia',
+    flag: '🇸🇦',
+    code: 'sa',
+    basic: {
+      capital: 'Riyadh',
+      population: '3481万人',
+      language: 'Arabic'
+    },
+    coordinates: {
+      lat: 25.0,
+      lng: 45.0
+    },
+    description: 'サウジアラビアの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'sn': {
+    name: 'Senegal',
+    nameEn: 'Senegal',
+    flag: '🇸🇳',
+    code: 'sn',
+    basic: {
+      capital: 'Dakar',
+      population: '1674万人',
+      language: 'French'
+    },
+    coordinates: {
+      lat: 14.0,
+      lng: -14.0
+    },
+    description: 'Senegalの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'rs': {
+    name: 'セルビア',
+    nameEn: 'Serbia',
+    flag: '🇷🇸',
+    code: 'rs',
+    basic: {
+      capital: 'Belgrade',
+      population: '691万人',
+      language: 'Serbian'
+    },
+    coordinates: {
+      lat: 44.0,
+      lng: 21.0
+    },
+    description: 'セルビアの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'sc': {
+    name: 'Seychelles',
+    nameEn: 'Seychelles',
+    flag: '🇸🇨',
+    code: 'sc',
+    basic: {
+      capital: 'Victoria',
+      population: '10万人',
+      language: 'Seychellois Creole'
+    },
+    coordinates: {
+      lat: -4.5833,
+      lng: 55.6667
+    },
+    description: 'Seychellesの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'sl': {
+    name: 'Sierra Leone',
+    nameEn: 'Sierra Leone',
+    flag: '🇸🇱',
+    code: 'sl',
+    basic: {
+      capital: 'Freetown',
+      population: '798万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 8.5,
+      lng: -11.5
+    },
+    description: 'Sierra Leoneの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'sg': {
+    name: 'シンガポール',
+    nameEn: 'Singapore',
+    flag: '🇸🇬',
+    code: 'sg',
+    basic: {
+      capital: 'Singapore',
+      population: '569万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 1.3667,
+      lng: 103.8
+    },
+    description: 'シンガポールの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'sx': {
+    name: 'Sint Maarten (Dutch part)',
+    nameEn: 'Sint Maarten (Dutch part)',
+    flag: '🇸🇽',
+    code: 'sx',
+    basic: {
+      capital: 'Philipsburg',
+      population: '4万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 18.0333,
+      lng: -63.05
+    },
+    description: 'Sint Maarten (Dutch part)の魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'sk': {
+    name: 'Slovakia',
+    nameEn: 'Slovakia',
+    flag: '🇸🇰',
+    code: 'sk',
+    basic: {
+      capital: 'Bratislava',
+      population: '546万人',
+      language: 'Slovak'
+    },
+    coordinates: {
+      lat: 48.6667,
+      lng: 19.5
+    },
+    description: 'Slovakiaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'si': {
+    name: 'Slovenia',
+    nameEn: 'Slovenia',
+    flag: '🇸🇮',
+    code: 'si',
+    basic: {
+      capital: 'Ljubljana',
+      population: '210万人',
+      language: 'Slovene'
+    },
+    coordinates: {
+      lat: 46.1167,
+      lng: 14.8167
+    },
+    description: 'Sloveniaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'sb': {
+    name: 'ソロモン諸島',
+    nameEn: 'Solomon Islands',
+    flag: '🇸🇧',
+    code: 'sb',
+    basic: {
+      capital: 'Honiara',
+      population: '69万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -8.0,
+      lng: 159.0
+    },
+    description: 'ソロモン諸島の魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'za': {
+    name: '南アフリカ',
+    nameEn: 'South Africa',
+    flag: '🇿🇦',
+    code: 'za',
+    basic: {
+      capital: 'Pretoria',
+      population: '5931万人',
+      language: 'Afrikaans'
+    },
+    coordinates: {
+      lat: -29.0,
+      lng: 24.0
+    },
+    description: '南アフリカの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ss': {
+    name: 'South Sudan',
+    nameEn: 'South Sudan',
+    flag: '🇸🇸',
+    code: 'ss',
+    basic: {
+      capital: 'Juba',
+      population: '1119万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 7.0,
+      lng: 30.0
+    },
+    description: 'South Sudanの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'es': {
+    name: 'スペイン',
+    nameEn: 'Spain',
+    flag: '🇪🇸',
+    code: 'es',
+    basic: {
+      capital: 'Madrid',
+      population: '4735万人',
+      language: 'Spanish'
+    },
+    coordinates: {
+      lat: 40.0,
+      lng: -4.0
+    },
+    description: 'スペインの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'lk': {
+    name: 'スリランカ',
+    nameEn: 'Sri Lanka',
+    flag: '🇱🇰',
+    code: 'lk',
+    basic: {
+      capital: 'Sri Jayawardenepura Kotte',
+      population: '2192万人',
+      language: 'Sinhala'
+    },
+    coordinates: {
+      lat: 7.0,
+      lng: 81.0
+    },
+    description: 'スリランカの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'sd': {
+    name: 'Sudan',
+    nameEn: 'Sudan',
+    flag: '🇸🇩',
+    code: 'sd',
+    basic: {
+      capital: 'Khartoum',
+      population: '4385万人',
+      language: 'Arabic'
+    },
+    coordinates: {
+      lat: 15.0,
+      lng: 30.0
+    },
+    description: 'Sudanの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'sr': {
+    name: 'Suriname',
+    nameEn: 'Suriname',
+    flag: '🇸🇷',
+    code: 'sr',
+    basic: {
+      capital: 'Paramaribo',
+      population: '59万人',
+      language: 'Dutch'
+    },
+    coordinates: {
+      lat: 4.0,
+      lng: -56.0
+    },
+    description: 'Surinameの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'sj': {
+    name: 'Svalbard and Jan Mayen',
+    nameEn: 'Svalbard and Jan Mayen',
+    flag: '🇸🇯',
+    code: 'sj',
+    basic: {
+      capital: 'Longyearbyen',
+      population: '2.6千人',
+      language: 'Norwegian'
+    },
+    coordinates: {
+      lat: 78.0,
+      lng: 20.0
+    },
+    description: 'Svalbard and Jan Mayenの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'se': {
+    name: 'スウェーデン',
+    nameEn: 'Sweden',
+    flag: '🇸🇪',
+    code: 'se',
+    basic: {
+      capital: 'Stockholm',
+      population: '1035万人',
+      language: 'Swedish'
+    },
+    coordinates: {
+      lat: 62.0,
+      lng: 15.0
+    },
+    description: 'スウェーデンの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ch': {
+    name: 'スイス',
+    nameEn: 'Switzerland',
+    flag: '🇨🇭',
+    code: 'ch',
+    basic: {
+      capital: 'Bern',
+      population: '865万人',
+      language: 'French'
+    },
+    coordinates: {
+      lat: 47.0,
+      lng: 8.0
+    },
+    description: 'スイスの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'sy': {
+    name: 'Syrian Arab Republic',
+    nameEn: 'Syrian Arab Republic',
+    flag: '🇸🇾',
+    code: 'sy',
+    basic: {
+      capital: 'Damascus',
+      population: '1750万人',
+      language: 'Arabic'
+    },
+    coordinates: {
+      lat: 35.0,
+      lng: 38.0
+    },
+    description: 'Syrian Arab Republicの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'tj': {
+    name: 'タジキスタン',
+    nameEn: 'Tajikistan',
+    flag: '🇹🇯',
+    code: 'tj',
+    basic: {
+      capital: 'Dushanbe',
+      population: '954万人',
+      language: 'Russian'
+    },
+    coordinates: {
+      lat: 39.0,
+      lng: 71.0
+    },
+    description: 'タジキスタンの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'tz': {
+    name: 'Tanzania',
+    nameEn: 'Tanzania',
+    flag: '🇹🇿',
+    code: 'tz',
+    basic: {
+      capital: 'Dodoma',
+      population: '5973万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -6.0,
+      lng: 35.0
+    },
+    description: 'Tanzaniaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'th': {
+    name: 'タイ',
+    nameEn: 'Thailand',
+    flag: '🇹🇭',
+    code: 'th',
+    basic: {
+      capital: 'Bangkok',
+      population: '6980万人',
+      language: 'Thai'
+    },
+    coordinates: {
+      lat: 15.0,
+      lng: 100.0
+    },
+    description: 'タイの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'tl': {
+    name: 'East Timor',
+    nameEn: 'East Timor',
+    flag: '🇹🇱',
+    code: 'tl',
+    basic: {
+      capital: 'Dili',
+      population: '132万人',
+      language: 'Portuguese'
+    },
+    coordinates: {
+      lat: -8.8333,
+      lng: 125.9167
+    },
+    description: 'East Timorの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'tg': {
+    name: 'Togo',
+    nameEn: 'Togo',
+    flag: '🇹🇬',
+    code: 'tg',
+    basic: {
+      capital: 'Lomé',
+      population: '828万人',
+      language: 'French'
+    },
+    coordinates: {
+      lat: 8.0,
+      lng: 1.1667
+    },
+    description: 'Togoの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'tk': {
+    name: 'Tokelau',
+    nameEn: 'Tokelau',
+    flag: '🇹🇰',
+    code: 'tk',
+    basic: {
+      capital: 'Fakaofo',
+      population: '1.4千人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -9.0,
+      lng: -172.0
+    },
+    description: 'Tokelauの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'to': {
+    name: 'トンガ',
+    nameEn: 'Tonga',
+    flag: '🇹🇴',
+    code: 'to',
+    basic: {
+      capital: 'Nuku\'alofa',
+      population: '11万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -20.0,
+      lng: -175.0
+    },
+    description: 'トンガの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'tt': {
+    name: 'Trinidad and Tobago',
+    nameEn: 'Trinidad and Tobago',
+    flag: '🇹🇹',
+    code: 'tt',
+    basic: {
+      capital: 'Port of Spain',
+      population: '140万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 10.6918,
+      lng: -61.2225
+    },
+    description: 'Trinidad and Tobagoの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'tn': {
+    name: 'Tunisia',
+    nameEn: 'Tunisia',
+    flag: '🇹🇳',
+    code: 'tn',
+    basic: {
+      capital: 'Tunis',
+      population: '1182万人',
+      language: 'Arabic'
+    },
+    coordinates: {
+      lat: 34.0,
+      lng: 9.0
+    },
+    description: 'Tunisiaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'tr': {
+    name: 'トルコ',
+    nameEn: 'Turkey',
+    flag: '🇹🇷',
+    code: 'tr',
+    basic: {
+      capital: 'Ankara',
+      population: '8434万人',
+      language: 'Turkish'
+    },
+    coordinates: {
+      lat: 39.0,
+      lng: 35.0
+    },
+    description: 'トルコの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'tm': {
+    name: 'トルクメニスタン',
+    nameEn: 'Turkmenistan',
+    flag: '🇹🇲',
+    code: 'tm',
+    basic: {
+      capital: 'Ashgabat',
+      population: '603万人',
+      language: 'Russian'
+    },
+    coordinates: {
+      lat: 40.0,
+      lng: 60.0
+    },
+    description: 'トルクメニスタンの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'tc': {
+    name: 'Turks and Caicos Islands',
+    nameEn: 'Turks and Caicos Islands',
+    flag: '🇹🇨',
+    code: 'tc',
+    basic: {
+      capital: 'Cockburn Town',
+      population: '4万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 21.75,
+      lng: -71.5833
+    },
+    description: 'Turks and Caicos Islandsの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'tv': {
+    name: 'ツバル',
+    nameEn: 'Tuvalu',
+    flag: '🇹🇻',
+    code: 'tv',
+    basic: {
+      capital: 'Funafuti',
+      population: '1万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -8.0,
+      lng: 178.0
+    },
+    description: 'ツバルの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ug': {
+    name: 'Uganda',
+    nameEn: 'Uganda',
+    flag: '🇺🇬',
+    code: 'ug',
+    basic: {
+      capital: 'Kampala',
+      population: '4574万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 1.0,
+      lng: 32.0
+    },
+    description: 'Ugandaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ua': {
+    name: 'ウクライナ',
+    nameEn: 'Ukraine',
+    flag: '🇺🇦',
+    code: 'ua',
+    basic: {
+      capital: 'Kyiv',
+      population: '4413万人',
+      language: 'Ukrainian'
+    },
+    coordinates: {
+      lat: 49.0,
+      lng: 32.0
+    },
+    description: 'ウクライナの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ae': {
+    name: 'アラブ首長国連邦',
+    nameEn: 'United Arab Emirates',
+    flag: '🇦🇪',
+    code: 'ae',
+    basic: {
+      capital: 'Abu Dhabi',
+      population: '989万人',
+      language: 'Arabic'
+    },
+    coordinates: {
+      lat: 24.0,
+      lng: 54.0
+    },
+    description: 'アラブ首長国連邦の魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'gb': {
+    name: 'イギリス',
+    nameEn: 'United Kingdom',
+    flag: '🇬🇧',
+    code: 'gb',
+    basic: {
+      capital: 'London',
+      population: '6722万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 54.0,
+      lng: -2.0
+    },
+    description: 'イギリスの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'um': {
+    name: 'United States Minor Outlying Islands',
+    nameEn: 'United States Minor Outlying Islands',
+    flag: '🇺🇲',
+    code: 'um',
+    basic: {
+      capital: 'Washington DC',
+      population: '300人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: 19.3,
+      lng: 166.6333
+    },
+    description: 'United States Minor Outlying Islandsの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'uy': {
+    name: 'ウルグアイ',
+    nameEn: 'Uruguay',
+    flag: '🇺🇾',
+    code: 'uy',
+    basic: {
+      capital: 'Montevideo',
+      population: '347万人',
+      language: 'Spanish'
+    },
+    coordinates: {
+      lat: -33.0,
+      lng: -56.0
+    },
+    description: 'ウルグアイの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'uz': {
+    name: 'ウズベキスタン',
+    nameEn: 'Uzbekistan',
+    flag: '🇺🇿',
+    code: 'uz',
+    basic: {
+      capital: 'Tashkent',
+      population: '3423万人',
+      language: 'Russian'
+    },
+    coordinates: {
+      lat: 41.0,
+      lng: 64.0
+    },
+    description: 'ウズベキスタンの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'vu': {
+    name: 'バヌアツ',
+    nameEn: 'Vanuatu',
+    flag: '🇻🇺',
+    code: 'vu',
+    basic: {
+      capital: 'Port Vila',
+      population: '31万人',
+      language: 'Bislama'
+    },
+    coordinates: {
+      lat: -16.0,
+      lng: 167.0
+    },
+    description: 'バヌアツの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  've': {
+    name: 'ベネズエラ',
+    nameEn: 'Venezuela',
+    flag: '🇻🇪',
+    code: 've',
+    basic: {
+      capital: 'Caracas',
+      population: '2844万人',
+      language: 'Spanish'
+    },
+    coordinates: {
+      lat: 8.0,
+      lng: -66.0
+    },
+    description: 'ベネズエラの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'vn': {
+    name: 'ベトナム',
+    nameEn: 'Vietnam',
+    flag: '🇻🇳',
+    code: 'vn',
+    basic: {
+      capital: 'Hanoi',
+      population: '9734万人',
+      language: 'Vietnamese'
+    },
+    coordinates: {
+      lat: 16.1667,
+      lng: 107.8333
+    },
+    description: 'ベトナムの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'wf': {
+    name: 'Wallis and Futuna',
+    nameEn: 'Wallis and Futuna',
+    flag: '🇼🇫',
+    code: 'wf',
+    basic: {
+      capital: 'Mata-Utu',
+      population: '1万人',
+      language: 'French'
+    },
+    coordinates: {
+      lat: -13.3,
+      lng: -176.2
+    },
+    description: 'Wallis and Futunaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'eh': {
+    name: 'Western Sahara',
+    nameEn: 'Western Sahara',
+    flag: '🇪🇭',
+    code: 'eh',
+    basic: {
+      capital: 'El Aaiún',
+      population: '51万人',
+      language: 'Berber'
+    },
+    coordinates: {
+      lat: 24.5,
+      lng: -13.0
+    },
+    description: 'Western Saharaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'ye': {
+    name: 'Yemen',
+    nameEn: 'Yemen',
+    flag: '🇾🇪',
+    code: 'ye',
+    basic: {
+      capital: 'Sana\'a',
+      population: '2983万人',
+      language: 'Arabic'
+    },
+    coordinates: {
+      lat: 15.0,
+      lng: 48.0
+    },
+    description: 'Yemenの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'zm': {
+    name: 'Zambia',
+    nameEn: 'Zambia',
+    flag: '🇿🇲',
+    code: 'zm',
+    basic: {
+      capital: 'Lusaka',
+      population: '1838万人',
+      language: 'English'
+    },
+    coordinates: {
+      lat: -15.0,
+      lng: 30.0
+    },
+    description: 'Zambiaの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+  'zw': {
+    name: 'Zimbabwe',
+    nameEn: 'Zimbabwe',
+    flag: '🇿🇼',
+    code: 'zw',
+    basic: {
+      capital: 'Harare',
+      population: '1486万人',
+      language: 'Chibarwe'
+    },
+    coordinates: {
+      lat: -20.0,
+      lng: 30.0
+    },
+    description: 'Zimbabweの魅力的な国です。',
+    highlights: [
+      {
+        title: '文化的魅力',
+        description: 'この国独特の文化を体験できます。'
+      },
+      {
+        title: '自然の美しさ',
+        description: '美しい自然景観を楽しめます。'
+      },
+      {
+        title: '歴史的価値',
+        description: '豊かな歴史を感じることができます。'
+      },
+      {
+        title: '地域の特色',
+        description: '地域ならではの特色があります。'
+      },
+    ],
+    whyVisit: '独特な体験ができる魅力的な国'
+  },
+
+};

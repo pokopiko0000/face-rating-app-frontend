@@ -1,7 +1,7 @@
 type HighlightImageMap = Record<string, Record<string, string>>;
 
 const highlightImages: HighlightImageMap = {
-  'finland': {
+  'fi': {
     '神秘的なオーロラ観測体験': 'https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=400&h=300&fit=crop&q=80',
     'サウナ文化の本場': 'https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=400&h=300&fit=crop&q=80',
     'ムーミンの故郷': 'https://images.unsplash.com/photo-1578925518681-39e3ded07b3a?w=400&h=300&fit=crop&q=80',

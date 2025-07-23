@@ -21,7 +21,14 @@ export default defineConfig({
     exclude: ['lucide-react'],
   },
   build: {
+    sourcemap: false,
     rollupOptions: {
+      onwarn(warning, warn) {
+        if (warning.code === 'SOURCEMAP_ERROR') {
+          return;
+        }
+        warn(warning);
+      },
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom'],

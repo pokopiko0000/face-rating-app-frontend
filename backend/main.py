@@ -288,6 +288,19 @@ def health_check():
     return {"status": "healthy", "message": "Face rating backend is running"}
 
 
+@app.get("/debug/cors")
+def debug_cors():
+    """CORS設定のデバッグ情報を返す"""
+    cors_config = settings.get_cors_config()
+    return {
+        "environment": settings.environment.value,
+        "cors_origins_env": os.getenv("CORS_ORIGINS", "Not set"),
+        "cors_origins_parsed": settings.cors_origins,
+        "cors_config": cors_config,
+        "api_url": settings.api_url,
+    }
+
+
 # --- メインの実行部分（デバッグ用） ---
 if __name__ == "__main__":
     import uvicorn
