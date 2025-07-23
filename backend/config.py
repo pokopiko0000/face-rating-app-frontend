@@ -40,7 +40,7 @@ class Settings(BaseSettings):
     
     # --- CORS Configuration ---
     # Pydanticのデフォルトパーサーを回避するため、別名を使用
-    _cors_origins_raw: Optional[str] = Field(default=None, env="CORS_ORIGINS", exclude=True)
+    cors_origins_raw: Optional[str] = Field(default=None, env="CORS_ORIGINS", exclude=True)
     
     # --- Face Analysis Settings ---
     face_detection_threshold: float = Field(default=0.1, env="FACE_DETECTION_THRESHOLD")
@@ -64,10 +64,10 @@ class Settings(BaseSettings):
     @property
     def cors_origins(self) -> List[str]:
         """Get parsed CORS origins from environment variable."""
-        if not self._cors_origins_raw:
+        if not self.cors_origins_raw:
             return []
         # Handle both single origin and comma-separated origins
-        return [origin.strip() for origin in self._cors_origins_raw.split(",") if origin.strip()]
+        return [origin.strip() for origin in self.cors_origins_raw.split(",") if origin.strip()]
     
     @field_validator("face_detection_size", mode='before')
     @classmethod
