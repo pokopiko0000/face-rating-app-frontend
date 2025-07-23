@@ -7,7 +7,7 @@ are defined here.
 """
 
 from enum import Enum
-from typing import List, Tuple, Optional
+from typing import List, Tuple, Optional, Union
 from pydantic import field_validator, Field
 from pydantic_settings import BaseSettings
 import os
@@ -64,9 +64,14 @@ class Settings(BaseSettings):
     @classmethod
     def parse_cors_origins(cls, v):
         """Parse comma-separated CORS origins."""
+        if v is None or v == "":
+            return []
         if isinstance(v, str):
+            # Handle single origin or comma-separated origins
             return [origin.strip() for origin in v.split(",") if origin.strip()]
-        return v
+        if isinstance(v, list):
+            return v
+        return []
     
     @field_validator("face_detection_size", mode='before')
     @classmethod
