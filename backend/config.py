@@ -64,10 +64,12 @@ class Settings(BaseSettings):
     @property
     def cors_origins(self) -> List[str]:
         """Get parsed CORS origins from environment variable."""
-        if not self.cors_origins_raw:
+        # 直接環境変数から読み取る（Pydanticのフィールドに依存しない）
+        raw_value = os.getenv("CORS_ORIGINS")
+        if not raw_value:
             return []
         # Handle both single origin and comma-separated origins
-        return [origin.strip() for origin in self.cors_origins_raw.split(",") if origin.strip()]
+        return [origin.strip() for origin in raw_value.split(",") if origin.strip()]
     
     @field_validator("face_detection_size", mode='before')
     @classmethod
