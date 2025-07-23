@@ -17,6 +17,11 @@ from pycountry_convert import (
 from pathlib import Path
 from typing import Dict, Any, Optional, List, Tuple
 
+# Debug環境変数
+print(f"DEBUG: CORS_ORIGINS env var = '{os.getenv('CORS_ORIGINS', 'NOT SET')}'")
+print(f"DEBUG: CORS_ORIGINS type = {type(os.getenv('CORS_ORIGINS'))}")
+print(f"DEBUG: CORS_ORIGINS repr = {repr(os.getenv('CORS_ORIGINS'))}")
+
 # Import configuration management
 from config import settings
 

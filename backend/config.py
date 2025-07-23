@@ -39,7 +39,8 @@ class Settings(BaseSettings):
     gcs_bucket_name: str = Field(env="GCS_BUCKET_NAME")
     
     # --- CORS Configuration ---
-    cors_origins: List[str] = Field(default_factory=list, env="CORS_ORIGINS")
+    # Pydanticのデフォルトパーサーを回避するため、別名を使用
+    _cors_origins_raw: Optional[str] = Field(default=None, env="CORS_ORIGINS", exclude=True)
     
     # --- Face Analysis Settings ---
     face_detection_threshold: float = Field(default=0.1, env="FACE_DETECTION_THRESHOLD")
@@ -60,18 +61,13 @@ class Settings(BaseSettings):
         env_file_encoding = "utf-8"
         case_sensitive = False
     
-    @field_validator("cors_origins", mode='before')
-    @classmethod
-    def parse_cors_origins(cls, v):
-        """Parse comma-separated CORS origins."""
-        if v is None or v == "":
+    @property
+    def cors_origins(self) -> List[str]:
+        """Get parsed CORS origins from environment variable."""
+        if not self._cors_origins_raw:
             return []
-        if isinstance(v, str):
-            # Handle single origin or comma-separated origins
-            return [origin.strip() for origin in v.split(",") if origin.strip()]
-        if isinstance(v, list):
-            return v
-        return []
+        # Handle both single origin and comma-separated origins
+        return [origin.strip() for origin in self._cors_origins_raw.split(",") if origin.strip()]
     
     @field_validator("face_detection_size", mode='before')
     @classmethod
