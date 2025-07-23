@@ -25,6 +25,11 @@ print(f"DEBUG: CORS_ORIGINS repr = {repr(os.getenv('CORS_ORIGINS'))}")
 # Import configuration management
 from config import settings
 
+# Debug設定値
+print(f"DEBUG: cors_origins_raw = {settings.cors_origins_raw}")
+print(f"DEBUG: cors_origins (parsed) = {settings.cors_origins}")
+print(f"DEBUG: environment = {settings.environment}")
+
 # Import constants
 from constants import COUNTRY_FLAGS, COUNTRY_NAME_JP
 

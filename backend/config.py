@@ -40,7 +40,7 @@ class Settings(BaseSettings):
     
     # --- CORS Configuration ---
     # Pydanticのデフォルトパーサーを回避するため、別名を使用
-    cors_origins_raw: Optional[str] = Field(default=None, env="CORS_ORIGINS", exclude=True)
+    cors_origins_raw: Optional[str] = Field(default=None, env="CORS_ORIGINS")
     
     # --- Face Analysis Settings ---
     face_detection_threshold: float = Field(default=0.1, env="FACE_DETECTION_THRESHOLD")
