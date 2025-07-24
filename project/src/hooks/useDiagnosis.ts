@@ -28,11 +28,18 @@ export const useDiagnosis = () => {
     setIsLoading(false);
   }, []);
 
+  const restore = useCallback((diagnosisResult: DiagnosisResult) => {
+    setResult(diagnosisResult);
+    setError(null);
+    setIsLoading(false);
+  }, []);
+
   return {
     isLoading,
     result,
     error,
     diagnose,
-    reset
+    reset,
+    restore
   };
 };
