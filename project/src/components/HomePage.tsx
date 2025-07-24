@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Sparkles } from 'lucide-react';
 import GenderSelector from './GenderSelector';
 import ImageUpload from './ImageUpload';
@@ -15,7 +15,19 @@ function HomePage() {
   const [selectedImage, setSelectedImage] = useState<File | null>(null);
   const [imagePreview, setImagePreview] = useState<string | null>(null);
   
-  const { isLoading, result, error, diagnose, reset } = useDiagnosis();
+  const location = useLocation();
+  const { isLoading, result, error, diagnose, reset, restore } = useDiagnosis();
+
+  // 国別ページから戻ってきた時の状態復元
+  useEffect(() => {
+    if (location.state?.restoreResult) {
+      restore(location.state.restoreResult);
+      setImagePreview(location.state.restoreImage);
+      setSelectedGender(location.state.restoreGender);
+      // 状態を復元した後、履歴から状態を削除
+      window.history.replaceState({}, document.title);
+    }
+  }, [location.state, restore]);
 
   const handleImageSelect = (file: File) => {
     setSelectedImage(file);

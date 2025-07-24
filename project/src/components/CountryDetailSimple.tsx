@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link, useNavigate, useLocation } from 'react-router-dom';
 import { ArrowLeft, Sparkles, MapPin, Users, Globe, Home } from 'lucide-react';
 import CountryFlag from './CountryFlag';
 import InteractiveWorldMap from './InteractiveWorldMap';
@@ -9,14 +9,22 @@ import { countryData } from '../data/countries';
 export default function CountryDetailSimple() {
   const { countryCode } = useParams<{ countryCode: string }>();
   const navigate = useNavigate();
+  const location = useLocation();
   const country = countryData[countryCode?.toLowerCase() || ''];
   const [imageLoaded, setImageLoaded] = useState(false);
   
   const handleBack = () => {
-    // 診断結果から来た場合は戻る、そうでなければホームページに移動
-    if (window.history.length > 1) {
-      navigate(-1);
+    // 診断結果の状態が存在する場合は、その状態を復元してホームページに戻る
+    if (location.state?.diagnosisResult) {
+      navigate('/', { 
+        state: { 
+          restoreResult: location.state.diagnosisResult,
+          restoreImage: location.state.userImage,
+          restoreGender: location.state.selectedGender
+        }
+      });
     } else {
+      // 状態がない場合は通常のホームページに戻る
       navigate('/');
     }
   };

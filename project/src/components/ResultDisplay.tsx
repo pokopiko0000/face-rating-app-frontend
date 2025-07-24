@@ -13,7 +13,7 @@ interface ResultDisplayProps {
   gender: 'male' | 'female';
 }
 
-export default function ResultDisplay({ result, userImage, onReset }: ResultDisplayProps) {
+export default function ResultDisplay({ result, userImage, onReset, gender }: ResultDisplayProps) {
   const topResult = result.ranking[0];
   const otherResults = result.ranking.slice(1, 5); // 2位から5位まで
   const topCountryImage = result.top_country_image_url; // バックエンドから直接URLを取得
@@ -71,6 +71,11 @@ export default function ResultDisplay({ result, userImage, onReset }: ResultDisp
               <div className="mt-4">
                 <Link
                   to={`/country/${countryCode}`}
+                  state={{
+                    diagnosisResult: result,
+                    userImage: userImage,
+                    selectedGender: gender
+                  }}
                   className="inline-flex items-center gap-2 px-6 py-3 bg-white/20 hover:bg-white/30 text-white rounded-full font-medium transition-all duration-300 hover:scale-105"
                 >
                   <ExternalLink size={18} />
@@ -130,6 +135,11 @@ export default function ResultDisplay({ result, userImage, onReset }: ResultDisp
                   {countryCode ? (
                     <Link
                       to={`/country/${countryCode}`}
+                      state={{
+                        diagnosisResult: result,
+                        userImage: userImage,
+                        selectedGender: gender
+                      }}
                       className="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-200 hover:shadow-md"
                     >
                       <span className="text-lg font-bold text-gray-600 w-8">{index + 2}</span>
